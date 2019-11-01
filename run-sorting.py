@@ -57,7 +57,7 @@ for next_participant in included_participants:
     infofile = os.path.join(testdata, 'info.csv').replace('\\', '/')
 
     # gaze/position file paths
-    gazesurface_file = os.path.join(exportfolder, 'gaze_positions.csv').replace('\\', '/')
+    gazesurface_file = glob.glob(exportfolder+'/surfaces/gaze_positions*.csv')[0]
     surfaceevents = os.path.join(exportfolder, 'surfaces', 'surface_events.csv').replace('\\', '/')
 
     sort = Sorting(infofile, savelogs)
