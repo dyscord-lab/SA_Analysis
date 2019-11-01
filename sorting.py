@@ -101,7 +101,7 @@ class Sorting():
     def savedata(self, data, savename, header=None):
         file = self.checkexisting(savename, header)
 
-        with open(file, 'a', newline='') as f:
+        with open(file, 'a') as f:
             writer = csv.writer(f)
             writer.writerows(data)
 
@@ -123,7 +123,7 @@ class Sorting():
             if not header:
                 # aka no header was actually given
                 header = ['']
-            with open(file, 'w+', newline='') as f:
+            with open(file, 'w+') as f:
                 if extension == '.csv':
                     writer = csv.writer(f)
                     writer.writerow(header)
