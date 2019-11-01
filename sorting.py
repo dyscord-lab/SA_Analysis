@@ -256,6 +256,8 @@ def simplefilechecker(filename, extension):
     fileroot = os.path.join(self.savelogs, filename).replace('\\', '/')
     file = fileroot + extension
 
+    # TODO: create better filename
+
     i = 1
     while True:
         if os.path.exists(file):
