@@ -210,7 +210,11 @@ class Sorting():
             previous = (index1, index2)
             previous_frames = (int(enters), int(exits))
 
+        # TODO: getting error on next line:
+        #   `writer.writerows(data)
+        #   _csv.Error: sequence expected`
         self.savedata(chunks, 'gazes split into sections')
+
 
         return chunks
 
