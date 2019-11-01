@@ -1,3 +1,4 @@
+# import libraries that we need
 import csv
 import gc
 import os
@@ -5,39 +6,13 @@ from datetime import datetime
 import pandas as pd
 
 
-
-#-------- FILE PATHS SETUP --------#
-
-# NOTE!! This script should be ideally be placed at the top level of a participant's directory
-# That is what tdetermines the "root" filepath!
-
-# After my 2 exams i'll make sure to implement a thing that is more interactive
-# or potentially a batch mode? if that's desired.
-#-=================================#
-
-root = os.path.dirname(__file__)
-
-savelogs = os.path.join(root, 'savelogs')
-if not os.path.exists(savelogs):
-    os.makedirs(savelogs)
-
-testdata = os.path.join(root, 'test data', '2019_10_19', '000').replace('\\', '/')
-exportfolder = os.path.join(testdata, 'exports', '004').replace('\\', '/')
-logfile = os.path.join(root, 'test data', 'sa1_2019-10-19_000-1.log').replace('\\', '/')
-
-exportinfo = os.path.join(exportfolder, 'export_info.csv').replace('\\', '/')
-infofile = os.path.join(testdata, 'info.old_style.csv').replace('\\', '/')
-# gaze/position file paths
-gazesurface_file = os.path.join(exportfolder, 'surfaces', 'gaze_positions_on_surface_Surface 1.csv').replace('\\', '/')
-surfaceevents = os.path.join(exportfolder, 'surfaces', 'surface_events.csv').replace('\\', '/')
-
-
 # Handles the general sorting
-class Sorting:
-    def __init__(self, expInfo):
+class Sorting():
+    def __init__(self, expInfo, savelogs):
         self.offset = self.generateoffset(expInfo)
         self.imgsorder = []
         self.surfaces = []
+        self.savelogs = savelogs
 
     # generic file parser
     def sortfiles(self, filepath):
@@ -133,7 +108,7 @@ class Sorting:
     # to check if file already exists, to prevent overwriting
     # otherwise generates desired file
     def checkexisting(self, filename, header=None, makeCopy=True, extension='.csv'):
-        fileroot = os.path.join(savelogs, filename).replace('\\', '/')
+        fileroot = os.path.join(self.savelogs, filename).replace('\\', '/')
         file = fileroot + extension
         if makeCopy:
             i = 1
@@ -278,7 +253,7 @@ def nesteddicts_inlist(imggazes):
 
 
 def simplefilechecker(filename, extension):
-    fileroot = os.path.join(savelogs, filename).replace('\\', '/')
+    fileroot = os.path.join(self.savelogs, filename).replace('\\', '/')
     file = fileroot + extension
 
     i = 1
@@ -297,14 +272,3 @@ def loggaze_matchup(imggazes, infolog):
     print(gazes['section #'].nunique())
     gc.collect()  # just for good measure
     gazes["img shown"] = ""
-
-
-sort = Sorting(infofile)
-sort.sortsurfaces(surfaceevents)
-
-# imggaze_chunks = { chunk# : { colname : value } }
-# ie { 000 : { 'world_timestamp' : 123123, ....,.. 'y_scaled': 0.99453 }
-imggaze_chunks = sort.gazesort(gazesurface_file)  # type: dict
-fullinfo = sort.logsort(logfile)  # type:list
-
-gazes = nesteddicts_inlist(imggaze_chunks)
