@@ -27,7 +27,7 @@ included_participants = [participant for participant in os.listdir(top_root)
                         if os.path.isdir(os.path.join(top_root,participant))]
 
 # set or create directory for saving logs
-savelogs = os.path.join(top_root, 'savelogs')
+savelogs = os.path.join(os.getcwd(), 'savelogs')
 if not os.path.exists(savelogs):
     os.makedirs(savelogs)
 
@@ -66,6 +66,6 @@ for next_participant in included_participants:
     # imggaze_chunks = { chunk# : { colname : value } }
     # ie { 000 : { 'world_timestamp' : 123123, ....,.. 'y_scaled': 0.99453 }
     imggaze_chunks = sort.gazesort(gazesurface_file)  # type: dict
-    fullinfo = sort.logsort(logfile, )  # type:list
+    fullinfo = sort.logsort(logfile)  # type:list
 
     gazes = nesteddicts_inlist(imggaze_chunks)
