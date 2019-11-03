@@ -271,9 +271,8 @@ def nesteddicts_inlist(imggazes):
 
     df["img shown"] = ""
 
-    filename = simplefilechecker('Gazes_Position_Sectioned', '.xlsx')
-    writer = pd.ExcelWriter(filename)
-    df.to_excel(writer)
+    filename = simplefilechecker('Gazes_Position_Sectioned', '.csv')
+    df.to_csv(filename)
     return df
 
 
