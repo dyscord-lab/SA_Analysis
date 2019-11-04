@@ -179,7 +179,6 @@ def pair_logs(processed_surface_df, processed_log_df):
     # return the merged dataframe
     return processed_surface_df
 
-
 def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
     """Add the stimulus ID and event (enter/exit) to each line of the gaze
         activity dataframe."""
