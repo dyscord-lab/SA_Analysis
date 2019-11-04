@@ -283,6 +283,17 @@ def nesteddicts_inlist(imggazes):
     return df
 
 
+def chunks(l, n):
+    
+    """Convert a list l into chunks of n size.
+    Credit to Ned Batchelder: https://stackoverflow.com/a/312464"""
+    
+    # For item i in a range that is a length of l,
+    for i in range(0, len(l), n):
+        
+        # Create an index range for l of n items:
+        yield l[i:i+n]
+
 def process_surfaces(surface_events_path):
     """Process surface events file from Pupil Player."""
 
@@ -303,8 +314,38 @@ def process_surfaces(surface_events_path):
     surface_info['end_time'] = surface_info['start_time'].shift(-1)
     surface_info['duration'] = (pd.to_numeric(surface_info['end_time']) - 
                                 pd.to_numeric(surface_info['start_time']))
+    
+    # if a frame took less than the appropriate amount of time, try to pair it
+    interrupted_frames = surface_info[(surface_info['event_type']=='enter') & 
+                                      (surface_info['duration'] < 1.95)]
 
-    # return processed file
+    # if there aren't any interrupted frames, continue on
+    if len(interrupted_frames)==0:
+        del interrupted_frames
+
+    # if there are an odd number of interrupted frames, stop
+    elif len(interrupted_frames)%2!=0: 
+        raise ValueError('An odd number of interrupted frames have been flagged.')
+
+    # if there are an even number of interrupted frames, pair them
+    else:
+        # identify the surface numbers of partial frames and pair them
+        partial_frames = interrupted_frames.surface_num.unique()
+        identified_pairs = list(chunks(partial_frames, 2))
+
+        # rename pairs in the original df
+        for pair in identified_pairs:
+
+            # identify what the value of the first one is
+            first_appearance = pair[0]
+
+            # identify what one needs to be replaced
+            second_appearance = pair[1]
+
+            # replace the second one
+            surface_info['surface_num'][surface_info['surface_num']==second_appearance] = first_appearance
+
+    # return processed dataframe
     return surface_info
 
 
