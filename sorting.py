@@ -48,8 +48,8 @@ class Sorting():
                                                     .str.replace('.png',''))
 
         # write the picture dataframe to file
-        pic_fileroot = savelogs
-        pic_file = savelogs + '/img_times.csv'
+        pic_fileroot = self.savelogs
+        pic_file = self.savelogs + '/img_times.csv'
         i = 1
         while True:
             if os.path.exists(pic_file):
