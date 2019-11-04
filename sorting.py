@@ -427,9 +427,9 @@ processed_logs = sort.logsort(logfile)
 # associate the surface and log stimulus information
 paired_logs = pair_logs(processed_surfaces, processed_logs)
 
-# imggaze_chunks = { chunk# : { colname : value } }
-# ie { 000 : { 'world_timestamp' : 123123, ....,.. 'y_scaled': 0.99453 }
-imggaze_chunks = sort.gazesort(gazesurface_file)  # type: dict
-fullinfo = sort.logsort(logfile)  # type:list
+# associate the gaze data with the stimulus data
+gaze_stimulus_df = associate_gaze_stimulus(gazesurface_file,paired_logs)
 
-gazes = nesteddicts_inlist(imggaze_chunks)
+# save the final dataframe
+gaze_stimulus_df.to_csv(savelogs+'/complete_gaze_df.csv',
+                       index=None)
