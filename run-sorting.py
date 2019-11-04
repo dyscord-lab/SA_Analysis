@@ -20,7 +20,7 @@ from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze
 #-=================================#
 
 # set root to current path location
-top_root = os.path.join(os.getcwd(), 'realparticipant_data')
+top_root = os.path.join(os.getcwd(), 'test data')
 
 # figure out the participants in the directory
 included_participants = [participant for participant in os.listdir(top_root)
@@ -43,25 +43,26 @@ for next_participant in included_participants:
     testdata = os.path.join(root,'000').replace('\\', '/')
 
     # look for the exports folder
-    exportfolder = os.path.join(testdata, 'exports', '000').replace('\\', '/')
+    # TODO: This has to be made more robust.
+    exportfolder = os.path.join(testdata, 'exports', '004').replace('\\', '/')
 
     # create paths for required participant output files
     logfile = glob.glob(root+'/*.log')[0]
 
     # TODO: implement a check to make sure there's no more than 1 logfile
 
-    #logfile = os.path.join(root, '000', 'sa1_2019-10-19_000-1.log').replace('\\', '/')
+    # identify the export info file path
     exportinfo = os.path.join(exportfolder, 'export_info.csv').replace('\\', '/')
 
-    # grab info file
-    infofile = os.path.join(testdata, 'info.csv').replace('\\', '/')
+    # identify the info file path
+    infofile = os.path.join(testdata, 'info.old_style.csv').replace('\\', '/')
 
     # gaze/position file paths
     gazesurface_file = glob.glob(exportfolder+'/surfaces/gaze_positions*.csv')[0]
     surfaceevents = os.path.join(exportfolder, 'surfaces', 'surface_events.csv').replace('\\', '/')
 
     # sort the info file
-    sort = Sorting(infofile)
+    sort = Sorting(infofile, savelogs)
 
     # process the surface file
     processed_surfaces = process_surfaces(surfaceevents)
