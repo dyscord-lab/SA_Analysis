@@ -395,7 +395,15 @@ def pair_logs(processed_surface_df, processed_log_df):
     
 # sort the info file
 sort = Sorting(infofile)
-sort.sortsurfaces(surfaceevents)
+
+# process the surface file
+processed_surfaces = process_surfaces(surfaceevents)
+
+# process the logfile
+processed_logs = sort.logsort(logfile)
+
+# associate the surface and log stimulus information
+paired_logs = pair_logs(processed_surfaces, processed_logs)
 
 # imggaze_chunks = { chunk# : { colname : value } }
 # ie { 000 : { 'world_timestamp' : 123123, ....,.. 'y_scaled': 0.99453 }
