@@ -392,6 +392,29 @@ def pair_logs(processed_surface_df, processed_log_df):
     return processed_surface_df
     
     
+def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
+    """Add the stimulus ID and event (enter/exit) to each line of the gaze activity dataframe."""
+    
+    # read in the file with gaze surface information
+    gaze_surface_df = pd.read_csv(gazesurface_file)
+    
+    # take only a few columns from the paired_log_df
+    limited_paired_logs = paired_log_df[['world_index', 'stimulus_pic', 'surface_and_event']]
+    
+    # merge the gaze logs and stimulus logs
+    gaze_surface_df = (gaze_surface_df
+                       
+                       # retain all gaze rows
+                       .merge(limited_paired_logs,
+                             on='world_index', 
+                             how='outer')
+                                       
+                       # fill all NAs with the previous value
+                       .fillna(method='ffill'))
+    
+    # return the newly merged df
+    return gaze_surface_df
+    
 # sort the info file
 sort = Sorting(infofile)
 
