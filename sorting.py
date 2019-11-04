@@ -278,6 +278,7 @@ def nesteddicts_inlist(imggazes):
     df["img shown"] = ""
 
     filename = simplefilechecker('Gazes_Position_Sectioned', '.csv')
+    #writer = pd.ExcelWriter(filename)
     df.to_csv(filename)
     return df
 
@@ -293,7 +294,6 @@ def simplefilechecker(filename, extension):
             i += 1
         else:
             return file
-
 
 # Need to work on this
 def loggaze_matchup(imggazes, infolog):
