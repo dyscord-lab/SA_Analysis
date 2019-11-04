@@ -184,7 +184,7 @@ def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
         activity dataframe."""
 
     # read in the file with gaze surface information
-    gaze_surface_df = pd.read_csv(gazesurface_file)
+    gaze_surface_df = pd.read_csv(gaze_surface_path)
 
     # take only a few columns from the paired_log_df
     limited_paired_logs = paired_log_df[['world_index',
