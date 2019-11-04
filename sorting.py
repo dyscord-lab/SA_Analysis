@@ -329,6 +329,9 @@ def process_surfaces(surface_events_path):
 
     # if there are an even number of interrupted frames, pair them
     else:
+        
+        # TODO: Implement check to make sure the 2 observed times add up to ~2 sec
+        
         # identify the surface numbers of partial frames and pair them
         partial_frames = interrupted_frames.surface_num.unique()
         identified_pairs = list(chunks(partial_frames, 2))
