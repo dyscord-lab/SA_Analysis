@@ -8,7 +8,7 @@ from datetime import datetime
 import pandas as pd
 
 # import custom-made things that we'll need
-from sorting import Sorting, nesteddicts_inlist, simplefilechecker, loggaze_matchup
+from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus
 
 #-------- FILE PATHS SETUP --------#
 
