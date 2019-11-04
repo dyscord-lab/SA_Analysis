@@ -8,7 +8,7 @@ from datetime import datetime
 import pandas as pd
 
 # import custom-made things that we'll need
-from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus
+from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
 
 #-------- FILE PATHS SETUP --------#
 
@@ -68,16 +68,21 @@ for next_participant in included_participants:
     processed_surfaces = process_surfaces(surfaceevents)
 
     # process the logfile
-    processed_logs = sort.logsort(logfile)
+    [full_logfile , processed_img_logs] = sort.logsort(logfile)
 
     # associate the surface and log stimulus information
-    paired_logs = pair_logs(processed_surfaces, processed_logs)
+    paired_logs = pair_logs(processed_surfaces, processed_img_logs)
 
     # associate the gaze data with the stimulus data
     gaze_stimulus_df = associate_gaze_stimulus(gazesurface_file,paired_logs)
+    
+    # extract the survey data
+    survey_df = extract_survey(full_logfile)
 
     # TODO: update file savename to incorporate participant's ID
 
-    # save the final dataframe
+    # save the final dataframes
     gaze_stimulus_df.to_csv(savelogs+'/complete_gaze_df.csv',
                            index=None)
+    survey_df.to_csv(savelogs+'/survey_df.csv',
+                     index=None)
