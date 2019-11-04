@@ -283,6 +283,31 @@ def nesteddicts_inlist(imggazes):
     return df
 
 
+def process_surfaces(surface_events_path):
+    """Process surface events file from Pupil Player."""
+
+    # read surface events file to dataframe
+    surface_info = (pd.read_csv(surface_events_path)
+                     .drop(columns='surface_name'))
+
+    # sequence surface names and events
+    surface_info['surface_num'] = surface_info.groupby('event_type').cumcount()+1
+
+    # concatenate variables
+    surface_info['surface_and_event'] = (surface_info['event_type'] 
+                                        + '_' 
+                                        + surface_info['surface_num'].map(str))
+    
+    # get the start time, end time, and duration for each surface event
+    surface_info['start_time'] = surface_info['world_timestamp']
+    surface_info['end_time'] = surface_info['start_time'].shift(-1)
+    surface_info['duration'] = (pd.to_numeric(surface_info['end_time']) - 
+                                pd.to_numeric(surface_info['start_time']))
+
+    # return processed file
+    return surface_info
+
+
 def simplefilechecker(filename, extension):
     fileroot = os.path.join(savelogs, filename).replace('\\', '/')
     file = fileroot + extension
