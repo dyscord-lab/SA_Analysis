@@ -373,6 +373,27 @@ def loggaze_matchup(imggazes, infolog):
     gazes["img shown"] = ""
 
 
+def pair_logs(processed_surface_df, processed_log_df):
+    """Combine the processed surface dataframe from Pupil with the processed 
+        log dataframe from PsychoPy to figure out which stimulus was shown 
+        at what time."""
+    
+    # only retain the stimulus logs
+    stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
+                      .reset_index(drop=True))
+    
+    # associate the stimulus and surface numbers
+    paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
+                                'stimulus_pic': stim_logs_only['picture'].unique()})
+    
+    # merge with the surface dataframe
+    processed_surface_df = processed_surface_df.merge(paired_logs, on='surface_num')
+    
+    # return the merged dataframe
+    return processed_surface_df
+    
+    
+# sort the info file
 sort = Sorting(infofile)
 sort.sortsurfaces(surfaceevents)
 
