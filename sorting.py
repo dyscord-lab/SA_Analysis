@@ -81,46 +81,52 @@ class Sorting:
 
     # generic sorting through logfile
     def logsort(self, path):
-        fullinfo = []
+        # read in the file as a dataframe
+        fullinfo = (pd.read_csv(path, sep='\t', header=None)
 
-        imgs = []
-        pauses = []
-        start = 10000000000
+                      # rename columns
+                      .rename(columns={0:"start_time",
+                                       1:"type",
+                                       2:"event"})
 
-        with open(path, "r+") as f:
-            for line in f:
-                if "PICTURE" in line:
-                    split = line.split(' 	DATA 	PICTURE: ')
-                    t = float(split[0])
-                    pic = split[1][:-1]
-                    if 'reset_image' in line:
-                        pauses.append(t)
-                    else:
-                        imgs.append((t, pic))
-                elif 'START' in line:
-                    start = float(line.split(' ', 1)[0])  # b/c not always @ 0
+                      # drop any participant responses
+                      .dropna())
 
-        if start < imgs[0][0]:
-            duration = round(imgs[0][0] - start, 18)
-            start = start + self.offset
-            end = imgs[0][0] + self.offset
-            fullinfo.append([start, end, duration, 'START'])
+        # get the end time for each screen
+        fullinfo['end_time'] = fullinfo['start_time'].shift(-1)
 
-        for img, pause in zip(imgs, pauses):
-            t1 = img[0] + self.offset
-            t2 = pause + self.offset
-            if pause < t1:
-                t2 = t1 + self.offset
-                t1 = pause + self.offset
-            duration = round(t2 - t1, 12)
-            pic = os.path.splitext(img[1])[0]
-            info = [t1, t2, duration, pic]
-            fullinfo.append(info)
+        # get duration for each screen
+        fullinfo['duration'] = (pd.to_numeric(fullinfo['end_time']) -
+                                pd.to_numeric(fullinfo['start_time']))
 
-        self.savedata(fullinfo, 'fullinfo', ['Start Time', 'End Time', 'Duration', 'Image Shown'])
-        self.imgsorder = imgs
 
-        return fullinfo
+        # identify only the events where images occurred
+        only_pics = (fullinfo[fullinfo['event'].str.contains("PICTURE")]
+                                .reset_index(drop=True)
+                                .drop(columns='type')
+                                .rename(columns={'event': 'picture'}))
+
+        # leave only picture numbers for picture identification
+        only_pics['picture'] = (only_pics['picture'].str.replace('PICTURE: ','')
+                                                    .str.replace('.png',''))
+
+        # write the picture dataframe to file
+        pic_fileroot = savelogs
+        pic_file = savelogs + '/img_times.csv'
+        i = 1
+        while True:
+            if os.path.exists(pic_file):
+                pic_file = pic_fileroot + '/img_times_copy_' + str(i) + '.csv'
+                i += 1
+            else:
+                break
+        only_pics.to_csv(pic_file, sep=",", index=None, header=True)
+
+        # save image order
+        self.imgsorder = [int(x) for x in only_pics.picture.unique() if x != "reset_image"]
+
+        # return the picture dataframe
+        return only_pics
 
     # saves any sort of collection, ie list or array, to a file
     def savedata(self, data, savename, header=None):
