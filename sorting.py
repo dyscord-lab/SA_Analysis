@@ -14,137 +14,61 @@ class Sorting():
         self.surfaces = []
         self.savelogs = savelogs
 
-    # generic file parser
-    def sortfiles(self, filepath):
-        if not os.path.exists(filepath):
-            return None
-
-        info = []
-        with open(filepath, "r+") as f:
-            reader = csv.reader(f)
-
-            for chunk in reader:
-                info.append(chunk)
-
-        return info
-
-    # sorts through surface_events.csv to determine when it enters + exists the video.
-    def sortsurfaces(self, surfaceinput):
-        # ['world_index', 'world_timestamp', 'surface_name', 'event_type']
-        surfaceinfo = self.sortfiles(surfaceinput)  # type:list
-
-        enter = None
-        exits = None
-        segment = []
-
-        for line in surfaceinfo:
-            if "enter" in line:
-                enter = line[0:2]  # exclude 'Surface 1' 'enter/exit', we dont need it
-            elif "exit" in line[3]:
-                exits = line[0:2]
-
-            if enter and exits:
-                # record and then reset
-                worldtimes = (enter[1], exits[1])
-                frames = (enter[0], exits[0])
-
-                segment.append([frames, worldtimes])
-                enter = None
-                exits = None
-
-        self.surfaces = segment
-
-    # generic sorting through logfile
     def logsort(self, path):
-        fullinfo = []
 
-        imgs = []
-        pauses = []
-        start = 10000000000
+        """ Parse the PsychoPy logfile."""
 
-        with open(path, "r+") as f:
-            for line in f:
-                if "PICTURE" in line:
-                    split = line.split(' 	DATA 	PICTURE: ')
-                    t = float(split[0])
-                    pic = split[1][:-1]
-                    if 'reset_image' in line:
-                        pauses.append(t)
-                    else:
-                        imgs.append((t, pic))
-                elif 'START' in line:
-                    start = float(line.split(' ', 1)[0])  # b/c not always @ 0
+        # read in the file as a dataframe
+        fullinfo = (pd.read_csv(path, sep='\t', header=None)
 
-        if start < imgs[0][0]:
-            duration = round(imgs[0][0] - start, 18)
-            start = start + self.offset
-            end = imgs[0][0] + self.offset
-            fullinfo.append([start, end, duration, 'START'])
+                      # rename columns
+                      .rename(columns={0:"start_time",
+                                       1:"type",
+                                       2:"event"})
 
-        for img, pause in zip(imgs, pauses):
-            t1 = img[0] + self.offset
-            t2 = pause + self.offset
-            if pause < t1:
-                t2 = t1 + self.offset
-                t1 = pause + self.offset
-            duration = round(t2 - t1, 12)
-            pic = os.path.splitext(img[1])[0]
-            info = [t1, t2, duration, pic]
-            fullinfo.append(info)
+                      # drop any participant responses
+                      .dropna())
 
-        self.savedata(fullinfo, 'fullinfo', ['Start Time', 'End Time', 'Duration', 'Image Shown'])
-        self.imgsorder = imgs
+        # get the end time for each screen
+        fullinfo['end_time'] = fullinfo['start_time'].shift(-1)
 
-        return fullinfo
+        # get duration for each screen
+        fullinfo['duration'] = (pd.to_numeric(fullinfo['end_time']) -
+                                pd.to_numeric(fullinfo['start_time']))
 
-    # saves any sort of collection, ie list or array, to a file
-    def savedata(self, data, savename, header=None):
-        file = self.checkexisting(savename, header)
 
-        with open(file, 'a') as f:
-            writer = csv.writer(f)
-            writer.writerows(data)
+        # identify only the events where images occurred
+        only_pics = (fullinfo[fullinfo['event'].str.contains("PICTURE")]
+                                .reset_index(drop=True)
+                                .drop(columns='type')
+                                .rename(columns={'event': 'picture'}))
 
-    # to check if file already exists, to prevent overwriting
-    # otherwise generates desired file
-    def checkexisting(self, filename, header=None, makeCopy=True, extension='.csv'):
-        fileroot = os.path.join(self.savelogs, filename).replace('\\', '/')
-        file = fileroot + extension
-        if makeCopy:
-            i = 1
-            while True:
-                if os.path.exists(file):
-                    file = fileroot + '_copy_' + str(i) + extension
-                    i += 1
-                else:
-                    break
+        # leave only picture numbers for picture identification
+        only_pics['picture'] = (only_pics['picture'].str.replace('PICTURE: ','')
+                                                    .str.replace('.png',''))
 
-        if not os.path.exists(file):
-            if not header:
-                # aka no header was actually given
-                header = ['']
-            with open(file, 'w+') as f:
-                if extension == '.csv':
-                    writer = csv.writer(f)
-                    writer.writerow(header)
-                else:
-                    try:
-                        f.writelines(header)
-                    except:
-                        print(Exception)
+        # write the picture dataframe to file
+        pic_fileroot = savelogs
+        pic_file = savelogs + '/img_times.csv'
+        i = 1
+        while True:
+            if os.path.exists(pic_file):
+                pic_file = pic_fileroot + '/img_times_copy_' + str(i) + '.csv'
+                i += 1
+            else:
+                break
+        only_pics.to_csv(pic_file, sep=",", index=None, header=True)
 
-        return file
+        # save image order
+        self.imgsorder = [int(x) for x in only_pics.picture.unique()
+                          if x != "reset_image"]
 
-    # takes input timestamp in unix format + possibly filepath of info.csv
-    # returns time in %H:%M:%S.%f format
-    def converttime(self, initaltimestamp):
-        timestamp = float(initaltimestamp)
-        wall_time = datetime.fromtimestamp(timestamp + self.offset).strftime("%H:%M:%S.%f")
+        # return the picture dataframe
+        return only_pics
 
-        return wall_time
-
-    # returns calculated offset time as a float
     def generateoffset(self, timesfile):
+        """Calculate offset time and return as float."""
+
         if len(timesfile) < 4:
             print("Missing filepath!")
             return None
@@ -169,112 +93,115 @@ class Sorting():
 
         return None
 
-    # Loads in the gaze positions file and segments them out based on the frame# + times
-    # returns dict-like object {index -> {column -> value}}
-    #
-    def gazesort(self, file):
-        if not self.surfaces:
-            return None
+def chunks(l, n):
+    """Convert a list l into chunks of n size.
+        Credit to Ned Batchelder: https://stackoverflow.com/a/312464"""
 
-        # self.sortfiles(file) returns a list of lists, which is then parsed into dataframe
-        df = pd.DataFrame.from_records(
-            self.sortfiles(file),
-            columns=[
-                'world_timestamp', 'world_index', 'gaze_timestamp',
-                'x_norm', 'y_norm', 'x_scaled', 'y_scaled', 'on_surf', 'confidence'
-            ]
-        )  # type: pd.DataFrame()
-        df = df[1:]  # removes the header (read in above as actual row)
+    # For item i in a range that is a length of l,
+    for i in range(0, len(l), n):
 
-        # collection of each img segment and all its associated details
-        chunks = []
+        # Create an index range for l of n items:
+        yield l[i:i+n]
 
-        # temp variables
-        previous = tuple()
-        previous_frames = tuple()
+def process_surfaces(surface_events_path):
+    """Process surface events file from Pupil Player."""
 
-        for surface in self.surfaces:
-            enters = surface[0][0]
-            exits = surface[0][1]  # search by frames
+    # read surface events file to dataframe
+    surface_info = (pd.read_csv(surface_events_path)
+                     .drop(columns='surface_name'))
 
-            index1 = df['world_index'].values.searchsorted(enters, side='left')  # first time it appears
-            index2 = df['world_index'].values.searchsorted(exits, side='right')  # last time it appears
+    # sequence surface names and events
+    surface_info['surface_num'] = surface_info.groupby('event_type').cumcount()+1
 
-            # through obersvations, when it is a new surface, the frame # has a significant jump
-            # aka the index is GOOD if index = index + 1 ---> this is only issue for index1/start
-            if previous and (index1 == previous[1]) and (int(enters) - previous_frames[0]) > 2:
-                index1 = index1 + 1
+    # concatenate variables
+    surface_info['surface_and_event'] = (surface_info['event_type']
+                                        + '_'
+                                        + surface_info['surface_num'].map(str))
 
-            chunk = df[index1:index2].to_dict(orient='index')
-            chunks.append(chunk)
-            previous = (index1, index2)
-            previous_frames = (int(enters), int(exits))
+    # get the start time, end time, and duration for each surface event
+    surface_info = surface_info.rename(columns={'world_timestamp': 'start_time'})
+    surface_info['end_time'] = surface_info['start_time'].shift(-1)
+    surface_info['duration'] = (pd.to_numeric(surface_info['end_time']) -
+                                pd.to_numeric(surface_info['start_time']))
 
-        # TODO: getting error on next line:
-        #   `writer.writerows(data)
-        #   _csv.Error: sequence expected`
-        self.savedata(chunks, 'gazes split into sections')
+    # if a frame took less than the appropriate amount of time, try to pair it
+    interrupted_frames = surface_info[(surface_info['event_type']=='enter') &
+                                      (surface_info['duration'] < 1.95)]
 
+    # if there aren't any interrupted frames, continue on
+    if len(interrupted_frames)==0:
+        del interrupted_frames
 
-        return chunks
+    # if there are an odd number of interrupted frames, stop
+    elif len(interrupted_frames)%2!=0:
+        raise ValueError('An odd number of interrupted frames have been flagged.')
 
+    # if there are an even number of interrupted frames, pair them
+    else:
 
-# Consolidates a List of a dict of other dicts, into one dict
-# returns a Dataframe from that dict
-def nesteddicts_inlist(imggazes):
-    data = {  # template for sorting
-        'world_timestamp': [],
-        'world_index': [],
-        'gaze_timestamp': [],
-        'x_norm': [],
-        'y_norm': [],
-        'x_scaled': [],
-        'y_scaled': [],
-        'on_surf': [],
-        'confidence': [],
-        'section #': []
-    }
+        # TODO: Implement check to make sure the 2 observed times add up to ~2 sec
 
-    i = 1
-    for section in imggazes:  # type: dict
-        sect = str(i)
-        for row in section:  # type: dict
-            rowinfo = section[row]
-            for label, val in zip(data, rowinfo):
-                data[label].append(rowinfo[val])
-            data['section #'].append(str(sect))
-        i += 1
-    gc.collect()  # just for good measure
-    df = pd.DataFrame.from_dict(data)
-    df.columns = list(data.keys())
+        # identify the surface numbers of partial frames and pair them
+        partial_frames = interrupted_frames.surface_num.unique()
+        identified_pairs = list(chunks(partial_frames, 2))
 
-    df["img shown"] = ""
+        # rename pairs in the original df
+        for pair in identified_pairs:
 
-    filename = simplefilechecker('Gazes_Position_Sectioned', '.xlsx')
-    writer = pd.ExcelWriter(filename)
-    df.to_excel(writer)
-    return df
+            # identify what the value of the first one is
+            first_appearance = pair[0]
 
+            # identify what one needs to be replaced
+            second_appearance = pair[1]
 
-def simplefilechecker(filename, extension):
-    fileroot = os.path.join(self.savelogs, filename).replace('\\', '/')
-    file = fileroot + extension
+            # replace the second one
+            surface_info['surface_num'][surface_info['surface_num']==second_appearance] = first_appearance
 
-    # TODO: create more informative filename
+    # return processed dataframe
+    return surface_info
 
-    i = 1
-    while True:
-        if os.path.exists(file):
-            file = fileroot + '_copy_' + str(i) + extension
-            i += 1
-        else:
-            return file
+def pair_logs(processed_surface_df, processed_log_df):
+    """Combine the processed surface dataframe from Pupil with the processed
+        log dataframe from PsychoPy to figure out which stimulus was shown
+        at what time."""
+
+    # only retain the stimulus logs
+    stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
+                      .reset_index(drop=True))
+
+    # associate the stimulus and surface numbers
+    paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
+                                'stimulus_pic': stim_logs_only['picture'].unique()})
+
+    # merge with the surface dataframe
+    processed_surface_df = processed_surface_df.merge(paired_logs, on='surface_num')
+
+    # return the merged dataframe
+    return processed_surface_df
 
 
-# Need to work on this
-def loggaze_matchup(imggazes, infolog):
-    gazes = nesteddicts_inlist(imggazes)  # type: pd.DataFrame
-    print(len(gazes))
-    print(gazes['section #'].nunique())
-    gc.collect()  # just for good measure
-    gazes["img shown"] = ""
+def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
+    """Add the stimulus ID and event (enter/exit) to each line of the gaze
+        activity dataframe."""
+
+    # read in the file with gaze surface information
+    gaze_surface_df = pd.read_csv(gazesurface_file)
+
+    # take only a few columns from the paired_log_df
+    limited_paired_logs = paired_log_df[['world_index',
+                                         'stimulus_pic',
+                                         'surface_and_event']]
+
+    # merge the gaze logs and stimulus logs
+    gaze_surface_df = (gaze_surface_df
+
+                       # retain all gaze rows
+                       .merge(limited_paired_logs,
+                             on='world_index',
+                             how='outer')
+
+                       # fill all NAs with the previous value
+                       .fillna(method='ffill'))
+
+    # return the newly merged df
+    return gaze_surface_df
