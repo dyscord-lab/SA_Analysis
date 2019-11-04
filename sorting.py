@@ -310,7 +310,7 @@ def process_surfaces(surface_events_path):
                                         + surface_info['surface_num'].map(str))
     
     # get the start time, end time, and duration for each surface event
-    surface_info['start_time'] = surface_info['world_timestamp']
+    surface_info = surface_info.rename(columns={'world_timestamp': 'start_time'})
     surface_info['end_time'] = surface_info['start_time'].shift(-1)
     surface_info['duration'] = (pd.to_numeric(surface_info['end_time']) - 
                                 pd.to_numeric(surface_info['start_time']))
@@ -350,7 +350,6 @@ def process_surfaces(surface_events_path):
 
     # return processed dataframe
     return surface_info
-
 
 def simplefilechecker(filename, extension):
     fileroot = os.path.join(savelogs, filename).replace('\\', '/')
