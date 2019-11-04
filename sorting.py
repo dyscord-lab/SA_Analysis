@@ -14,12 +14,12 @@ class Sorting():
         self.surfaces = []
         self.savelogs = savelogs
 
-    def logsort(self, path):
+    def logsort(self, log_file_path):
 
         """ Parse the PsychoPy logfile."""
 
         # read in the file as a dataframe
-        fullinfo = (pd.read_csv(path, sep='\t', header=None)
+        fullinfo = (pd.read_csv(log_file_path, sep='\t', header=None)
 
                       # rename columns
                       .rename(columns={0:"start_time",
