@@ -1,2 +1,9 @@
 .DS_Store
 __pycache__
+$RGROBJ3.gitignore
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/SA_Analysis.iml
+.idea/vcs.xml
+.idea/workspace.xml
