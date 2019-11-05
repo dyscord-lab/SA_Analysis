@@ -6,7 +6,7 @@ from datetime import datetime
 import pandas as pd
 
 # import custom-made things that we'll need
-from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus
+from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
 from filesearch import findparticipants, findhighest, findlogfile, findinfofile
 
 # set root to current path location
@@ -62,19 +62,25 @@ for next_participant in included_participants:
     processed_surfaces = process_surfaces(surfaceevents)
 
     # process the logfile
-    processed_logs = sort.logsort(logfile)
+    [full_logfile , processed_img_logs] = sort.logsort(logfile)
 
     # associate the surface and log stimulus information
-    paired_logs = pair_logs(processed_surfaces, processed_logs)
+    paired_logs = pair_logs(processed_surfaces, processed_img_logs)
 
     # associate the gaze data with the stimulus data
     gaze_stimulus_df = associate_gaze_stimulus(gazesurface_file, paired_logs)
 
-    # save the final dataframe
-    filename = participant_info + '_complete_gaze_df.csv'
-    gaze_stimulus_df.to_csv(savelogs + '/' + filename, index=None)
-
-
+    # extract the survey data
+    survey_df = extract_survey(full_logfile)
+  
+    # save the final gaze dataframe
+    gaze_filename = participant_info + '_complete_gaze_df.csv'
+    gaze_stimulus_df.to_csv(savelogs + '/' + gaze_filename, index=None)
+    
+    # save the final survey dataframe
+    survey_filename = participant_info + '_survey_df.csv'
+    survey_df.to_csv(savelogs + '/' + survey_filename, index=None)
+   
 # logs issues, if there are any
 # right now just for ".log" duplicates, more can be added though
 if issues:

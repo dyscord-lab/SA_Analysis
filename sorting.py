@@ -64,7 +64,7 @@ class Sorting():
                           if x != "reset_image"]
 
         # return the picture dataframe
-        return only_pics
+        return fullinfo, only_pics
 
     def generateoffset(self, timesfile):
         """Calculate offset time and return as float."""
@@ -204,3 +204,53 @@ def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
 
     # return the newly merged df
     return gaze_surface_df
+
+def extract_survey(full_log_df):
+    
+    """Extract the participant's survey responses and reaction times (RT) for responding
+        from the PsychoPy logfile."""
+    
+    # truncate time to 1 decimal place (without rounding)
+    full_log_df['start_time'] = (full_log_df['start_time']
+                                 .apply(lambda x: float( '%.1f'%(float(x)) )))
+    
+    # extract reaction time rows from full logfile
+    rt_df = (full_log_df[(full_log_df['event'].str.contains('rating RT'))]
+                         .reset_index(drop=True)
+                         .drop(columns=['type','end_time','duration'])
+                         .rename(columns={'start_time':'time',
+                                          'event': 'rt'}))
+    
+    # extract the reaction time and convert to float
+    rt_df['rt'] = (rt_df['rt'].str.extract('(\d+\.\d+)')
+                              .astype(float))
+    
+    # extract question rows from full logfile
+    question_df = (full_log_df[(full_log_df['event'].str.contains('Question'))]
+                               .reset_index(drop=True)
+                               .drop(columns=['type', 'end_time', 'duration'])
+                               .rename(columns={'start_time':'time'}))
+    
+    # extract questions and responses from comma-separated line in 'event' variable
+    concat_responses = question_df['event'].str.split(',', expand=True)
+    question_df['question_number'] = concat_responses[0].str.extract('(\d+)').astype(int)
+    question_df['rating'] = concat_responses[1].str.extract('(\d+)').astype(int)
+    question_df = question_df.drop(columns='event')
+
+    # mark whether the question came from before or after the Cyberball game
+    question_df['survey'] = ((question_df
+                              
+                              # tag pre- or post-cyberball survey 
+                              .groupby('question_number').cumcount()+1)
+                              .astype(str)
+                             
+                              # convert to string from numbers
+                              .str.replace('1','pre')
+                              .str.replace('2','post'))
+    
+    # join the question and reaction time dataframes
+    joined_frame = question_df.join(rt_df,
+                                    lsuffix='_q', rsuffix='_rt')
+    
+    # return the joined frame
+    return joined_frame
