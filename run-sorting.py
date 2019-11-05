@@ -22,7 +22,7 @@ issues = {}
 
 # figure out the participants in each sub-directory
 # each participant = full path to their datafolder
-included_participants = findparticipants(dataroot)
+included_participants = findparticipants(top_root)
 
 # cycle through participants
 for next_participant in included_participants:
