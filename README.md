@@ -3,6 +3,11 @@
 A series of functions to clean and prepare data for analysis for
 the dyscord lab's SA study.
 
+## Structure
+
+This code weaves together output from the data collection protocol generated
+in the [SA Stimulus](https://github.com/dyscord-lab/SA_Stimulus) repository.
+
 ## To do
 1. Make the timestamps of the `gaze_positions` match up with the
   `.log` file
