@@ -8,3 +8,4 @@ $RGROBJ3.gitignore
 .idea/vcs.xml
 .idea/workspace.xml
 */__pycache__
+savelogs/
