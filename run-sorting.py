@@ -6,8 +6,8 @@ from datetime import datetime
 import pandas as pd
 
 # import custom-made things that we'll need
-from sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
-from filesearch import findparticipants, findhighest, findlogfile, findinfofile
+from lib.sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
+from lib.filesearch import findparticipants, findhighest, findlogfile, findinfofile
 
 # set root to current path location
 top_root = os.path.join(os.getcwd(), 'data')
