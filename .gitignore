@@ -7,3 +7,4 @@ $RGROBJ3.gitignore
 .idea/SA_Analysis.iml
 .idea/vcs.xml
 .idea/workspace.xml
+*/__pycache__
