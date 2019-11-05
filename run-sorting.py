@@ -72,15 +72,15 @@ for next_participant in included_participants:
 
     # extract the survey data
     survey_df = extract_survey(full_logfile)
-  
+
     # save the final gaze dataframe
     gaze_filename = participant_info + '_complete_gaze_df.csv'
     gaze_stimulus_df.to_csv(savelogs + '/' + gaze_filename, index=None)
-    
+
     # save the final survey dataframe
     survey_filename = participant_info + '_survey_df.csv'
     survey_df.to_csv(savelogs + '/' + survey_filename, index=None)
-   
+
 # logs issues, if there are any
 # right now just for ".log" duplicates, more can be added though
 if issues:
