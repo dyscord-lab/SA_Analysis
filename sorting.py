@@ -46,18 +46,6 @@ class Sorting():
         only_pics['picture'] = (only_pics['picture'].str.replace('PICTURE: ','')
                                                     .str.replace('.png',''))
 
-        # write the picture dataframe to file
-        pic_fileroot = self.savelogs
-        pic_file = self.savelogs + '/img_times.csv'
-        i = 1
-        while True:
-            if os.path.exists(pic_file):
-                pic_file = pic_fileroot + '/img_times_copy_' + str(i) + '.csv'
-                i += 1
-            else:
-                break
-        only_pics.to_csv(pic_file, sep=",", index=None, header=True)
-
         # save image order
         self.imgsorder = [int(x) for x in only_pics.picture.unique()
                           if x != "reset_image"]
