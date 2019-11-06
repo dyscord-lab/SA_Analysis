@@ -28,8 +28,8 @@ included_participants = findparticipants(top_root)
 for next_participant in included_participants:
 
     # set participant's working directories
-    containing_directory = os.path.abspath(os.path.join(root ,"../"))
     root = next_participant
+    containing_directory = os.path.abspath(os.path.join(root ,"../"))
 
     # sets participant info for documentation purposes
     participant = os.path.split(root)[1]
