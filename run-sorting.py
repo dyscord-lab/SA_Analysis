@@ -36,8 +36,8 @@ for next_participant in included_participants:
     day = os.path.split(os.path.split(root)[0])[1]
     participant_info = str(participant) + '_' + str(day)
 
-    # identify the info file path
-    infofile = root + '/info.csv'
+    # # identify the info file path
+    # infofile = root + '/info.csv'
 
     # identify log file path
     logfile = glob.glob(containing_directory + '/*.log')[0]
@@ -61,7 +61,7 @@ for next_participant in included_participants:
     surfaceevents = os.path.join(exportfolder, 'surfaces', 'surface_events.csv')
 
     # sort the info file
-    sort = Sorting(infofile, savelogs)
+    sort = Sorting(savelogs)
 
     # process the surface file
     processed_surfaces = process_surfaces(surfaceevents)
