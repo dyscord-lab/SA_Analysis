@@ -27,7 +27,8 @@ included_participants = findparticipants(top_root)
 # cycle through participants
 for next_participant in included_participants:
 
-    # set participant's working directory
+    # set participant's working directories
+    containing_directory = os.path.abspath(os.path.join(root ,"../"))
     root = next_participant
 
     # sets participant info for documentation purposes
@@ -36,11 +37,11 @@ for next_participant in included_participants:
     participant_info = str(participant) + '_' + str(day)
 
     # identify the info file path
-    containing_directory = os.path.abspath(os.path.join(root ,"../"))
-    print(containing_directory)
-    print(containing_directory + '/*.log')
-    infofile = glob.glob(containing_directory + '/*.log')[0]
-    print(infofile)
+    infofile = root + '/info.csv'
+
+    # identify log file path
+    logfile = glob.glob(containing_directory + '/*.log')[0]
+    print(logfile)
 
     # # create paths for required participant output files
     # logfile = findlogfile(root)
