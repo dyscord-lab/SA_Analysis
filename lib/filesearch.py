@@ -43,6 +43,8 @@ def findlogfile(root):
         if file.endswith('.log'):
             if not logfile:
                 logfile = os.path.join(root, file)
+            if file.endswith('.DS_Store'):
+                x = file
             else:
                 dupilcate.append(file)
 
