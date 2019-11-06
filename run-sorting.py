@@ -41,7 +41,6 @@ for next_participant in included_participants:
 
     # identify log file path
     logfile = glob.glob(containing_directory + '/*.log')[0]
-    print(logfile)
 
     # # create paths for required participant output files
     # logfile = findlogfile(root)
