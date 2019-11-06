@@ -40,6 +40,7 @@ for next_participant in included_participants:
 
     # create paths for required participant output files
     logfile = findlogfile(root)
+    print('logfile')
     if type(logfile) == list:
         # if multiple log files found, documents as issue and skip this participant
         issues[participant_info] = logfile
