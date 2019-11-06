@@ -39,7 +39,7 @@ for next_participant in included_participants:
     containing_directory = os.path.abspath(os.path.join(root ,"../"))
     print(containing_directory)
     print(containing_directory + '/*.log')
-    infofile = glob.glob(containing_directory + '/*.log')
+    infofile = glob.glob(containing_directory + '/*.log')[0]
     print(infofile)
 
     # # create paths for required participant output files
