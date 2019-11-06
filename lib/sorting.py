@@ -80,7 +80,7 @@ def process_surfaces(surface_events_path):
 
     # get the start time, end time, and duration for each surface event
     surface_info = surface_info.rename(columns={'world_timestamp': 'start_time'})
-    surface_info['end_time'] = surface_info['start_time'].shift(-1)
+    surface_info['end_time'] = surface_info['start_time'].shift(1)
     surface_info['duration'] = (pd.to_numeric(surface_info['end_time']) -
                                 pd.to_numeric(surface_info['start_time']))
 
@@ -94,7 +94,7 @@ def process_surfaces(surface_events_path):
 
     # if there are an odd number of interrupted frames, stop
     elif len(interrupted_frames)%2!=0:
-        raise ValueError('An odd number of interrupted frames have been flagged.')
+        return "odd_frames"
 
     # if there are an even number of interrupted frames, pair them
     else:
@@ -128,19 +128,24 @@ def pair_logs(processed_surface_df, processed_log_df):
     # only retain the stimulus logs
     stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
                       .reset_index(drop=True))
-    print(stim_logs_only)
-    print(processed_surface_df)
+    
+    # only proceed if we can match our stimuli and surfaces
+    if (len(processed_surface_df['surface_num'].unique())==
+       len(stim_logs_only['picture'].unique())):
 
-    # associate the stimulus and surface numbers
-    paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
-                                'stimulus_pic': stim_logs_only['picture'].unique()
-                                })
+        # associate the stimulus and surface numbers
+        paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
+                                    'stimulus_pic': stim_logs_only['picture'].unique()
+                                    })
 
-    # merge with the surface dataframe
-    processed_surface_df = processed_surface_df.merge(paired_logs, on='surface_num')
+        # merge with the surface dataframe
+        processed_surface_df = processed_surface_df.merge(paired_logs, on='surface_num')
 
-    # return the merged dataframe
-    return processed_surface_df
+        # return the merged dataframe
+        return processed_surface_df
+    
+    else:
+        return "mismatch_logs"
 
 def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
     """Add the stimulus ID and event (enter/exit) to each line of the gaze

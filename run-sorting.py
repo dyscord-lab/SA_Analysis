@@ -18,7 +18,7 @@ if not os.path.exists(savelogs):
     os.makedirs(savelogs)
 
 # keeps track of any issues and saves to file at end
-issues = {}
+issues = pd.DataFrame(columns=['participant','error'])
 
 # figure out the participants in each sub-directory
 # each participant = full path to their datafolder
@@ -26,7 +26,7 @@ included_participants = findparticipants(top_root)
 
 # cycle through participants
 for next_participant in included_participants:
-
+    
     # set participant's working directories
     root = next_participant
     containing_directory = os.path.abspath(os.path.join(root ,"../"))
@@ -65,38 +65,52 @@ for next_participant in included_participants:
 
     # process the surface file
     processed_surfaces = process_surfaces(surfaceevents)
+    
+    # see if we processed the file
+    if isinstance(processed_surfaces, str):
+        
+        # if we have incomplete data, flag the participant
+        issues = issues.append({'participant': participant_info,
+                                'error': processed_surfaces},
+                               ignore_index=True)
+    
+    # if we have the data, process proceed
+    else:
+        # process the logfile
+        [full_logfile , processed_img_logs] = sort.logsort(logfile)
 
-    # process the logfile
-    [full_logfile , processed_img_logs] = sort.logsort(logfile)
+        # associate the surface and log stimulus information
+        paired_logs = pair_logs(processed_surfaces, processed_img_logs)
 
-    # associate the surface and log stimulus information
-    paired_logs = pair_logs(processed_surfaces, processed_img_logs)
+        # see if we were able to process everything
+        if isinstance(paired_logs, str):
+        
+            # if we have incomplete data, flag the participant
+            issues = issues.append({'participant': participant_info,
+                                    'error': paired_logs},
+                                   ignore_index=True)
+        
+        # if we have the data, proceed
+        else:
 
-    # associate the gaze data with the stimulus data
-    gaze_stimulus_df = associate_gaze_stimulus(gazesurface_file, paired_logs)
+            # associate the gaze data with the stimulus data
+            gaze_stimulus_df = associate_gaze_stimulus(gazesurface_file,
+                                                       paired_logs)
 
-    # extract the survey data
-    survey_df = extract_survey(full_logfile)
+            # extract the survey data
+            survey_df = extract_survey(full_logfile)
 
-    # save the final gaze dataframe
-    gaze_filename = participant_info + '-complete_gaze_df.csv'
-    gaze_stimulus_df.to_csv(savelogs + '/' + gaze_filename, index=None)
+            # save the final gaze dataframe
+            gaze_filename = participant_info + '-complete_gaze_df.csv'
+            gaze_stimulus_df.to_csv(savelogs + '/' + gaze_filename,
+                                    index=None)
 
-    # save the final survey dataframe
-    survey_filename = participant_info + '-survey_df.csv'
-    survey_df.to_csv(savelogs + '/' + survey_filename, index=None)
+            # save the final survey dataframe
+            survey_filename = participant_info + '-survey_df.csv'
+            survey_df.to_csv(savelogs + '/' + survey_filename, index=None)
+
 
 # logs issues, if there are any
 # right now just for ".log" duplicates, more can be added though
-if issues:
-    date = str(datetime.now())
-
-    issuesfile = savelogs + '/issues.csv'
-    mode = "w+"
-    if os.path.exists(issuesfile):
-        mode = "a"
-
-    with open(issuesfile, mode, newline='') as f:
-        writer = csv.writer(f)
-        for participant, issue in issues.items():
-            writer.writerow([participant, issue])
+issues.to_csv(savelogs+'/issues.csv',
+              index=None)
