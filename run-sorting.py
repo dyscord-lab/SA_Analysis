@@ -37,7 +37,7 @@ for next_participant in included_participants:
 
     # identify the info file path
     print(root + '/../*.log')
-    infofile = glob.glob(root + '/../*.log')[0]
+    infofile = glob.glob(path.join(root ,"../") + '*.log')[0]
     print(infofile)
 
     # # create paths for required participant output files
