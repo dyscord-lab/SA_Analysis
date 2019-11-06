@@ -23,13 +23,14 @@ def findhighest(path):
     highest = ''
     for exports in os.listdir(path):
 
-        if not highest:
-            highest = exports
-        else:
-            exp = int(exports)
-            high = int(highest)
-            if exp > high:
+        if not exports.endswith('.DS_Store'):
+            if not highest:
                 highest = exports
+            else:
+                exp = int(exports)
+                high = int(highest)
+                if exp > high:
+                    highest = exports
 
     return os.path.join(path, highest)
 
