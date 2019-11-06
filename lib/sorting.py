@@ -8,7 +8,7 @@ import pandas as pd
 
 # Handles the general sorting
 class Sorting():
-    def __init__(self, expInfo, savelogs):
+    def __init__(self, savelogs):
         self.imgsorder = []
         self.surfaces = []
         self.savelogs = savelogs
@@ -128,10 +128,12 @@ def pair_logs(processed_surface_df, processed_log_df):
     # only retain the stimulus logs
     stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
                       .reset_index(drop=True))
+    print(stim_logs_only)
 
     # associate the stimulus and surface numbers
     paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
-                                'stimulus_pic': stim_logs_only['picture'].unique()})
+                                'stimulus_pic': stim_logs_only['picture'].unique()
+                                })
 
     # merge with the surface dataframe
     processed_surface_df = processed_surface_df.merge(paired_logs, on='surface_num')
