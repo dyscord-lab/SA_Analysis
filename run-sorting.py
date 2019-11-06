@@ -37,6 +37,7 @@ for next_participant in included_participants:
 
     # identify the info file path
     containing_directory = os.path.abspath(os.path.join(root ,"../"))
+    print(containing_directory)
     infofile = glob.glob(containing_directory + '*.log')
     print(infofile)
 
