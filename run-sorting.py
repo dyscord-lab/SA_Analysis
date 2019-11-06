@@ -36,7 +36,7 @@ for next_participant in included_participants:
     participant_info = str(participant) + '_' + str(day)
 
     # identify the info file path
-    infofile = (glob.glob(os.path.abspath(os.path.join(root ,"../"))+ '*.log')[0])
+    infofile = (glob.glob(os.path.abspath(os.path.join(root ,"../"))+ '*.log'))
     print(infofile)
 
     # # create paths for required participant output files
