@@ -36,15 +36,15 @@ for next_participant in included_participants:
     participant_info = str(participant) + '_' + str(day)
 
     # identify the info file path
-    infofile = findinfofile(root)
+    infofile = glob.glob(root + '*.log')[0]
 
-    # create paths for required participant output files
-    logfile = findlogfile(root)
-    print(logfile)
-    if type(logfile) == list:
-        # if multiple log files found, documents as issue and skip this participant
-        issues[participant_info] = logfile
-        continue
+    # # create paths for required participant output files
+    # logfile = findlogfile(root)
+    # print(logfile)
+    # if type(logfile) == list:
+    #     # if multiple log files found, documents as issue and skip this participant
+    #     issues[participant_info] = logfile
+    #     continue
 
     # look for the exports folder
     exportfolder = findhighest(os.path.join(root, 'exports'))
