@@ -129,6 +129,7 @@ def pair_logs(processed_surface_df, processed_log_df):
     stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
                       .reset_index(drop=True))
     print(stim_logs_only)
+    print(processed_surface_df)
 
     # associate the stimulus and surface numbers
     paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
