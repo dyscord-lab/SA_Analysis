@@ -26,7 +26,7 @@ included_participants = findparticipants(top_root)
 
 # cycle through participants
 for next_participant in included_participants:
-    
+
     # set participant's working directories
     root = next_participant
     containing_directory = os.path.abspath(os.path.join(root ,"../"))
@@ -65,15 +65,15 @@ for next_participant in included_participants:
 
     # process the surface file
     processed_surfaces = process_surfaces(surfaceevents)
-    
+
     # see if we processed the file
     if isinstance(processed_surfaces, str):
-        
+
         # if we have incomplete data, flag the participant
         issues = issues.append({'participant': participant_info,
                                 'error': processed_surfaces},
                                ignore_index=True)
-    
+
     # if we have the data, process proceed
     else:
         # process the logfile
@@ -84,12 +84,12 @@ for next_participant in included_participants:
 
         # see if we were able to process everything
         if isinstance(paired_logs, str):
-        
+
             # if we have incomplete data, flag the participant
             issues = issues.append({'participant': participant_info,
                                     'error': paired_logs},
                                    ignore_index=True)
-        
+
         # if we have the data, proceed
         else:
 

@@ -94,6 +94,10 @@ def process_surfaces(surface_events_path):
 
     # if there are an odd number of interrupted frames, stop
     elif len(interrupted_frames)%2!=0:
+        print('')
+        print('error: interrupted frames')
+        print("total surfaces: "+str(surface_info['surface_num'].max()))
+        print("interrupted frames: "+str(len(interrupted_frames)))
         return "odd_frames"
 
     # if there are an even number of interrupted frames, pair them
@@ -128,7 +132,7 @@ def pair_logs(processed_surface_df, processed_log_df):
     # only retain the stimulus logs
     stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
                       .reset_index(drop=True))
-    
+
     # only proceed if we can match our stimuli and surfaces
     if (len(processed_surface_df['surface_num'].unique())==
        len(stim_logs_only['picture'].unique())):
@@ -143,8 +147,12 @@ def pair_logs(processed_surface_df, processed_log_df):
 
         # return the merged dataframe
         return processed_surface_df
-    
+
     else:
+        print('')
+        print('error: mismatched logs')
+        print("pictures: "+str(len(stim_logs_only['picture'].unique())))
+        print('identified stimuli: '+str(len(processed_surface_df['surface_num'].unique())))
         return "mismatch_logs"
 
 def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
