@@ -1,11 +1,10 @@
 # import libraries that we need
 import glob
 import os
-
 import pandas as pd
 
+# import custom-made functions that we'll need
 from lib.filesearch import findparticipants, findhighest
-# import custom-made things that we'll need
 from lib.sorting import Sorting, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
 
 # set root to current path location
@@ -60,6 +59,7 @@ for next_participant in included_participants:
 
     # look for the exports folder
     exportfolder = findhighest(os.path.join(root, 'exports'))
+    print(exportfolder)
 
     # identify the export info file path
     exportinfo = os.path.join(exportfolder, 'export_info.csv')
