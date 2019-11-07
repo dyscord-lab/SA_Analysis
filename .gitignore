@@ -11,4 +11,4 @@ $RGROBJ3.gitignore
 savelogs/
 data/
 .ipynb_checkpoints
-.ipynb
+*.ipynb
