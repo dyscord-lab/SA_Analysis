@@ -1,13 +1,12 @@
 # import libraries that we need
-import csv
-import os
 import glob
-from datetime import datetime
+import os
+
 import pandas as pd
 
+from lib.filesearch import findparticipants, findhighest
 # import custom-made things that we'll need
-from lib.sorting import Sorting, chunks, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
-from lib.filesearch import findparticipants, findhighest, findlogfile, findinfofile
+from lib.sorting import Sorting, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
 
 # set root to current path location
 top_root = os.path.join(os.getcwd(), 'data')
@@ -18,7 +17,7 @@ if not os.path.exists(savelogs):
     os.makedirs(savelogs)
 
 # keeps track of any issues and saves to file at end
-issues = pd.DataFrame(columns=['participant','error'])
+issues = pd.DataFrame(columns=['participant', 'error'])
 
 # figure out the participants in each sub-directory
 # each participant = full path to their datafolder
@@ -29,7 +28,7 @@ for next_participant in included_participants:
 
     # set participant's working directories
     root = next_participant
-    containing_directory = os.path.abspath(os.path.join(root ,"../"))
+    containing_directory = os.path.abspath(os.path.join(root, "../"))
 
     # sets participant info for documentation purposes
     participant = os.path.split(root)[1]
@@ -40,14 +39,23 @@ for next_participant in included_participants:
     # infofile = root + '/info.csv'
 
     # identify log file path
-    logfile = glob.glob(containing_directory + '/*.log')[0]
+    try:
+        logfile = glob.glob(containing_directory + '/*.log')[0]
+    except IndexError:
+        # a .log file wasn't found in the participants directory
+        # aka index [0] doesn't exist, so document issue and continue to next?
+        issues.append(
+            {'participant': participant_info,
+             'error': 'logfile not found/glob list empty'},
+            ignore_index=True)
+        continue
 
-    # # create paths for required participant output files
     # logfile = findlogfile(root)
-    # print(logfile)
-    # if type(logfile) == list:
-    #     # if multiple log files found, documents as issue and skip this participant
-    #     issues[participant_info] = logfile
+    # if isinstance(logfile, list):
+    #     # multiple log files found,
+    #     # documents as issue and skip this participant
+    #     issues.append({'participant': participant_info,
+    #                    'error': logfile}, ignore_index=True)
     #     continue
 
     # look for the exports folder
@@ -77,7 +85,7 @@ for next_participant in included_participants:
     # if we have the data, process proceed
     else:
         # process the logfile
-        [full_logfile , processed_img_logs] = sort.logsort(logfile)
+        [full_logfile, processed_img_logs] = sort.logsort(logfile)
 
         # associate the surface and log stimulus information
         paired_logs = pair_logs(processed_surfaces, processed_img_logs)
@@ -108,7 +116,6 @@ for next_participant in included_participants:
             # save the final survey dataframe
             survey_filename = participant_info + '-survey_df.csv'
             survey_df.to_csv(savelogs + '/' + survey_filename, index=None)
-
 
 # logs issues, if there are any
 # right now just for ".log" duplicates, more can be added though

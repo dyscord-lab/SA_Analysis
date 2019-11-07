@@ -19,20 +19,37 @@ def findparticipants(dataroot):
 
 
 # uses the export folder with highest number
-def findhighest(path):
-    highest = ''
-    for exports in os.listdir(path):
+def findhighest(exportsfolder):
+    highest = ''  # full path to the
 
-        if not exports.endswith('.DS_Store'):
+    # goes through the list of all files in path
+    for export in os.listdir(exportsfolder):
+
+        export_subfolder = os.path.join(path, export)
+        # check if the file found is an actual folder
+        if os.path.isdir(export_subfolder):
             if not highest:
-                highest = exports
+                # first export folder found
+                highest = highest_export
             else:
-                exp = int(exports)
-                high = int(highest)
-                if exp > high:
-                    highest = exports
+                try:
+                    # check if the current folder is a bigger num than current highest
+                    if int(export_subfolder) > int(highest):
+                        highest = exports
 
-    return os.path.join(path, highest)
+                except ValueError:
+                    # the folder found isn't all numbers, so skip
+                    continue
+
+        # if not exports.endswith('.DS_Store'):
+        #     if not highest:
+        #         highest = exports
+        #     else:
+        #         if int(exp) > int(high):
+        #             highest = exports
+
+
+    return os.path.join(highest)
 
 
 # search for .log file, but returns list if any duplicates found
@@ -43,21 +60,16 @@ def findlogfile(root):
     for file in os.listdir(root):
         if file.endswith('.log'):
             if not logfile:
+                # a log file hasn't been found before
                 logfile = os.path.join(root, file)
-            if file.endswith('.DS_Store'):
-                x = file
+            # if file.endswith('.DS_Store'): # ??
+            #     x = file
             else:
                 dupilcate.append(file)
 
-    # if no duplicates found
+    # no duplicates found, so just the found logfile
     if not duplicates:
         return logfile
-
-    participant = os.path.split(root)[1]
-    day = os.path.split(os.path.split(root)[0])[1]
-
-    print('\nduplicates found for ' + str(day) + '_' + str(participant))
-    print(duplicates)
 
     return duplicates
 
