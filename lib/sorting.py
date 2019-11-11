@@ -82,7 +82,8 @@ class Sorting:
         rounded_gazes = round_gaze_to_log(adjusted_gazes)
 
         # returns tuple of 2 lists
-        return adjusted_gazes, rounded_gazes
+        # return adjusted_gazes, rounded_gazes
+        return adjusted_gazes
 
     # Attempt to circumvent the issue of floating points + extra decimals
     def round_gaze_to_log(self, gazes):
