@@ -23,37 +23,18 @@ def find_participants(dataroot):
 
 
 # uses the export folder with highest number
-def findhighest(exportsfolder):
+def find_highest_export(exportsfolder):
 
-    """Sort through the export directory to all exported subdirectories"""
-
+    """Sort through the export directory to all exported subdirectories
+        and find the most recent export"""
+    
     # assume that the current folder is the highest folder
-    highest = ''
-
-    # goes through the list of all files in path
-    for export in os.listdir(exportsfolder):
-
-        # loop through the next folder in the export folder
-        export_subfolder = os.path.join(exportsfolder, export)
-
-        # check if the file found is an actual folder
-        if os.path.isdir(export_subfolder):
-            if not highest:
-                # first export folder found
-                highest = export_subfolder
-            else:
-
-                # check if the current folder is a higher num than current highest
-                try:
-                    if int(export_subfolder) > int(highest):
-                        highest = export_subfolder
-
-                # the folder found isn't all numbers, so skip
-                except ValueError:
-                    continue
+    highest = max([os.path.basename(next_dir) 
+                   for next_dir in os.scandir(exportsfolder) 
+                   if next_dir.is_dir()])
 
     # return the highest-numbered folder
-    return os.path.join(highest)
+    return os.path.join(exportsfolder,highest)
 
 
 # search for .log file, but returns list if any duplicates found
