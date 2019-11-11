@@ -230,3 +230,38 @@ def extract_survey(full_log_df):
 
     # return the joined frame
     return joined_frame
+
+
+# Collects the gazes timestamp, instead of the world_timestamps
+# as they are not percisely equal
+# This levels out the gaze times to that of the log file
+def timestamps_collect(gazefile, logfile):
+    # collects the gaze_timestamps instead of world_timestamps
+    raw_gazes = []
+    with open(gazefile, "r+") as f:
+        reader = csv.reader(f)
+        next(reader)  # ignore header
+        for row in reader:
+            raw_gazes.append(float(row[2]))
+    gaze_offset = raw_gazes[0]
+
+    # the moment Psychopy starts recording is not 0
+    # so to offset gazes times, we will add this later
+    log_pictimes = []
+    with open(logfile, "r+") as f:
+        reader = csv.reader(f)
+
+        for row in reader:
+            if "PICTURE" in row:
+                t = float(row[0].split(" ")[0])
+                log_pictimes.append(t)
+    log_offset = log_pictimes[0]
+
+    # adjusted_gaze_time = raw_time - gaze_offset + logoffset
+    gazes = []
+    for gaze in raw_gazes:
+        adjusted_gaze = gaze - gaze_offset + log_offset
+        gazes.append(adjusted_gaze)
+
+    # I just don't know how to make the log partition out the gaze times
+    return gazes
