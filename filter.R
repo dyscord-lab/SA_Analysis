@@ -15,10 +15,10 @@ data = read.csv('./data/',
   group_by(participantID) %>%
   
   # filtering for awake participants (0% conf for < 1/20th of the data)
-  filter(sum(data$confidence == 0)/length(data$confidence) < .05) %>%
+  dplyr::filter(sum(data$confidence == 0)/length(data$confidence) < .05) %>%
   
   # filtering for sufficient conf. participants (80+% conf for > 1/20th of the data)  
-  filter(sum(data$confidence >= .8)/length(data$confidence) > .8) %>% 
+  dplyr::filter(sum(data$confidence >= .8)/length(data$confidence) > .8) %>% 
   
   # creating difference value in Cartesian coordinates for remaining participants
   mutate(diff = ((lag(x_norm)-x_norm)^2 + (lag(y_norm)-y_norm)^2)^(1/2)) 
