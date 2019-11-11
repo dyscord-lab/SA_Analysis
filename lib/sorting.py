@@ -69,13 +69,16 @@ class Sorting:
 
         # identify first time that PsychoPy logged an image
         log_offset = logfile_df[logfile_timestamp_colname].apply(float).min()
+        
+        # identify total offset
+        total_offset = (-gaze_offset + log_offset)
 
         # create a timestamp adjusted to the logfile time
-        gaze_surface_df['adjusted_gaze'] = gaze_surface_df['gaze_timestamp'] - gaze_offset + log_offset
-        gaze_surface_df['adjusted_gaze'] = gaze_surface_df['adjusted_gaze'].round(round_places)
+        gaze_surface_df['adjusted_timestamp'] = gaze_surface_df['gaze_timestamp'] + total_offset
+        gaze_surface_df['adjusted_timestamp'] = gaze_surface_df['adjusted_timestamp'].round(round_places)
 
         # return df with new adjusted variable
-        return gaze_surface_df
+        return [gaze_surface_df , total_offset]
 
 def chunks(l, n):
     """Convert a list l into chunks of n size.
