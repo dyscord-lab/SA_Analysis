@@ -79,17 +79,3 @@ def findlogfile(root):
 
     # return duplicate logfiles
     return duplicates
-
-
-# accounts for future ver where it uses 'info.xslx' + 'info.old_style.csv'
-def findinfofile(root):
-
-    """Identify the location of the info file"""
-
-    # in future will include 'info.xlsx'
-    possiblenames = ('info.csv', 'info.old_style.csv')
-
-    # generate path to info file
-    for file in os.listdir(root):
-        if file in possiblenames:
-            return os.path.join(root, file)

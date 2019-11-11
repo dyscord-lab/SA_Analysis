@@ -34,9 +34,6 @@ for next_participant in included_participants:
     day = os.path.split(os.path.split(root)[0])[1]
     participant_info = str(participant) + '_' + str(day)
 
-    # # identify the info file path
-    # infofile = root + '/info.csv'
-
     # identify log file path
     try:
         logfile = glob.glob(containing_directory + '/*.log')[0]
