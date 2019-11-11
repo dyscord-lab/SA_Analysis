@@ -1,32 +1,29 @@
 # import libraries that we need
 import csv
-import gc
 import os
-from datetime import datetime
 import pandas as pd
 
 
 # Handles the general sorting
-class Sorting():
+class Sorting:
     def __init__(self, savelogs):
         self.imgsorder = []
         self.surfaces = []
         self.savelogs = savelogs
 
     def logsort(self, log_file_path):
-
         """ Parse the PsychoPy logfile."""
 
         # read in the file as a dataframe
         fullinfo = (pd.read_csv(log_file_path, sep='\t', header=None)
 
-                      # rename columns
-                      .rename(columns={0:"start_time",
-                                       1:"type",
-                                       2:"event"})
+                    # rename columns
+                    .rename(columns={0: "start_time",
+                                     1: "type",
+                                     2: "event"})
 
-                      # drop any participant responses
-                      .dropna())
+                    # drop any participant responses
+                    .dropna())
 
         # get the end time for each screen
         fullinfo['end_time'] = fullinfo['start_time'].shift(-1)
@@ -35,16 +32,15 @@ class Sorting():
         fullinfo['duration'] = (pd.to_numeric(fullinfo['end_time']) -
                                 pd.to_numeric(fullinfo['start_time']))
 
-
         # identify only the events where images occurred
         only_pics = (fullinfo[fullinfo['event'].str.contains("PICTURE")]
-                                .reset_index(drop=True)
-                                .drop(columns='type')
-                                .rename(columns={'event': 'picture'}))
+                     .reset_index(drop=True)
+                     .drop(columns='type')
+                     .rename(columns={'event': 'picture'}))
 
         # leave only picture numbers for picture identification
-        only_pics['picture'] = (only_pics['picture'].str.replace('PICTURE: ','')
-                                                    .str.replace('.png',''))
+        only_pics['picture'] = (only_pics['picture'].str.replace('PICTURE: ', '')
+                                .str.replace('.png', ''))
 
         # save image order
         self.imgsorder = [int(x) for x in only_pics.picture.unique()
@@ -53,30 +49,75 @@ class Sorting():
         # return the picture dataframe
         return fullinfo, only_pics
 
+    # Collects the gazes timestamp, instead of the world_timestamps
+    # Levels out the gaze times to that of the log file
+    def timestamps_adjust(self, gazefile, logfile):
+        # collects the gaze_timestamps instead of world_timestamps
+        raw_gazes = []
+        with open(gazefile, "r+") as f:
+            reader = csv.reader(f)
+            next(reader)  # ignore header
+            for row in reader:
+                raw_gazes.append(float(row[2]))
+        gaze_offset = raw_gazes[0]
+
+        # the moment Psychopy starts recording is not 0
+        # so to offset gazes times, we will add this later
+        log_pictimes = []
+        with open(logfile, "r+") as f:
+            reader = csv.reader(f)
+
+            for row in reader:
+                if "PICTURE" in row:
+                    t = float(row[0].split(" ")[0])
+                    log_pictimes.append(t)
+        log_offset = log_pictimes[0]
+
+        # adjusted_gaze_time = raw_time - gaze_offset + logoffset
+        adjusted_gazes = []
+        for gaze in raw_gazes:
+            adjusted_gaze = gaze - gaze_offset + log_offset
+            adjusted_gazes.append(adjusted_gaze)
+
+        rounded_gazes = round_gaze_to_log(adjusted_gazes)
+
+        # returns tuple of 2 lists
+        return adjusted_gazes, rounded_gazes
+
+    # Attempt to circumvent the issue of floating points + extra decimals
+    def round_gaze_to_log(self, gazes):
+        rounded_gazes = []
+        round_to = 4  # the logfile does just 4 decimal places
+        for gaze in gazes:
+            rounded_gazes.append(round(gaze, round_to))
+
+        return rounded_gazes
+
+
 def chunks(l, n):
     """Convert a list l into chunks of n size.
         Credit to Ned Batchelder: https://stackoverflow.com/a/312464"""
 
     # For item i in a range that is a length of l,
     for i in range(0, len(l), n):
-
         # Create an index range for l of n items:
-        yield l[i:i+n]
+        yield l[i:i + n]
+
 
 def process_surfaces(surface_events_path):
     """Process surface events file from Pupil Player."""
 
     # read surface events file to dataframe
     surface_info = (pd.read_csv(surface_events_path)
-                     .drop(columns='surface_name'))
+                    .drop(columns='surface_name'))
 
     # sequence surface names and events
-    surface_info['surface_num'] = surface_info.groupby('event_type').cumcount()+1
+    surface_info['surface_num'] = surface_info.groupby('event_type').cumcount() + 1
 
     # concatenate variables
     surface_info['surface_and_event'] = (surface_info['event_type']
-                                        + '_'
-                                        + surface_info['surface_num'].map(str))
+                                         + '_'
+                                         + surface_info['surface_num'].map(str))
 
     # get the start time, end time, and duration for each surface event
     surface_info = surface_info.rename(columns={'world_timestamp': 'start_time'})
@@ -85,19 +126,19 @@ def process_surfaces(surface_events_path):
                                 pd.to_numeric(surface_info['start_time']))
 
     # if a frame took less than the appropriate amount of time, try to pair it
-    interrupted_frames = surface_info[(surface_info['event_type']=='enter') &
+    interrupted_frames = surface_info[(surface_info['event_type'] == 'enter') &
                                       (surface_info['duration'] < 1.95)]
 
     # if there aren't any interrupted frames, continue on
-    if len(interrupted_frames)==0:
+    if len(interrupted_frames) == 0:
         del interrupted_frames
 
     # if there are an odd number of interrupted frames, stop
-    elif len(interrupted_frames)%2!=0:
+    elif len(interrupted_frames) % 2 != 0:
         print('')
         print('error: interrupted frames')
-        print("total surfaces: "+str(surface_info['surface_num'].max()))
-        print("interrupted frames: "+str(len(interrupted_frames)))
+        print("total surfaces: " + str(surface_info['surface_num'].max()))
+        print("interrupted frames: " + str(len(interrupted_frames)))
         return "odd_frames"
 
     # if there are an even number of interrupted frames, pair them
@@ -111,7 +152,6 @@ def process_surfaces(surface_events_path):
 
         # rename pairs in the original df
         for pair in identified_pairs:
-
             # identify what the value of the first one is
             first_appearance = pair[0]
 
@@ -119,10 +159,11 @@ def process_surfaces(surface_events_path):
             second_appearance = pair[1]
 
             # replace the second one
-            surface_info['surface_num'][surface_info['surface_num']==second_appearance] = first_appearance
+            surface_info['surface_num'][surface_info['surface_num'] == second_appearance] = first_appearance
 
     # return processed dataframe
     return surface_info
+
 
 def pair_logs(processed_surface_df, processed_log_df):
     """Combine the processed surface dataframe from Pupil with the processed
@@ -130,12 +171,12 @@ def pair_logs(processed_surface_df, processed_log_df):
         at what time."""
 
     # only retain the stimulus logs
-    stim_logs_only = (processed_log_df[processed_log_df['picture']!='reset_image']
+    stim_logs_only = (processed_log_df[processed_log_df['picture'] != 'reset_image']
                       .reset_index(drop=True))
 
     # only proceed if we can match our stimuli and surfaces
-    if (len(processed_surface_df['surface_num'].unique())==
-       len(stim_logs_only['picture'].unique())):
+    if (len(processed_surface_df['surface_num'].unique()) ==
+            len(stim_logs_only['picture'].unique())):
 
         # associate the stimulus and surface numbers
         paired_logs = pd.DataFrame({'surface_num': processed_surface_df['surface_num'].unique(),
@@ -151,9 +192,10 @@ def pair_logs(processed_surface_df, processed_log_df):
     else:
         print('')
         print('error: mismatched logs')
-        print("pictures: "+str(len(stim_logs_only['picture'].unique())))
-        print('identified stimuli: '+str(len(processed_surface_df['surface_num'].unique())))
+        print("pictures: " + str(len(stim_logs_only['picture'].unique())))
+        print('identified stimuli: ' + str(len(processed_surface_df['surface_num'].unique())))
         return "mismatch_logs"
+
 
 def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
     """Add the stimulus ID and event (enter/exit) to each line of the gaze
@@ -172,8 +214,8 @@ def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
 
                        # retain all gaze rows
                        .merge(limited_paired_logs,
-                             on='world_index',
-                             how='outer')
+                              on='world_index',
+                              how='outer')
 
                        # fill all NAs with the previous value
                        .fillna(method='ffill'))
@@ -181,31 +223,31 @@ def associate_gaze_stimulus(gaze_surface_path, paired_log_df):
     # return the newly merged df
     return gaze_surface_df
 
-def extract_survey(full_log_df):
 
+def extract_survey(full_log_df):
     """Extract the participant's survey responses and reaction times (RT) for responding
         from the PsychoPy logfile."""
 
     # truncate time to 1 decimal place (without rounding)
     full_log_df['start_time'] = (full_log_df['start_time']
-                                 .apply(lambda x: float( '%.1f'%(float(x)) )))
+                                 .apply(lambda x: float('%.1f' % (float(x)))))
 
     # extract reaction time rows from full logfile
     rt_df = (full_log_df[(full_log_df['event'].str.contains('rating RT'))]
-                         .reset_index(drop=True)
-                         .drop(columns=['type','end_time','duration'])
-                         .rename(columns={'start_time':'time',
-                                          'event': 'rt'}))
+             .reset_index(drop=True)
+             .drop(columns=['type', 'end_time', 'duration'])
+             .rename(columns={'start_time': 'time',
+                              'event': 'rt'}))
 
     # extract the reaction time and convert to float
     rt_df['rt'] = (rt_df['rt'].str.extract('(\d+\.\d+)')
-                              .astype(float))
+                   .astype(float))
 
     # extract question rows from full logfile
     question_df = (full_log_df[(full_log_df['event'].str.contains('Question'))]
-                               .reset_index(drop=True)
-                               .drop(columns=['type', 'end_time', 'duration'])
-                               .rename(columns={'start_time':'time'}))
+                   .reset_index(drop=True)
+                   .drop(columns=['type', 'end_time', 'duration'])
+                   .rename(columns={'start_time': 'time'}))
 
     # extract questions and responses from comma-separated line in 'event' variable
     concat_responses = question_df['event'].str.split(',', expand=True)
@@ -217,12 +259,12 @@ def extract_survey(full_log_df):
     question_df['survey'] = ((question_df
 
                               # tag pre- or post-cyberball survey
-                              .groupby('question_number').cumcount()+1)
-                              .astype(str)
+                              .groupby('question_number').cumcount() + 1)
+                             .astype(str)
 
-                              # convert to string from numbers
-                              .str.replace('1','pre')
-                              .str.replace('2','post'))
+                             # convert to string from numbers
+                             .str.replace('1', 'pre')
+                             .str.replace('2', 'post'))
 
     # join the question and reaction time dataframes
     joined_frame = question_df.join(rt_df,
@@ -231,37 +273,3 @@ def extract_survey(full_log_df):
     # return the joined frame
     return joined_frame
 
-
-# Collects the gazes timestamp, instead of the world_timestamps
-# as they are not percisely equal
-# This levels out the gaze times to that of the log file
-def timestamps_collect(gazefile, logfile):
-    # collects the gaze_timestamps instead of world_timestamps
-    raw_gazes = []
-    with open(gazefile, "r+") as f:
-        reader = csv.reader(f)
-        next(reader)  # ignore header
-        for row in reader:
-            raw_gazes.append(float(row[2]))
-    gaze_offset = raw_gazes[0]
-
-    # the moment Psychopy starts recording is not 0
-    # so to offset gazes times, we will add this later
-    log_pictimes = []
-    with open(logfile, "r+") as f:
-        reader = csv.reader(f)
-
-        for row in reader:
-            if "PICTURE" in row:
-                t = float(row[0].split(" ")[0])
-                log_pictimes.append(t)
-    log_offset = log_pictimes[0]
-
-    # adjusted_gaze_time = raw_time - gaze_offset + logoffset
-    gazes = []
-    for gaze in raw_gazes:
-        adjusted_gaze = gaze - gaze_offset + log_offset
-        gazes.append(adjusted_gaze)
-
-    # I just don't know how to make the log partition out the gaze times
-    return gazes

@@ -69,7 +69,7 @@ for next_participant in included_participants:
     surfaceevents = os.path.join(exportfolder, 'surfaces', 'surface_events.csv')
 
     # sort the info file
-    sort = Sorting(savelogs)
+    sort = Sorting(savelogs, gazesurface_file, logfile)
 
     # process the surface file
     processed_surfaces = process_surfaces(surfaceevents)
