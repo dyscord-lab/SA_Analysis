@@ -1,7 +1,7 @@
 import os
 
 
-def findparticipants(dataroot):
+def find_participants(dataroot):
 
     """Find all participants in the current dataset"""
 
@@ -57,7 +57,7 @@ def findhighest(exportsfolder):
 
 
 # search for .log file, but returns list if any duplicates found
-def findlogfile(root):
+def find_logfile(root):
 
     """Find all logfiles, including flagging duplicate logfiles"""
 
