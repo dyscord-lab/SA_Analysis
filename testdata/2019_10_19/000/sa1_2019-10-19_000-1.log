@@ -1,0 +1,3034 @@
+35.4889 	DATA 	START
+35.4889 	DATA 	Intro Survey
+37.8876 	DATA 	Keypress: space
+40.3553 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.3580 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.3718 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.3881 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.3906 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.4055 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.4383 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.4549 	DATA 	Mouse: wheel shift=(0,0), pos=(635,868)
+40.4727 	DATA 	Keypress: space
+40.5060 	DATA 	Mouse: wheel shift=(0,0), pos=(635,869)
+40.5252 	DATA 	Mouse: wheel shift=(0,0), pos=(635,869)
+40.5555 	DATA 	Mouse: wheel shift=(0,0), pos=(635,869)
+40.5719 	DATA 	Mouse: wheel shift=(0,0), pos=(635,869)
+40.6721 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.6892 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.7061 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.7064 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.7216 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.7388 	DATA 	Mouse: wheel shift=(0,-1), pos=(636,871)
+40.7551 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.7721 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+40.7880 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.1550 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.1715 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.1892 	DATA 	Mouse: wheel shift=(0,1), pos=(636,871)
+41.2055 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.2380 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.2382 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.2551 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.2715 	DATA 	Mouse: wheel shift=(0,0), pos=(636,871)
+41.2890 	DATA 	Mouse: wheel shift=(0,1), pos=(636,871)
+41.3052 	DATA 	Mouse: wheel shift=(0,0), pos=(636,872)
+41.3220 	DATA 	Mouse: wheel shift=(0,0), pos=(636,873)
+41.3391 	DATA 	Mouse: wheel shift=(0,0), pos=(636,879)
+41.3562 	DATA 	Mouse: wheel shift=(0,0), pos=(636,882)
+41.3715 	DATA 	Mouse: wheel shift=(0,1), pos=(637,887)
+41.3888 	DATA 	Mouse: wheel shift=(0,0), pos=(638,890)
+41.4054 	DATA 	Mouse: wheel shift=(0,0), pos=(639,893)
+41.4223 	DATA 	Mouse: wheel shift=(0,0), pos=(639,894)
+41.4234 	DATA 	Keypress: 3
+41.4392 	DATA 	Mouse: wheel shift=(0,0), pos=(639,895)
+41.4452 	DATA 	Mouse: wheel shift=(0,0), pos=(639,896)
+41.4553 	DATA 	Mouse: wheel shift=(0,0), pos=(639,896)
+43.4063 	DATA 	Mouse: wheel shift=(0,0), pos=(1252,459)
+43.4230 	DATA 	Mouse: wheel shift=(0,0), pos=(1252,459)
+43.4395 	DATA 	Mouse: wheel shift=(0,0), pos=(1252,459)
+43.4561 	DATA 	Mouse: wheel shift=(0,0), pos=(1252,459)
+52.3258 	DATA 	Mouse: Left button down, pos=(1309,274)
+52.3289 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=        4:
+quite a bit
+52.3289 	DATA 	RatingScale unnamed RatingScale: rating RT=14.382
+52.3289 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('        4:\nquite a bit', 3.48), ('        4:\nquite a bit', 14.382)]
+52.3415 	DATA 	Question Number: 22 , Response:         4:
+quite a bit
+52.4755 	DATA 	Mouse:  Left button up, pos=(1309,274)
+62.1140 	DATA 	Mouse: Left button down, pos=(1312,434)
+62.2151 	DATA 	Mouse:  Left button up, pos=(1313,434)
+63.0783 	DATA 	Mouse: Left button down, pos=(1310,292)
+63.0812 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+63.0812 	DATA 	RatingScale unnamed RatingScale: rating RT=10.708
+63.0812 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 9.741), ('       3:\nmoderately', 10.708)]
+63.0949 	DATA 	Question Number: 26 , Response:        3:
+moderately
+63.1612 	DATA 	Mouse:  Left button up, pos=(1310,292)
+67.6469 	DATA 	Keypress: num_2
+68.0968 	DATA 	Keypress: num_2
+68.2467 	DATA 	Keypress: num_2
+68.8978 	DATA 	Mouse: wheel shift=(0,0), pos=(1333,304)
+68.9134 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+68.9300 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+68.9483 	DATA 	Mouse: wheel shift=(0,0), pos=(1333,304)
+68.9484 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+68.9651 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+68.9823 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+68.9979 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.0152 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.0323 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.0492 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.0650 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.0825 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.0986 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.1160 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.1305 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.1491 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.1649 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.1813 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.1990 	DATA 	Mouse: wheel shift=(-1,0), pos=(1333,304)
+69.2152 	DATA 	Mouse: wheel shift=(-1,0), pos=(1319,310)
+69.2324 	DATA 	Mouse: wheel shift=(0,0), pos=(1278,323)
+69.2484 	DATA 	Mouse: wheel shift=(0,0), pos=(1171,353)
+69.2652 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.2822 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.2970 	DATA 	Mouse: wheel shift=(-1,0), pos=(1133,362)
+69.3164 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.3329 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.3635 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.3660 	DATA 	Mouse: wheel shift=(-1,0), pos=(1133,362)
+69.3824 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.3982 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.4161 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.4314 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.4493 	DATA 	Mouse: wheel shift=(-1,0), pos=(1133,362)
+69.4658 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.4824 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.4983 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.5146 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.5320 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.5493 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.5653 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.5822 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.5982 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.6162 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.6484 	DATA 	Mouse: wheel shift=(-1,0), pos=(1133,362)
+69.6652 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.6981 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+69.6982 	DATA 	Mouse: wheel shift=(0,0), pos=(1133,362)
+72.9815 	DATA 	Mouse: wheel shift=(0,0), pos=(1130,370)
+73.0158 	DATA 	Mouse: wheel shift=(0,0), pos=(1130,370)
+73.0481 	DATA 	Mouse: wheel shift=(0,0), pos=(1130,370)
+73.0484 	DATA 	Mouse: wheel shift=(0,0), pos=(1131,370)
+74.3307 	DATA 	Mouse: wheel shift=(0,0), pos=(1418,426)
+74.7979 	DATA 	Mouse: Left button down, pos=(1805,420)
+74.9508 	DATA 	Mouse:  Left button up, pos=(1803,420)
+75.4010 	DATA 	Mouse: wheel shift=(0,0), pos=(1028,284)
+75.4311 	DATA 	Mouse: Left button down, pos=(1028,284)
+75.4482 	DATA 	Mouse: wheel shift=(0,0), pos=(1028,284)
+75.5014 	DATA 	Mouse:  Left button up, pos=(1055,284)
+75.5313 	DATA 	Mouse: wheel shift=(0,0), pos=(1116,281)
+75.6484 	DATA 	Mouse: Left button down, pos=(1139,281)
+75.6514 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=        4:
+quite a bit
+75.6514 	DATA 	RatingScale unnamed RatingScale: rating RT=12.525
+75.6514 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('        4:\nquite a bit', 11.675), ('        4:\nquite a bit', 12.525)]
+75.6654 	DATA 	Question Number: 29 , Response:         4:
+quite a bit
+75.7482 	DATA 	Mouse:  Left button up, pos=(1139,281)
+75.7981 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8142 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8172 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8311 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8484 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8510 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8649 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8812 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+75.8839 	DATA 	Mouse: wheel shift=(0,0), pos=(1139,281)
+76.0653 	DATA 	Mouse: wheel shift=(0,0), pos=(1279,324)
+77.2823 	DATA 	Mouse: Left button down, pos=(1284,364)
+77.4498 	DATA 	Mouse:  Left button up, pos=(1283,361)
+77.8323 	DATA 	Mouse: Left button down, pos=(1312,433)
+77.9657 	DATA 	Mouse:  Left button up, pos=(1312,431)
+78.2322 	DATA 	Mouse: Left button down, pos=(1299,210)
+78.3325 	DATA 	Mouse:  Left button up, pos=(1298,214)
+78.5165 	DATA 	Mouse: Left button down, pos=(1315,314)
+78.5521 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+78.5521 	DATA 	RatingScale unnamed RatingScale: rating RT=2.859
+78.5521 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 2.142), ('       3:\nmoderately', 2.859)]
+78.5661 	DATA 	Question Number: 1 , Response:        3:
+moderately
+78.5946 	DATA 	Mouse:  Left button up, pos=(1301,287)
+78.7164 	DATA 	Mouse: Left button down, pos=(1298,283)
+78.8000 	DATA 	Mouse:  Left button up, pos=(1299,286)
+79.1344 	DATA 	Mouse: Left button down, pos=(1296,370)
+79.1821 	DATA 	Mouse:  Left button up, pos=(1297,373)
+79.3491 	DATA 	Mouse: Left button down, pos=(1288,398)
+79.4498 	DATA 	Mouse:  Left button up, pos=(1288,410)
+79.8332 	DATA 	Mouse: Left button down, pos=(1328,257)
+79.8364 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+79.8364 	DATA 	RatingScale unnamed RatingScale: rating RT=1.241
+79.8364 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.757), ('       3:\nmoderately', 1.241)]
+79.8499 	DATA 	Question Number: 9 , Response:        3:
+moderately
+79.9660 	DATA 	Mouse:  Left button up, pos=(1328,257)
+80.0659 	DATA 	Mouse: Left button down, pos=(1327,257)
+80.1669 	DATA 	Mouse:  Left button up, pos=(1322,262)
+80.4166 	DATA 	Mouse: Left button down, pos=(1271,449)
+80.5184 	DATA 	Mouse:  Left button up, pos=(1272,447)
+80.8331 	DATA 	Mouse: Left button down, pos=(1270,326)
+80.9495 	DATA 	Mouse:  Left button up, pos=(1275,338)
+81.1656 	DATA 	Mouse: Left button down, pos=(1275,277)
+81.1686 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+81.1686 	DATA 	RatingScale unnamed RatingScale: rating RT=1.290
+81.1686 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.542), ('       3:\nmoderately', 1.29)]
+81.1830 	DATA 	Question Number: 18 , Response:        3:
+moderately
+81.3156 	DATA 	Mouse:  Left button up, pos=(1276,272)
+81.7005 	DATA 	Mouse: Left button down, pos=(1283,467)
+81.8168 	DATA 	Mouse:  Left button up, pos=(1284,466)
+82.4670 	DATA 	Mouse: Left button down, pos=(1317,261)
+82.4699 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+82.4699 	DATA 	RatingScale unnamed RatingScale: rating RT=1.258
+82.4699 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.491), ('       3:\nmoderately', 1.258)]
+82.4830 	DATA 	Question Number: 4 , Response:        3:
+moderately
+82.5670 	DATA 	Mouse:  Left button up, pos=(1317,263)
+82.9333 	DATA 	Mouse: Left button down, pos=(1292,429)
+83.0375 	DATA 	Mouse:  Left button up, pos=(1292,429)
+83.6002 	DATA 	Mouse: Left button down, pos=(1284,278)
+83.6032 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+83.6032 	DATA 	RatingScale unnamed RatingScale: rating RT=1.093
+83.6032 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.425), ('       3:\nmoderately', 1.093)]
+83.6166 	DATA 	Question Number: 15 , Response:        3:
+moderately
+83.6670 	DATA 	Mouse:  Left button up, pos=(1284,278)
+84.0502 	DATA 	Mouse: Left button down, pos=(1297,417)
+84.1533 	DATA 	Mouse:  Left button up, pos=(1297,416)
+84.5001 	DATA 	Mouse: Left button down, pos=(1283,270)
+84.5033 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+84.5033 	DATA 	RatingScale unnamed RatingScale: rating RT=0.858
+84.5033 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.407), ('       3:\nmoderately', 0.858)]
+84.5172 	DATA 	Question Number: 17 , Response:        3:
+moderately
+84.6002 	DATA 	Mouse:  Left button up, pos=(1282,267)
+84.9513 	DATA 	Mouse: Left button down, pos=(1294,464)
+85.0171 	DATA 	Mouse:  Left button up, pos=(1294,463)
+85.4000 	DATA 	Mouse: Left button down, pos=(1311,316)
+85.5347 	DATA 	Mouse:  Left button up, pos=(1310,313)
+85.6508 	DATA 	Mouse: Left button down, pos=(1306,281)
+85.6537 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+85.6537 	DATA 	RatingScale unnamed RatingScale: rating RT=1.102
+85.6537 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.402), ('       3:\nmoderately', 1.102)]
+85.6671 	DATA 	Question Number: 21 , Response:        3:
+moderately
+85.7836 	DATA 	Mouse:  Left button up, pos=(1305,277)
+86.0670 	DATA 	Mouse: Left button down, pos=(1295,451)
+86.1841 	DATA 	Mouse:  Left button up, pos=(1295,449)
+86.5378 	DATA 	Mouse: Left button down, pos=(1287,242)
+86.5383 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+86.5383 	DATA 	RatingScale unnamed RatingScale: rating RT=0.843
+86.5383 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.374), ('       3:\nmoderately', 0.843)]
+86.5508 	DATA 	Question Number: 14 , Response:        3:
+moderately
+86.6341 	DATA 	Mouse:  Left button up, pos=(1290,250)
+86.9687 	DATA 	Mouse: Left button down, pos=(1298,378)
+87.0348 	DATA 	Mouse:  Left button up, pos=(1300,395)
+87.3012 	DATA 	Mouse: Left button down, pos=(1301,405)
+87.3518 	DATA 	Mouse:  Left button up, pos=(1301,405)
+87.6513 	DATA 	Mouse: Left button down, pos=(1279,224)
+87.7510 	DATA 	Mouse:  Left button up, pos=(1279,224)
+88.3683 	DATA 	Mouse: Left button down, pos=(1290,252)
+88.3714 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+88.3714 	DATA 	RatingScale unnamed RatingScale: rating RT=1.792
+88.3714 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.425), ('       3:\nmoderately', 1.792)]
+88.3844 	DATA 	Question Number: 6 , Response:        3:
+moderately
+88.4844 	DATA 	Mouse:  Left button up, pos=(1290,260)
+88.8523 	DATA 	Mouse: Left button down, pos=(1259,418)
+88.9357 	DATA 	Mouse:  Left button up, pos=(1259,416)
+89.2710 	DATA 	Mouse: Left button down, pos=(1302,275)
+89.2714 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+89.2714 	DATA 	RatingScale unnamed RatingScale: rating RT=0.858
+89.2714 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.441), ('       3:\nmoderately', 0.858)]
+89.2859 	DATA 	Question Number: 20 , Response:        3:
+moderately
+89.4014 	DATA 	Mouse:  Left button up, pos=(1301,274)
+89.7354 	DATA 	Mouse: Left button down, pos=(1283,437)
+89.8356 	DATA 	Mouse:  Left button up, pos=(1283,437)
+90.2044 	DATA 	Mouse: Left button down, pos=(1281,293)
+90.2049 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+90.2049 	DATA 	RatingScale unnamed RatingScale: rating RT=0.889
+90.2049 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.422), ('       3:\nmoderately', 0.889)]
+90.2182 	DATA 	Question Number: 8 , Response:        3:
+moderately
+90.3180 	DATA 	Mouse:  Left button up, pos=(1280,293)
+90.5530 	DATA 	Mouse: Left button down, pos=(1278,281)
+90.6692 	DATA 	Mouse:  Left button up, pos=(1278,282)
+91.0040 	DATA 	Mouse: Left button down, pos=(1282,418)
+91.1042 	DATA 	Mouse:  Left button up, pos=(1282,418)
+91.8190 	DATA 	Mouse: Left button down, pos=(1306,243)
+91.8219 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+91.8220 	DATA 	RatingScale unnamed RatingScale: rating RT=1.576
+91.8220 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.758), ('       3:\nmoderately', 1.576)]
+91.8363 	DATA 	Question Number: 7 , Response:        3:
+moderately
+91.9032 	DATA 	Mouse:  Left button up, pos=(1306,243)
+92.4192 	DATA 	Mouse: Left button down, pos=(1278,405)
+92.4888 	DATA 	Mouse:  Left button up, pos=(1278,405)
+92.9388 	DATA 	Mouse: Left button down, pos=(1287,224)
+93.0360 	DATA 	Mouse:  Left button up, pos=(1287,226)
+93.2869 	DATA 	Mouse: Left button down, pos=(1287,238)
+93.2901 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+93.2901 	DATA 	RatingScale unnamed RatingScale: rating RT=1.425
+93.2901 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.556), ('       3:\nmoderately', 1.425)]
+93.3027 	DATA 	Question Number: 13 , Response:        3:
+moderately
+93.3885 	DATA 	Mouse:  Left button up, pos=(1286,248)
+93.8363 	DATA 	Mouse: Left button down, pos=(1289,402)
+93.9362 	DATA 	Mouse:  Left button up, pos=(1289,403)
+94.5033 	DATA 	Mouse: Left button down, pos=(1286,275)
+94.5065 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+94.5065 	DATA 	RatingScale unnamed RatingScale: rating RT=1.175
+94.5065 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.507), ('       3:\nmoderately', 1.175)]
+94.5200 	DATA 	Question Number: 12 , Response:        3:
+moderately
+94.5863 	DATA 	Mouse:  Left button up, pos=(1286,278)
+94.9533 	DATA 	Mouse: Left button down, pos=(1293,415)
+95.0528 	DATA 	Mouse:  Left button up, pos=(1293,415)
+95.4029 	DATA 	Mouse: Left button down, pos=(1282,218)
+95.5360 	DATA 	Mouse:  Left button up, pos=(1281,217)
+95.8362 	DATA 	Mouse: Left button down, pos=(1282,248)
+95.8391 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+95.8391 	DATA 	RatingScale unnamed RatingScale: rating RT=1.291
+95.8391 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.407), ('       3:\nmoderately', 1.291)]
+95.8527 	DATA 	Question Number: 16 , Response:        3:
+moderately
+95.9534 	DATA 	Mouse:  Left button up, pos=(1284,256)
+96.3363 	DATA 	Mouse: Left button down, pos=(1304,391)
+96.4201 	DATA 	Mouse:  Left button up, pos=(1304,391)
+96.7066 	DATA 	Mouse: Left button down, pos=(1288,255)
+96.7070 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+96.7070 	DATA 	RatingScale unnamed RatingScale: rating RT=0.823
+96.7070 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.454), ('       3:\nmoderately', 0.823)]
+96.7216 	DATA 	Question Number: 24 , Response:        3:
+moderately
+96.8547 	DATA 	Mouse:  Left button up, pos=(1288,255)
+97.2233 	DATA 	Mouse: Left button down, pos=(1298,464)
+97.3713 	DATA 	Mouse:  Left button up, pos=(1298,464)
+97.8872 	DATA 	Mouse: Left button down, pos=(1306,299)
+97.8901 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+97.8901 	DATA 	RatingScale unnamed RatingScale: rating RT=1.138
+97.8901 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.487), ('       3:\nmoderately', 1.138)]
+97.9036 	DATA 	Question Number: 31 , Response:        3:
+moderately
+97.9711 	DATA 	Mouse:  Left button up, pos=(1306,299)
+98.2040 	DATA 	Mouse: Left button down, pos=(1296,276)
+98.2715 	DATA 	Mouse:  Left button up, pos=(1296,276)
+98.7208 	DATA 	Mouse: Left button down, pos=(1292,431)
+98.7882 	DATA 	Mouse:  Left button up, pos=(1292,431)
+99.2049 	DATA 	Mouse: Left button down, pos=(1293,281)
+99.2082 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+99.2082 	DATA 	RatingScale unnamed RatingScale: rating RT=1.276
+99.2082 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.791), ('       3:\nmoderately', 1.276)]
+99.2218 	DATA 	Question Number: 2 , Response:        3:
+moderately
+99.3402 	DATA 	Mouse:  Left button up, pos=(1292,280)
+99.8886 	DATA 	Mouse: Left button down, pos=(1297,417)
+99.9885 	DATA 	Mouse:  Left button up, pos=(1297,417)
+100.6383 	DATA 	Mouse: Left button down, pos=(1300,277)
+100.6414 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+100.6414 	DATA 	RatingScale unnamed RatingScale: rating RT=1.386
+100.6414 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.636), ('       3:\nmoderately', 1.386)]
+100.6541 	DATA 	Question Number: 30 , Response:        3:
+moderately
+100.7378 	DATA 	Mouse:  Left button up, pos=(1301,277)
+101.2051 	DATA 	Mouse: Left button down, pos=(1298,427)
+101.2876 	DATA 	Mouse:  Left button up, pos=(1298,427)
+101.7556 	DATA 	Mouse: Left button down, pos=(1291,263)
+101.7585 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+101.7585 	DATA 	RatingScale unnamed RatingScale: rating RT=1.072
+101.7585 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.521), ('       3:\nmoderately', 1.072)]
+101.7719 	DATA 	Question Number: 23 , Response:        3:
+moderately
+101.8392 	DATA 	Mouse:  Left button up, pos=(1291,263)
+102.2414 	DATA 	Mouse: Left button down, pos=(1287,431)
+102.3562 	DATA 	Mouse:  Left button up, pos=(1287,431)
+102.8553 	DATA 	Mouse: Left button down, pos=(1277,266)
+102.8585 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+102.8585 	DATA 	RatingScale unnamed RatingScale: rating RT=1.053
+102.8585 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.436), ('       3:\nmoderately', 1.053)]
+102.8721 	DATA 	Question Number: 27 , Response:        3:
+moderately
+102.9727 	DATA 	Mouse:  Left button up, pos=(1277,270)
+103.2890 	DATA 	Mouse: Left button down, pos=(1291,396)
+103.3898 	DATA 	Mouse:  Left button up, pos=(1291,396)
+103.6933 	DATA 	Mouse: Left button down, pos=(1282,243)
+103.6937 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+103.6937 	DATA 	RatingScale unnamed RatingScale: rating RT=0.793
+103.6937 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.391), ('       3:\nmoderately', 0.793)]
+103.7065 	DATA 	Question Number: 11 , Response:        3:
+moderately
+103.8393 	DATA 	Mouse:  Left button up, pos=(1282,243)
+104.3057 	DATA 	Mouse: Left button down, pos=(1277,420)
+104.3894 	DATA 	Mouse:  Left button up, pos=(1277,419)
+104.7066 	DATA 	Mouse: Left button down, pos=(1282,299)
+104.7097 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+104.7097 	DATA 	RatingScale unnamed RatingScale: rating RT=0.973
+104.7097 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.572), ('       3:\nmoderately', 0.973)]
+104.7224 	DATA 	Question Number: 25 , Response:        3:
+moderately
+104.8070 	DATA 	Mouse:  Left button up, pos=(1282,299)
+105.2721 	DATA 	Mouse: Left button down, pos=(1294,414)
+105.3725 	DATA 	Mouse:  Left button up, pos=(1294,410)
+105.6561 	DATA 	Mouse: Left button down, pos=(1304,253)
+105.6594 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+105.6594 	DATA 	RatingScale unnamed RatingScale: rating RT=0.908
+105.6594 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.524), ('       3:\nmoderately', 0.908)]
+105.6720 	DATA 	Question Number: 5 , Response:        3:
+moderately
+105.7722 	DATA 	Mouse:  Left button up, pos=(1304,256)
+106.0564 	DATA 	Mouse: Left button down, pos=(1281,428)
+106.1556 	DATA 	Mouse:  Left button up, pos=(1281,428)
+106.4723 	DATA 	Mouse: Left button down, pos=(1282,263)
+106.4751 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+106.4751 	DATA 	RatingScale unnamed RatingScale: rating RT=0.775
+106.4751 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.359), ('       3:\nmoderately', 0.775)]
+106.4896 	DATA 	Question Number: 19 , Response:        3:
+moderately
+106.5400 	DATA 	Mouse:  Left button up, pos=(1284,267)
+106.8238 	DATA 	Mouse: Left button down, pos=(1290,401)
+106.9108 	DATA 	Mouse:  Left button up, pos=(1290,400)
+107.1572 	DATA 	Mouse: Left button down, pos=(1282,244)
+107.1602 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+107.1602 	DATA 	RatingScale unnamed RatingScale: rating RT=0.642
+107.1602 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.308), ('       3:\nmoderately', 0.642)]
+107.1730 	DATA 	Question Number: 10 , Response:        3:
+moderately
+107.2578 	DATA 	Mouse:  Left button up, pos=(1286,257)
+107.5076 	DATA 	Mouse: Left button down, pos=(1291,400)
+107.6072 	DATA 	Mouse:  Left button up, pos=(1291,397)
+107.8100 	DATA 	Mouse: Left button down, pos=(1285,276)
+107.8105 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+107.8105 	DATA 	RatingScale unnamed RatingScale: rating RT=0.609
+107.8105 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.309), ('       3:\nmoderately', 0.609)]
+107.8236 	DATA 	Question Number: 3 , Response:        3:
+moderately
+107.9233 	DATA 	Mouse:  Left button up, pos=(1288,285)
+108.1412 	DATA 	Mouse: Left button down, pos=(1307,410)
+108.2402 	DATA 	Mouse:  Left button up, pos=(1307,407)
+108.4403 	DATA 	Mouse: Left button down, pos=(1294,271)
+108.4440 	DATA 	RatingScale unnamed RatingScale: (mouse response) rating=       3:
+moderately
+108.4440 	DATA 	RatingScale unnamed RatingScale: rating RT=0.589
+108.4440 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.289), ('       3:\nmoderately', 0.589)]
+108.4572 	DATA 	Question Number: 28 , Response:        3:
+moderately
+108.5403 	DATA 	Mouse:  Left button up, pos=(1294,279)
+108.7428 	DATA 	Mouse: Left button down, pos=(1286,419)
+108.8327 	DATA 	Mouse:  Left button up, pos=(1286,418)
+111.2152 	DATA 	Keypress: 2
+112.3751 	DATA 	Keypress: 2
+113.8071 	DATA 	Keypress: 3
+119.0789 	DATA 	Keypress: 2
+119.1783 	DATA 	Keypress: 3
+122.3110 	DATA 	Keypress: 2
+122.3118 	DATA 	Keypress: 3
+122.6632 	DATA 	Keypress: 2
+122.6708 	DATA 	Keypress: 3
+123.4951 	DATA 	Keypress: space
+1.0167 	DATA 	Displaying Round 1 label
+3.0389 	DATA 	Starting Round 1
+3.6877 	DATA 	Keypress: 2
+3.8661 	DATA 	round 1 - trial 0 - throw: 1to2 - FBALL
+3.8661 	DATA 	current s variable: 1to2-1.bmp
+4.0331 	DATA 	current s variable: 1to2-2.bmp
+4.2164 	DATA 	current s variable: 1to2-3.bmp
+4.4055 	DATA 	current s variable: 1to2-4.bmp
+4.5888 	DATA 	current s variable: 1to2-5.bmp
+4.7726 	DATA 	current s variable: 1to2-6.bmp
+4.9495 	DATA 	current s variable: 1to2-7.bmp
+5.1172 	DATA 	current s variable: 1to2-8.bmp
+5.3029 	DATA 	PLAYER HAS BALL
+5.3131 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+5.3131 	DATA 	round 1 - trial 1 - throw: 2to1 - FBALL
+5.3131 	DATA 	current s variable: 2to1-1.bmp
+5.4836 	DATA 	current s variable: 2to1-2.bmp
+5.6503 	DATA 	current s variable: 2to1-3.bmp
+5.6647 	DATA 	Keypress: 2
+5.8389 	DATA 	current s variable: 2to1-4.bmp
+6.0225 	DATA 	current s variable: 2to1-5.bmp
+6.2055 	DATA 	current s variable: 2to1-6.bmp
+6.2348 	DATA 	Keypress: 2
+6.3837 	DATA 	current s variable: 2to1-7.bmp
+6.4878 	DATA 	Keypress: 3
+7.6933 	DATA 	Keypress: 3
+7.6946 	DATA 	Keypress: 2
+7.6958 	DATA 	Keypress: 3
+7.6965 	DATA 	Keypress: 2
+7.6976 	DATA 	Keypress: 3
+7.8917 	DATA 	round 1 - trial 2 - throw: 1to3 - FBALL
+7.8917 	DATA 	current s variable: 1to3-1.bmp
+8.0674 	DATA 	current s variable: 1to3-2.bmp
+8.1758 	DATA 	Keypress: 2
+8.2506 	DATA 	current s variable: 1to3-3.bmp
+8.3037 	DATA 	Keypress: 3
+8.4240 	DATA 	current s variable: 1to3-4.bmp
+8.4360 	DATA 	Keypress: 2
+8.5437 	DATA 	Keypress: 3
+8.6007 	DATA 	current s variable: 1to3-5.bmp
+8.6717 	DATA 	Keypress: 2
+8.7686 	DATA 	current s variable: 1to3-6.bmp
+8.8069 	DATA 	Keypress: 3
+8.8956 	DATA 	Keypress: 2
+8.9557 	DATA 	current s variable: 1to3-7.bmp
+8.9698 	DATA 	Keypress: 3
+9.1408 	DATA 	current s variable: 1to3-8.bmp
+9.3232 	DATA 	current s variable: 1to3-9.bmp
+10.8297 	DATA 	round 1 - trial 3 - throw: 3to2 - FBALL
+10.8297 	DATA 	current s variable: 3to2-1.bmp
+11.0017 	DATA 	current s variable: 3to2-2.bmp
+11.1896 	DATA 	current s variable: 3to2-3.bmp
+11.3737 	DATA 	current s variable: 3to2-4.bmp
+11.5509 	DATA 	current s variable: 3to2-5.bmp
+11.7230 	DATA 	current s variable: 3to2-6.bmp
+11.9061 	DATA 	current s variable: 3to2-7.bmp
+12.0853 	DATA 	current s variable: 3to2-8.bmp
+12.2692 	DATA 	PLAYER HAS BALL
+12.2793 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+12.2794 	DATA 	round 1 - trial 4 - throw: 2to1 - FBALL
+12.2794 	DATA 	current s variable: 2to1-1.bmp
+12.4568 	DATA 	current s variable: 2to1-2.bmp
+12.6399 	DATA 	current s variable: 2to1-3.bmp
+12.8236 	DATA 	current s variable: 2to1-4.bmp
+13.0016 	DATA 	current s variable: 2to1-5.bmp
+13.1732 	DATA 	current s variable: 2to1-6.bmp
+13.3526 	DATA 	current s variable: 2to1-7.bmp
+14.5336 	DATA 	round 1 - trial 5 - throw: 1to2 - FBALL
+14.5336 	DATA 	current s variable: 1to2-1.bmp
+14.7076 	DATA 	current s variable: 1to2-2.bmp
+14.8930 	DATA 	current s variable: 1to2-3.bmp
+15.0695 	DATA 	current s variable: 1to2-4.bmp
+15.2358 	DATA 	current s variable: 1to2-5.bmp
+15.4246 	DATA 	current s variable: 1to2-6.bmp
+15.6026 	DATA 	current s variable: 1to2-7.bmp
+15.7692 	DATA 	current s variable: 1to2-8.bmp
+15.9528 	DATA 	PLAYER HAS BALL
+16.9358 	DATA 	Keypress: 3
+16.9371 	DATA 	PLAYER THROWS TO 3 - RT 0.9843
+16.9372 	DATA 	round 1 - trial 6 - throw: 2to3 - FBALL
+16.9372 	DATA 	current s variable: 2to3-1.bmp
+17.1246 	DATA 	current s variable: 2to3-2.bmp
+17.3021 	DATA 	current s variable: 2to3-3.bmp
+17.4749 	DATA 	current s variable: 2to3-4.bmp
+17.6538 	DATA 	current s variable: 2to3-5.bmp
+17.8408 	DATA 	current s variable: 2to3-6.bmp
+18.0196 	DATA 	current s variable: 2to3-7.bmp
+19.1917 	DATA 	Keypress: 3
+19.3896 	DATA 	round 1 - trial 7 - throw: 3to1 - FBALL
+19.3897 	DATA 	current s variable: 3to1-1.bmp
+19.5767 	DATA 	current s variable: 3to1-2.bmp
+19.7585 	DATA 	current s variable: 3to1-3.bmp
+19.9374 	DATA 	current s variable: 3to1-4.bmp
+20.1090 	DATA 	current s variable: 3to1-5.bmp
+20.2928 	DATA 	current s variable: 3to1-6.bmp
+20.4758 	DATA 	current s variable: 3to1-7.bmp
+20.6541 	DATA 	current s variable: 3to1-8.bmp
+20.8213 	DATA 	current s variable: 3to1-9.bmp
+22.3217 	DATA 	round 1 - trial 8 - throw: 1to2 - FBALL
+22.3217 	DATA 	current s variable: 1to2-1.bmp
+22.5048 	DATA 	current s variable: 1to2-2.bmp
+22.6872 	DATA 	current s variable: 1to2-3.bmp
+22.8543 	DATA 	current s variable: 1to2-4.bmp
+23.0255 	DATA 	current s variable: 1to2-5.bmp
+23.2053 	DATA 	current s variable: 1to2-6.bmp
+23.3786 	DATA 	current s variable: 1to2-7.bmp
+23.5550 	DATA 	current s variable: 1to2-8.bmp
+23.5944 	DATA 	Keypress: 2
+23.7435 	DATA 	PLAYER HAS BALL
+23.7536 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+23.7537 	DATA 	round 1 - trial 9 - throw: 2to3 - FBALL
+23.7537 	DATA 	current s variable: 2to3-1.bmp
+23.9272 	DATA 	current s variable: 2to3-2.bmp
+24.1106 	DATA 	current s variable: 2to3-3.bmp
+24.2893 	DATA 	current s variable: 2to3-4.bmp
+24.4765 	DATA 	current s variable: 2to3-5.bmp
+24.6550 	DATA 	current s variable: 2to3-6.bmp
+24.8451 	DATA 	current s variable: 2to3-7.bmp
+26.1577 	DATA 	round 1 - trial 10 - throw: 3to2 - FBALL
+26.1577 	DATA 	current s variable: 3to2-1.bmp
+26.3270 	DATA 	current s variable: 3to2-2.bmp
+26.5068 	DATA 	current s variable: 3to2-3.bmp
+26.6886 	DATA 	current s variable: 3to2-4.bmp
+26.8561 	DATA 	current s variable: 3to2-5.bmp
+27.0232 	DATA 	current s variable: 3to2-6.bmp
+27.1934 	DATA 	current s variable: 3to2-7.bmp
+27.3721 	DATA 	current s variable: 3to2-8.bmp
+27.5387 	DATA 	PLAYER HAS BALL
+28.7759 	DATA 	Keypress: 3
+28.7762 	DATA 	PLAYER THROWS TO 3 - RT 1.2376
+28.7762 	DATA 	round 1 - trial 11 - throw: 2to3 - FBALL
+28.7762 	DATA 	current s variable: 2to3-1.bmp
+28.7998 	DATA 	Keypress: 2
+28.9456 	DATA 	current s variable: 2to3-2.bmp
+29.1284 	DATA 	current s variable: 2to3-3.bmp
+29.3110 	DATA 	current s variable: 2to3-4.bmp
+29.4902 	DATA 	current s variable: 2to3-5.bmp
+29.6734 	DATA 	current s variable: 2to3-6.bmp
+29.8444 	DATA 	current s variable: 2to3-7.bmp
+31.4895 	DATA 	round 1 - trial 12 - throw: 3to1 - FBALL
+31.4896 	DATA 	current s variable: 3to1-1.bmp
+31.6785 	DATA 	current s variable: 3to1-2.bmp
+31.8398 	DATA 	current s variable: 3to1-3.bmp
+32.0060 	DATA 	current s variable: 3to1-4.bmp
+32.1740 	DATA 	current s variable: 3to1-5.bmp
+32.3401 	DATA 	current s variable: 3to1-6.bmp
+32.5068 	DATA 	current s variable: 3to1-7.bmp
+32.6738 	DATA 	current s variable: 3to1-8.bmp
+32.8622 	DATA 	current s variable: 3to1-9.bmp
+34.6857 	DATA 	round 1 - trial 13 - throw: 1to2 - FBALL
+34.6857 	DATA 	current s variable: 1to2-1.bmp
+34.8587 	DATA 	current s variable: 1to2-2.bmp
+35.0412 	DATA 	current s variable: 1to2-3.bmp
+35.2077 	DATA 	current s variable: 1to2-4.bmp
+35.3741 	DATA 	current s variable: 1to2-5.bmp
+35.5410 	DATA 	current s variable: 1to2-6.bmp
+35.7038 	DATA 	Keypress: 2
+35.7141 	DATA 	current s variable: 1to2-7.bmp
+35.8916 	DATA 	current s variable: 1to2-8.bmp
+36.0584 	DATA 	PLAYER HAS BALL
+36.0686 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+36.0686 	DATA 	round 1 - trial 14 - throw: 2to1 - FBALL
+36.0686 	DATA 	current s variable: 2to1-1.bmp
+36.0921 	DATA 	Keypress: 2
+36.2411 	DATA 	current s variable: 2to1-2.bmp
+36.4083 	DATA 	current s variable: 2to1-3.bmp
+36.5970 	DATA 	current s variable: 2to1-4.bmp
+36.7796 	DATA 	current s variable: 2to1-5.bmp
+36.9590 	DATA 	current s variable: 2to1-6.bmp
+37.1466 	DATA 	current s variable: 2to1-7.bmp
+39.1376 	DATA 	round 1 - trial 15 - throw: 1to2 - FBALL
+39.1376 	DATA 	current s variable: 1to2-1.bmp
+39.2878 	DATA 	Keypress: 2
+39.3145 	DATA 	current s variable: 1to2-2.bmp
+39.4920 	DATA 	current s variable: 1to2-3.bmp
+39.5277 	DATA 	Keypress: 3
+39.6601 	DATA 	current s variable: 1to2-4.bmp
+39.8271 	DATA 	current s variable: 1to2-5.bmp
+39.9926 	DATA 	current s variable: 1to2-6.bmp
+40.1038 	DATA 	Keypress: 2
+40.1653 	DATA 	current s variable: 1to2-7.bmp
+40.2478 	DATA 	Keypress: 3
+40.3477 	DATA 	current s variable: 1to2-8.bmp
+40.5272 	DATA 	PLAYER HAS BALL
+40.5373 	DATA 	PLAYER THROWS TO 1 - RT 0.0101
+40.5373 	DATA 	round 1 - trial 16 - throw: 2to1 - FBALL
+40.5374 	DATA 	current s variable: 2to1-1.bmp
+40.7096 	DATA 	current s variable: 2to1-2.bmp
+40.7492 	DATA 	Keypress: 2
+40.7997 	DATA 	Keypress: 3
+40.8982 	DATA 	current s variable: 2to1-3.bmp
+41.0761 	DATA 	current s variable: 2to1-4.bmp
+41.2476 	DATA 	current s variable: 2to1-5.bmp
+41.3277 	DATA 	Keypress: 2
+41.4238 	DATA 	Keypress: 3
+41.4324 	DATA 	current s variable: 2to1-6.bmp
+41.6092 	DATA 	current s variable: 2to1-7.bmp
+43.5094 	DATA 	Keypress: 2
+43.5103 	DATA 	Keypress: 3
+43.5115 	DATA 	Keypress: 2
+43.5123 	DATA 	Keypress: 3
+43.5133 	DATA 	Keypress: 2
+43.5140 	DATA 	Keypress: 3
+43.5677 	DATA 	Keypress: 2
+43.6077 	DATA 	Keypress: 3
+43.7080 	DATA 	round 1 - trial 17 - throw: 1to2 - FBALL
+43.7080 	DATA 	current s variable: 1to2-1.bmp
+43.8826 	DATA 	current s variable: 1to2-2.bmp
+44.0492 	DATA 	current s variable: 1to2-3.bmp
+44.0625 	DATA 	Keypress: 2
+44.1197 	DATA 	Keypress: 3
+44.2276 	DATA 	current s variable: 1to2-4.bmp
+44.4108 	DATA 	current s variable: 1to2-5.bmp
+44.5678 	DATA 	Keypress: 2
+44.5936 	DATA 	current s variable: 1to2-6.bmp
+44.6317 	DATA 	Keypress: 3
+44.7605 	DATA 	current s variable: 1to2-7.bmp
+44.9277 	DATA 	current s variable: 1to2-8.bmp
+45.0158 	DATA 	Keypress: 2
+45.0717 	DATA 	Keypress: 3
+45.1159 	DATA 	PLAYER HAS BALL
+45.1261 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+45.1261 	DATA 	round 1 - trial 18 - throw: 2to1 - FBALL
+45.1261 	DATA 	current s variable: 2to1-1.bmp
+45.2942 	DATA 	current s variable: 2to1-2.bmp
+45.4798 	DATA 	Keypress: 2
+45.4824 	DATA 	current s variable: 2to1-3.bmp
+45.5598 	DATA 	Keypress: 3
+45.6602 	DATA 	current s variable: 2to1-4.bmp
+45.8333 	DATA 	current s variable: 2to1-5.bmp
+45.9838 	DATA 	Keypress: 2
+46.0167 	DATA 	current s variable: 2to1-6.bmp
+46.0449 	DATA 	Keypress: 3
+46.1936 	DATA 	current s variable: 2to1-7.bmp
+48.0469 	DATA 	Keypress: 2
+48.0477 	DATA 	Keypress: 3
+48.0489 	DATA 	Keypress: 2
+48.0497 	DATA 	Keypress: 3
+48.0508 	DATA 	Keypress: 2
+48.0516 	DATA 	Keypress: 3
+48.0527 	DATA 	Keypress: 2
+48.0535 	DATA 	Keypress: 3
+48.1598 	DATA 	Keypress: 2
+48.2455 	DATA 	round 1 - trial 19 - throw: 1to2 - FBALL
+48.2456 	DATA 	current s variable: 1to2-1.bmp
+48.2958 	DATA 	Keypress: 3
+48.4336 	DATA 	current s variable: 1to2-2.bmp
+48.6116 	DATA 	current s variable: 1to2-3.bmp
+48.6958 	DATA 	Keypress: 2
+48.7780 	DATA 	current s variable: 1to2-4.bmp
+48.7878 	DATA 	Keypress: 3
+48.9506 	DATA 	current s variable: 1to2-5.bmp
+49.1283 	DATA 	current s variable: 1to2-6.bmp
+49.2478 	DATA 	Keypress: 2
+49.2960 	DATA 	current s variable: 1to2-7.bmp
+49.3838 	DATA 	Keypress: 3
+49.4792 	DATA 	current s variable: 1to2-8.bmp
+49.6453 	DATA 	PLAYER HAS BALL
+49.6556 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+49.6556 	DATA 	round 1 - trial 20 - throw: 2to1 - FBALL
+49.6556 	DATA 	current s variable: 2to1-1.bmp
+49.7518 	DATA 	Keypress: 2
+49.8284 	DATA 	current s variable: 2to1-2.bmp
+49.8478 	DATA 	Keypress: 3
+49.9949 	DATA 	current s variable: 2to1-3.bmp
+50.1834 	DATA 	current s variable: 2to1-4.bmp
+50.2878 	DATA 	Keypress: 2
+50.3615 	DATA 	current s variable: 2to1-5.bmp
+50.4158 	DATA 	Keypress: 3
+50.5334 	DATA 	current s variable: 2to1-6.bmp
+50.7124 	DATA 	current s variable: 2to1-7.bmp
+50.8158 	DATA 	Keypress: 2
+50.8476 	DATA 	Keypress: 3
+51.3757 	DATA 	Keypress: 2
+51.4076 	DATA 	Keypress: 3
+51.4266 	DATA 	round 1 - trial 21 - throw: 1to2 - FBALL
+51.4266 	DATA 	current s variable: 1to2-1.bmp
+51.5953 	DATA 	current s variable: 1to2-2.bmp
+51.7623 	DATA 	current s variable: 1to2-3.bmp
+51.8397 	DATA 	Keypress: 2
+51.9503 	DATA 	current s variable: 1to2-4.bmp
+51.9917 	DATA 	Keypress: 3
+52.1332 	DATA 	current s variable: 1to2-5.bmp
+52.3131 	DATA 	current s variable: 1to2-6.bmp
+52.4558 	DATA 	Keypress: 2
+52.4957 	DATA 	Keypress: 3
+52.4959 	DATA 	current s variable: 1to2-7.bmp
+52.6672 	DATA 	current s variable: 1to2-8.bmp
+52.8503 	DATA 	PLAYER HAS BALL
+52.8605 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+52.8606 	DATA 	round 1 - trial 22 - throw: 2to1 - FBALL
+52.8606 	DATA 	current s variable: 2to1-1.bmp
+52.9278 	DATA 	Keypress: 2
+53.0157 	DATA 	Keypress: 3
+53.0284 	DATA 	current s variable: 2to1-2.bmp
+53.2014 	DATA 	current s variable: 2to1-3.bmp
+53.3791 	DATA 	current s variable: 2to1-4.bmp
+53.4798 	DATA 	Keypress: 2
+53.5460 	DATA 	current s variable: 2to1-5.bmp
+53.5677 	DATA 	Keypress: 3
+53.7136 	DATA 	current s variable: 2to1-6.bmp
+53.9009 	DATA 	current s variable: 2to1-7.bmp
+53.9997 	DATA 	Keypress: 3
+55.4931 	DATA 	Keypress: 3
+55.4943 	DATA 	Keypress: 3
+55.4953 	DATA 	Keypress: 3
+55.4962 	DATA 	Keypress: 3
+55.4972 	DATA 	Keypress: 3
+55.5677 	DATA 	Keypress: 3
+55.6916 	DATA 	round 1 - trial 23 - throw: 1to3 - FBALL
+55.6916 	DATA 	current s variable: 1to3-1.bmp
+55.8678 	DATA 	current s variable: 1to3-2.bmp
+56.0398 	DATA 	Keypress: 3
+56.0516 	DATA 	current s variable: 1to3-3.bmp
+56.2345 	DATA 	current s variable: 1to3-4.bmp
+56.3278 	DATA 	Keypress: 3
+56.4142 	DATA 	current s variable: 1to3-5.bmp
+56.5869 	DATA 	current s variable: 1to3-6.bmp
+56.6477 	DATA 	Keypress: 3
+56.7689 	DATA 	current s variable: 1to3-7.bmp
+56.9521 	DATA 	current s variable: 1to3-8.bmp
+56.9812 	DATA 	Keypress: 3
+57.1301 	DATA 	current s variable: 1to3-9.bmp
+57.2318 	DATA 	Keypress: 3
+58.0006 	DATA 	Keypress: 3
+58.0017 	DATA 	Keypress: 3
+58.0027 	DATA 	Keypress: 3
+58.1993 	DATA 	round 1 - trial 24 - throw: 3to2 - FBALL
+58.1993 	DATA 	current s variable: 3to2-1.bmp
+58.2477 	DATA 	Keypress: 3
+58.3866 	DATA 	current s variable: 3to2-2.bmp
+58.4798 	DATA 	Keypress: 3
+58.5699 	DATA 	current s variable: 3to2-3.bmp
+58.6958 	DATA 	Keypress: 3
+58.7534 	DATA 	current s variable: 3to2-4.bmp
+58.9314 	DATA 	current s variable: 3to2-5.bmp
+58.9708 	DATA 	Keypress: 3
+59.1197 	DATA 	current s variable: 3to2-6.bmp
+59.1997 	DATA 	Keypress: 3
+59.3025 	DATA 	current s variable: 3to2-7.bmp
+59.4078 	DATA 	Keypress: 3
+59.4811 	DATA 	current s variable: 3to2-8.bmp
+59.6158 	DATA 	Keypress: 3
+59.6525 	DATA 	PLAYER HAS BALL
+59.6627 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+59.6627 	DATA 	round 1 - trial 25 - throw: 2to1 - FBALL
+59.6627 	DATA 	current s variable: 2to1-1.bmp
+59.8237 	DATA 	Keypress: 3
+59.8316 	DATA 	current s variable: 2to1-2.bmp
+59.9518 	DATA 	Keypress: 2
+59.9989 	DATA 	current s variable: 2to1-3.bmp
+60.1646 	DATA 	current s variable: 2to1-4.bmp
+60.3376 	DATA 	current s variable: 2to1-5.bmp
+60.3712 	DATA 	Keypress: 3
+60.4958 	DATA 	Keypress: 2
+60.5195 	DATA 	current s variable: 2to1-6.bmp
+60.6983 	DATA 	current s variable: 2to1-7.bmp
+61.7098 	DATA 	Keypress: 3
+61.7108 	DATA 	Keypress: 2
+61.7119 	DATA 	Keypress: 3
+61.7597 	DATA 	Keypress: 3
+61.9086 	DATA 	round 1 - trial 26 - throw: 1to2 - FBALL
+61.9086 	DATA 	current s variable: 1to2-1.bmp
+62.0867 	DATA 	current s variable: 1to2-2.bmp
+62.1008 	DATA 	Keypress: 3
+62.2696 	DATA 	current s variable: 1to2-3.bmp
+62.4483 	DATA 	current s variable: 1to2-4.bmp
+62.6152 	DATA 	current s variable: 1to2-5.bmp
+62.7824 	DATA 	current s variable: 1to2-6.bmp
+62.9528 	DATA 	current s variable: 1to2-7.bmp
+63.1368 	DATA 	current s variable: 1to2-8.bmp
+63.3197 	DATA 	PLAYER HAS BALL
+63.3300 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+63.3300 	DATA 	round 1 - trial 27 - throw: 2to3 - FBALL
+63.3300 	DATA 	current s variable: 2to3-1.bmp
+63.5036 	DATA 	current s variable: 2to3-2.bmp
+63.6826 	DATA 	current s variable: 2to3-3.bmp
+63.8492 	DATA 	current s variable: 2to3-4.bmp
+64.0325 	DATA 	current s variable: 2to3-5.bmp
+64.1987 	DATA 	current s variable: 2to3-6.bmp
+64.3656 	DATA 	current s variable: 2to3-7.bmp
+66.2060 	DATA 	round 1 - trial 28 - throw: 3to2 - FBALL
+66.2060 	DATA 	current s variable: 3to2-1.bmp
+66.3831 	DATA 	current s variable: 3to2-2.bmp
+66.5706 	DATA 	current s variable: 3to2-3.bmp
+66.7496 	DATA 	current s variable: 3to2-4.bmp
+66.9210 	DATA 	current s variable: 3to2-5.bmp
+67.1046 	DATA 	current s variable: 3to2-6.bmp
+67.2874 	DATA 	current s variable: 3to2-7.bmp
+67.4672 	DATA 	current s variable: 3to2-8.bmp
+67.6547 	DATA 	PLAYER HAS BALL
+68.1918 	DATA 	Keypress: 3
+68.1931 	DATA 	PLAYER THROWS TO 3 - RT 0.5384
+68.1931 	DATA 	round 1 - trial 29 - throw: 2to3 - FBALL
+68.1931 	DATA 	current s variable: 2to3-1.bmp
+68.3717 	DATA 	current s variable: 2to3-2.bmp
+68.5506 	DATA 	current s variable: 2to3-3.bmp
+68.7223 	DATA 	current s variable: 2to3-4.bmp
+68.9005 	DATA 	current s variable: 2to3-5.bmp
+69.0671 	DATA 	current s variable: 2to3-6.bmp
+69.2383 	DATA 	current s variable: 2to3-7.bmp
+70.2348 	DATA 	round 1 - trial 30 - throw: 3to2 - FBALL
+70.2348 	DATA 	current s variable: 3to2-1.bmp
+70.4226 	DATA 	current s variable: 3to2-2.bmp
+70.6054 	DATA 	current s variable: 3to2-3.bmp
+70.7896 	DATA 	current s variable: 3to2-4.bmp
+70.9678 	DATA 	current s variable: 3to2-5.bmp
+71.1337 	DATA 	current s variable: 3to2-6.bmp
+71.3006 	DATA 	current s variable: 3to2-7.bmp
+71.4666 	DATA 	current s variable: 3to2-8.bmp
+71.5357 	DATA 	Keypress: 3
+71.6336 	DATA 	PLAYER HAS BALL
+76.6516 	DATA 	Displaying Round 2 label
+78.5438 	DATA 	Keypress: 2
+78.6696 	DATA 	Starting Round 2
+78.6957 	DATA 	Keypress: 3
+79.5549 	DATA 	Keypress: 2
+79.5557 	DATA 	Keypress: 3
+79.7537 	DATA 	round 2 - trial 0 - throw: 1to2 - FBALL
+79.7537 	DATA 	current s variable: 1to2-1.bmp
+79.8478 	DATA 	Keypress: 3
+79.9412 	DATA 	current s variable: 1to2-2.bmp
+80.0078 	DATA 	Keypress: 2
+80.1203 	DATA 	current s variable: 1to2-3.bmp
+80.1757 	DATA 	Keypress: 3
+80.3039 	DATA 	current s variable: 1to2-4.bmp
+80.3155 	DATA 	Keypress: 2
+80.4766 	DATA 	current s variable: 1to2-5.bmp
+80.4886 	DATA 	Keypress: 3
+80.5677 	DATA 	Keypress: 2
+80.6536 	DATA 	current s variable: 1to2-6.bmp
+80.7677 	DATA 	Keypress: 3
+80.8372 	DATA 	current s variable: 1to2-7.bmp
+80.8957 	DATA 	Keypress: 2
+81.0236 	DATA 	Keypress: 3
+81.0247 	DATA 	current s variable: 1to2-8.bmp
+81.1757 	DATA 	Keypress: 2
+81.2084 	DATA 	PLAYER HAS BALL
+81.2187 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+81.2187 	DATA 	round 2 - trial 1 - throw: 2to3 - FBALL
+81.2187 	DATA 	current s variable: 2to3-1.bmp
+81.3356 	DATA 	Keypress: 3
+81.3868 	DATA 	current s variable: 2to3-2.bmp
+81.5584 	DATA 	current s variable: 2to3-3.bmp
+81.5733 	DATA 	Keypress: 2
+81.7419 	DATA 	current s variable: 2to3-4.bmp
+81.7571 	DATA 	Keypress: 3
+81.9194 	DATA 	current s variable: 2to3-5.bmp
+81.9917 	DATA 	Keypress: 2
+82.0865 	DATA 	current s variable: 2to3-6.bmp
+82.1197 	DATA 	Keypress: 3
+82.2533 	DATA 	current s variable: 2to3-7.bmp
+82.3278 	DATA 	Keypress: 2
+83.2042 	DATA 	Keypress: 3
+83.2054 	DATA 	Keypress: 2
+83.2063 	DATA 	Keypress: 3
+83.4028 	DATA 	round 2 - trial 2 - throw: 3to2 - FBALL
+83.4028 	DATA 	current s variable: 3to2-1.bmp
+83.5706 	DATA 	current s variable: 3to2-2.bmp
+83.7422 	DATA 	current s variable: 3to2-3.bmp
+83.9265 	DATA 	current s variable: 3to2-4.bmp
+84.1093 	DATA 	current s variable: 3to2-5.bmp
+84.2874 	DATA 	current s variable: 3to2-6.bmp
+84.4542 	DATA 	current s variable: 3to2-7.bmp
+84.6206 	DATA 	current s variable: 3to2-8.bmp
+84.6718 	DATA 	Keypress: 3
+84.7882 	DATA 	PLAYER HAS BALL
+84.7984 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+84.7984 	DATA 	round 2 - trial 3 - throw: 2to3 - FBALL
+84.7984 	DATA 	current s variable: 2to3-1.bmp
+84.9756 	DATA 	current s variable: 2to3-2.bmp
+85.1546 	DATA 	current s variable: 2to3-3.bmp
+85.3212 	DATA 	current s variable: 2to3-4.bmp
+85.4936 	DATA 	current s variable: 2to3-5.bmp
+85.6708 	DATA 	current s variable: 2to3-6.bmp
+85.8436 	DATA 	current s variable: 2to3-7.bmp
+87.7658 	DATA 	Keypress: 2
+87.7669 	DATA 	Keypress: 2
+87.7678 	DATA 	Keypress: 2
+87.7688 	DATA 	Keypress: 2
+87.9646 	DATA 	round 2 - trial 4 - throw: 3to2 - FBALL
+87.9647 	DATA 	current s variable: 3to2-1.bmp
+88.0717 	DATA 	Keypress: 2
+88.1439 	DATA 	current s variable: 3to2-2.bmp
+88.3212 	DATA 	current s variable: 3to2-3.bmp
+88.4944 	DATA 	current s variable: 3to2-4.bmp
+88.6732 	DATA 	current s variable: 3to2-5.bmp
+88.8556 	DATA 	current s variable: 3to2-6.bmp
+89.0283 	DATA 	current s variable: 3to2-7.bmp
+89.0482 	DATA 	Keypress: 2
+89.2064 	DATA 	current s variable: 3to2-8.bmp
+89.2797 	DATA 	Keypress: 2
+89.3900 	DATA 	PLAYER HAS BALL
+89.4002 	DATA 	PLAYER THROWS TO 1 - RT 0.0101
+89.4002 	DATA 	round 2 - trial 5 - throw: 2to1 - FBALL
+89.4002 	DATA 	current s variable: 2to1-1.bmp
+89.5278 	DATA 	Keypress: 2
+89.5774 	DATA 	current s variable: 2to1-2.bmp
+89.7557 	DATA 	current s variable: 2to1-3.bmp
+89.8558 	DATA 	Keypress: 2
+89.9284 	DATA 	current s variable: 2to1-4.bmp
+90.1106 	DATA 	current s variable: 2to1-5.bmp
+90.2938 	DATA 	current s variable: 2to1-6.bmp
+90.4611 	DATA 	current s variable: 2to1-7.bmp
+90.5518 	DATA 	Keypress: 3
+90.5997 	DATA 	Keypress: 2
+91.6891 	DATA 	Keypress: 2
+91.6905 	DATA 	Keypress: 3
+91.6916 	DATA 	Keypress: 2
+91.7997 	DATA 	Keypress: 2
+91.8865 	DATA 	round 2 - trial 6 - throw: 1to3 - FBALL
+91.8866 	DATA 	current s variable: 1to3-1.bmp
+92.0604 	DATA 	current s variable: 1to3-2.bmp
+92.1518 	DATA 	Keypress: 3
+92.2396 	DATA 	current s variable: 1to3-3.bmp
+92.4122 	DATA 	current s variable: 1to3-4.bmp
+92.5838 	DATA 	Keypress: 2
+92.5946 	DATA 	current s variable: 1to3-5.bmp
+92.7773 	DATA 	current s variable: 1to3-6.bmp
+92.9518 	DATA 	Keypress: 3
+92.9615 	DATA 	current s variable: 1to3-7.bmp
+93.1401 	DATA 	current s variable: 1to3-8.bmp
+93.3118 	DATA 	Keypress: 2
+93.3132 	DATA 	current s variable: 1to3-9.bmp
+94.7140 	DATA 	Keypress: 3
+94.7152 	DATA 	Keypress: 2
+94.7162 	DATA 	Keypress: 3
+94.7837 	DATA 	Keypress: 2
+94.9126 	DATA 	round 2 - trial 7 - throw: 3to2 - FBALL
+94.9126 	DATA 	current s variable: 3to2-1.bmp
+95.0960 	DATA 	current s variable: 3to2-2.bmp
+95.2738 	DATA 	current s variable: 3to2-3.bmp
+95.4580 	DATA 	current s variable: 3to2-4.bmp
+95.6460 	DATA 	current s variable: 3to2-5.bmp
+95.8244 	DATA 	current s variable: 3to2-6.bmp
+95.9958 	DATA 	current s variable: 3to2-7.bmp
+96.1738 	DATA 	current s variable: 3to2-8.bmp
+96.2137 	DATA 	Keypress: 3
+96.3627 	DATA 	PLAYER HAS BALL
+96.3729 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+96.3729 	DATA 	round 2 - trial 8 - throw: 2to1 - FBALL
+96.3729 	DATA 	current s variable: 2to1-1.bmp
+96.5406 	DATA 	current s variable: 2to1-2.bmp
+96.7078 	DATA 	current s variable: 2to1-3.bmp
+96.8903 	DATA 	current s variable: 2to1-4.bmp
+97.0736 	DATA 	current s variable: 2to1-5.bmp
+97.2454 	DATA 	current s variable: 2to1-6.bmp
+97.4236 	DATA 	current s variable: 2to1-7.bmp
+99.1736 	DATA 	round 2 - trial 9 - throw: 1to3 - FBALL
+99.1737 	DATA 	current s variable: 1to3-1.bmp
+99.3474 	DATA 	current s variable: 1to3-2.bmp
+99.5298 	DATA 	current s variable: 1to3-3.bmp
+99.7140 	DATA 	current s variable: 1to3-4.bmp
+99.8927 	DATA 	current s variable: 1to3-5.bmp
+100.0759 	DATA 	current s variable: 1to3-6.bmp
+100.2431 	DATA 	current s variable: 1to3-7.bmp
+100.4091 	DATA 	current s variable: 1to3-8.bmp
+100.5972 	DATA 	current s variable: 1to3-9.bmp
+101.6660 	DATA 	round 2 - trial 10 - throw: 3to1 - FBALL
+101.6660 	DATA 	current s variable: 3to1-1.bmp
+101.8420 	DATA 	current s variable: 3to1-2.bmp
+102.0083 	DATA 	current s variable: 3to1-3.bmp
+102.1756 	DATA 	current s variable: 3to1-4.bmp
+102.3636 	DATA 	current s variable: 3to1-5.bmp
+102.5476 	DATA 	current s variable: 3to1-6.bmp
+102.7312 	DATA 	current s variable: 3to1-7.bmp
+102.9140 	DATA 	current s variable: 3to1-8.bmp
+103.0974 	DATA 	current s variable: 3to1-9.bmp
+104.8196 	DATA 	round 2 - trial 11 - throw: 1to3 - FBALL
+104.8196 	DATA 	current s variable: 1to3-1.bmp
+104.9930 	DATA 	current s variable: 1to3-2.bmp
+105.1645 	DATA 	current s variable: 1to3-3.bmp
+105.3487 	DATA 	current s variable: 1to3-4.bmp
+105.5317 	DATA 	current s variable: 1to3-5.bmp
+105.7097 	DATA 	current s variable: 1to3-6.bmp
+105.8809 	DATA 	current s variable: 1to3-7.bmp
+106.0598 	DATA 	current s variable: 1to3-8.bmp
+106.2265 	DATA 	current s variable: 1to3-9.bmp
+107.4806 	DATA 	round 2 - trial 12 - throw: 3to2 - FBALL
+107.4807 	DATA 	current s variable: 3to2-1.bmp
+107.6603 	DATA 	current s variable: 3to2-2.bmp
+107.8479 	DATA 	current s variable: 3to2-3.bmp
+108.0270 	DATA 	current s variable: 3to2-4.bmp
+108.2156 	DATA 	current s variable: 3to2-5.bmp
+108.3946 	DATA 	current s variable: 3to2-6.bmp
+108.5777 	DATA 	current s variable: 3to2-7.bmp
+108.7603 	DATA 	current s variable: 3to2-8.bmp
+108.8558 	DATA 	Keypress: 3
+108.9335 	DATA 	PLAYER HAS BALL
+108.9437 	DATA 	PLAYER THROWS TO 3 - RT 0.0101
+108.9437 	DATA 	round 2 - trial 13 - throw: 2to3 - FBALL
+108.9437 	DATA 	current s variable: 2to3-1.bmp
+109.1114 	DATA 	current s variable: 2to3-2.bmp
+109.2996 	DATA 	current s variable: 2to3-3.bmp
+109.4777 	DATA 	current s variable: 2to3-4.bmp
+109.6665 	DATA 	current s variable: 2to3-5.bmp
+109.8495 	DATA 	current s variable: 2to3-6.bmp
+110.0325 	DATA 	current s variable: 2to3-7.bmp
+110.7476 	DATA 	round 2 - trial 14 - throw: 3to2 - FBALL
+110.7476 	DATA 	current s variable: 3to2-1.bmp
+110.9323 	DATA 	current s variable: 3to2-2.bmp
+111.1110 	DATA 	current s variable: 3to2-3.bmp
+111.2776 	DATA 	current s variable: 3to2-4.bmp
+111.4663 	DATA 	current s variable: 3to2-5.bmp
+111.6503 	DATA 	current s variable: 3to2-6.bmp
+111.8328 	DATA 	current s variable: 3to2-7.bmp
+112.0116 	DATA 	current s variable: 3to2-8.bmp
+112.1957 	DATA 	PLAYER HAS BALL
+113.8397 	DATA 	Keypress: 2
+113.8400 	DATA 	PLAYER THROWS TO 1 - RT 1.6443
+113.8400 	DATA 	round 2 - trial 15 - throw: 2to1 - FBALL
+113.8400 	DATA 	current s variable: 2to1-1.bmp
+114.0175 	DATA 	current s variable: 2to1-2.bmp
+114.1951 	DATA 	current s variable: 2to1-3.bmp
+114.3676 	DATA 	current s variable: 2to1-4.bmp
+114.5505 	DATA 	current s variable: 2to1-5.bmp
+114.7295 	DATA 	current s variable: 2to1-6.bmp
+114.8956 	DATA 	current s variable: 2to1-7.bmp
+116.6756 	DATA 	round 2 - trial 16 - throw: 1to2 - FBALL
+116.6756 	DATA 	current s variable: 1to2-1.bmp
+116.8506 	DATA 	current s variable: 1to2-2.bmp
+116.8648 	DATA 	Keypress: 2
+117.0344 	DATA 	current s variable: 1to2-3.bmp
+117.2123 	DATA 	current s variable: 1to2-4.bmp
+117.3839 	DATA 	current s variable: 1to2-5.bmp
+117.5685 	DATA 	current s variable: 1to2-6.bmp
+117.7454 	DATA 	current s variable: 1to2-7.bmp
+117.9178 	DATA 	current s variable: 1to2-8.bmp
+118.1016 	DATA 	PLAYER HAS BALL
+118.1117 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+118.1118 	DATA 	round 2 - trial 17 - throw: 2to1 - FBALL
+118.1118 	DATA 	current s variable: 2to1-1.bmp
+118.1438 	DATA 	Keypress: 2
+118.2845 	DATA 	current s variable: 2to1-2.bmp
+118.4689 	DATA 	current s variable: 2to1-3.bmp
+118.6516 	DATA 	current s variable: 2to1-4.bmp
+118.8355 	DATA 	current s variable: 2to1-5.bmp
+119.0135 	DATA 	current s variable: 2to1-6.bmp
+119.1866 	DATA 	current s variable: 2to1-7.bmp
+120.3686 	DATA 	round 2 - trial 18 - throw: 1to2 - FBALL
+120.3686 	DATA 	current s variable: 1to2-1.bmp
+120.4318 	DATA 	Keypress: 2
+120.5471 	DATA 	current s variable: 1to2-2.bmp
+120.6078 	DATA 	Keypress: 3
+120.7186 	DATA 	current s variable: 1to2-3.bmp
+120.8979 	DATA 	current s variable: 1to2-4.bmp
+121.0810 	DATA 	current s variable: 1to2-5.bmp
+121.2646 	DATA 	current s variable: 1to2-6.bmp
+121.4300 	DATA 	current s variable: 1to2-7.bmp
+121.5358 	DATA 	Keypress: 2
+121.6191 	DATA 	current s variable: 1to2-8.bmp
+121.7804 	DATA 	PLAYER HAS BALL
+121.7906 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+121.7906 	DATA 	round 2 - trial 19 - throw: 2to1 - FBALL
+121.7906 	DATA 	current s variable: 2to1-1.bmp
+121.9634 	DATA 	current s variable: 2to1-2.bmp
+122.1366 	DATA 	current s variable: 2to1-3.bmp
+122.3185 	DATA 	current s variable: 2to1-4.bmp
+122.5023 	DATA 	current s variable: 2to1-5.bmp
+122.6856 	DATA 	current s variable: 2to1-6.bmp
+122.8637 	DATA 	current s variable: 2to1-7.bmp
+123.6157 	DATA 	Keypress: 3
+123.7046 	DATA 	round 2 - trial 20 - throw: 1to3 - FBALL
+123.7046 	DATA 	current s variable: 1to3-1.bmp
+123.8866 	DATA 	current s variable: 1to3-2.bmp
+123.9999 	DATA 	Keypress: 3
+124.0706 	DATA 	current s variable: 1to3-3.bmp
+124.2539 	DATA 	current s variable: 1to3-4.bmp
+124.3038 	DATA 	Keypress: 3
+124.4374 	DATA 	current s variable: 1to3-5.bmp
+124.5758 	DATA 	Keypress: 3
+124.6152 	DATA 	current s variable: 1to3-6.bmp
+124.7817 	DATA 	current s variable: 1to3-7.bmp
+124.8327 	DATA 	Keypress: 3
+124.9479 	DATA 	current s variable: 1to3-8.bmp
+125.1154 	DATA 	current s variable: 1to3-9.bmp
+125.1597 	DATA 	Keypress: 3
+126.1448 	DATA 	Keypress: 3
+126.1459 	DATA 	Keypress: 3
+126.1676 	DATA 	Keypress: 3
+126.3436 	DATA 	round 2 - trial 21 - throw: 3to2 - FBALL
+126.3436 	DATA 	current s variable: 3to2-1.bmp
+126.4638 	DATA 	Keypress: 3
+126.5153 	DATA 	current s variable: 3to2-2.bmp
+126.6825 	DATA 	current s variable: 3to2-3.bmp
+126.7517 	DATA 	Keypress: 3
+126.8552 	DATA 	current s variable: 3to2-4.bmp
+127.0366 	DATA 	current s variable: 3to2-5.bmp
+127.0506 	DATA 	Keypress: 3
+127.2159 	DATA 	current s variable: 3to2-6.bmp
+127.3198 	DATA 	Keypress: 3
+127.3986 	DATA 	current s variable: 3to2-7.bmp
+127.5702 	DATA 	current s variable: 3to2-8.bmp
+127.6045 	DATA 	Keypress: 3
+127.7536 	DATA 	PLAYER HAS BALL
+127.7638 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+127.7638 	DATA 	round 2 - trial 22 - throw: 2to3 - FBALL
+127.7638 	DATA 	current s variable: 2to3-1.bmp
+127.8478 	DATA 	Keypress: 3
+127.9368 	DATA 	current s variable: 2to3-2.bmp
+128.1200 	DATA 	current s variable: 2to3-3.bmp
+128.1354 	DATA 	Keypress: 3
+128.2984 	DATA 	current s variable: 2to3-4.bmp
+128.4398 	DATA 	Keypress: 3
+128.4663 	DATA 	current s variable: 2to3-5.bmp
+128.6499 	DATA 	current s variable: 2to3-6.bmp
+128.7518 	DATA 	Keypress: 3
+128.8332 	DATA 	current s variable: 2to3-7.bmp
+130.6311 	DATA 	Keypress: 3
+130.6326 	DATA 	Keypress: 3
+130.6877 	DATA 	Keypress: 3
+130.8296 	DATA 	round 2 - trial 23 - throw: 3to1 - FBALL
+130.8296 	DATA 	current s variable: 3to1-1.bmp
+131.0054 	DATA 	current s variable: 3to1-2.bmp
+131.0404 	DATA 	Keypress: 3
+131.1887 	DATA 	current s variable: 3to1-3.bmp
+131.3677 	DATA 	Keypress: 3
+131.3716 	DATA 	current s variable: 3to1-4.bmp
+131.5495 	DATA 	current s variable: 3to1-5.bmp
+131.7213 	DATA 	current s variable: 3to1-6.bmp
+131.7598 	DATA 	Keypress: 3
+131.9000 	DATA 	current s variable: 3to1-7.bmp
+132.0846 	DATA 	current s variable: 3to1-8.bmp
+132.2663 	DATA 	current s variable: 3to1-9.bmp
+133.1740 	DATA 	round 2 - trial 24 - throw: 1to2 - FBALL
+133.1740 	DATA 	current s variable: 1to2-1.bmp
+133.3546 	DATA 	current s variable: 1to2-2.bmp
+133.5397 	DATA 	current s variable: 1to2-3.bmp
+133.7226 	DATA 	current s variable: 1to2-4.bmp
+133.9005 	DATA 	current s variable: 1to2-5.bmp
+134.0725 	DATA 	current s variable: 1to2-6.bmp
+134.2566 	DATA 	current s variable: 1to2-7.bmp
+134.4348 	DATA 	current s variable: 1to2-8.bmp
+134.4878 	DATA 	Keypress: 3
+134.6180 	DATA 	PLAYER HAS BALL
+134.6281 	DATA 	PLAYER THROWS TO 3 - RT 0.0101
+134.6281 	DATA 	round 2 - trial 25 - throw: 2to3 - FBALL
+134.6281 	DATA 	current s variable: 2to3-1.bmp
+134.8011 	DATA 	current s variable: 2to3-2.bmp
+134.9724 	DATA 	current s variable: 2to3-3.bmp
+135.1511 	DATA 	current s variable: 2to3-4.bmp
+135.3355 	DATA 	current s variable: 2to3-5.bmp
+135.5178 	DATA 	current s variable: 2to3-6.bmp
+135.7023 	DATA 	current s variable: 2to3-7.bmp
+136.7626 	DATA 	round 2 - trial 26 - throw: 3to2 - FBALL
+136.7626 	DATA 	current s variable: 3to2-1.bmp
+136.9557 	DATA 	current s variable: 3to2-2.bmp
+137.1404 	DATA 	current s variable: 3to2-3.bmp
+137.3177 	DATA 	current s variable: 3to2-4.bmp
+137.5023 	DATA 	current s variable: 3to2-5.bmp
+137.6843 	DATA 	current s variable: 3to2-6.bmp
+137.8732 	DATA 	current s variable: 3to2-7.bmp
+138.0568 	DATA 	current s variable: 3to2-8.bmp
+138.2401 	DATA 	PLAYER HAS BALL
+138.3437 	DATA 	Keypress: 2
+138.3517 	DATA 	PLAYER THROWS TO 1 - RT 0.1115
+138.3517 	DATA 	round 2 - trial 27 - throw: 2to1 - FBALL
+138.3517 	DATA 	current s variable: 2to1-1.bmp
+138.5182 	DATA 	current s variable: 2to1-2.bmp
+138.6854 	DATA 	current s variable: 2to1-3.bmp
+138.8583 	DATA 	current s variable: 2to1-4.bmp
+139.0414 	DATA 	current s variable: 2to1-5.bmp
+139.2189 	DATA 	current s variable: 2to1-6.bmp
+139.3919 	DATA 	current s variable: 2to1-7.bmp
+141.2549 	DATA 	Keypress: 3
+141.3037 	DATA 	Keypress: 2
+141.4537 	DATA 	round 2 - trial 28 - throw: 1to2 - FBALL
+141.4537 	DATA 	current s variable: 1to2-1.bmp
+141.5121 	DATA 	Keypress: 3
+141.6356 	DATA 	current s variable: 1to2-2.bmp
+141.8020 	DATA 	current s variable: 1to2-3.bmp
+141.9686 	DATA 	current s variable: 1to2-4.bmp
+142.1416 	DATA 	current s variable: 1to2-5.bmp
+142.3246 	DATA 	current s variable: 1to2-6.bmp
+142.5034 	DATA 	current s variable: 1to2-7.bmp
+142.6686 	DATA 	current s variable: 1to2-8.bmp
+142.7043 	DATA 	Keypress: 3
+142.8534 	DATA 	PLAYER HAS BALL
+142.8636 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+142.8636 	DATA 	round 2 - trial 29 - throw: 2to3 - FBALL
+142.8636 	DATA 	current s variable: 2to3-1.bmp
+143.0410 	DATA 	current s variable: 2to3-2.bmp
+143.2196 	DATA 	current s variable: 2to3-3.bmp
+143.4085 	DATA 	current s variable: 2to3-4.bmp
+143.5922 	DATA 	current s variable: 2to3-5.bmp
+143.7766 	DATA 	current s variable: 2to3-6.bmp
+143.9536 	DATA 	current s variable: 2to3-7.bmp
+145.4037 	DATA 	Keypress: 2
+145.6026 	DATA 	round 2 - trial 30 - throw: 3to2 - FBALL
+145.6026 	DATA 	current s variable: 3to2-1.bmp
+145.7706 	DATA 	current s variable: 3to2-2.bmp
+145.9586 	DATA 	current s variable: 3to2-3.bmp
+146.1425 	DATA 	current s variable: 3to2-4.bmp
+146.3206 	DATA 	current s variable: 3to2-5.bmp
+146.4937 	DATA 	current s variable: 3to2-6.bmp
+146.6703 	DATA 	current s variable: 3to2-7.bmp
+146.8398 	DATA 	Keypress: 2
+146.8593 	DATA 	current s variable: 3to2-8.bmp
+147.0373 	DATA 	PLAYER HAS BALL
+152.0536 	DATA 	Displaying Round 3 label
+153.8788 	DATA 	Keypress: 2
+153.8798 	DATA 	Keypress: 3
+153.8809 	DATA 	Keypress: 2
+153.8817 	DATA 	Keypress: 3
+153.8826 	DATA 	Keypress: 2
+153.8835 	DATA 	Keypress: 3
+154.0776 	DATA 	Starting Round 3
+156.0276 	DATA 	round 3 - trial 0 - throw: 1to2 - FBALL
+156.0276 	DATA 	current s variable: 1to2-1.bmp
+156.2116 	DATA 	current s variable: 1to2-2.bmp
+156.3945 	DATA 	current s variable: 1to2-3.bmp
+156.4557 	DATA 	Keypress: 3
+156.5729 	DATA 	current s variable: 1to2-4.bmp
+156.7619 	DATA 	current s variable: 1to2-5.bmp
+156.8558 	DATA 	Keypress: 2
+156.9448 	DATA 	current s variable: 1to2-6.bmp
+156.9998 	DATA 	Keypress: 3
+157.1236 	DATA 	current s variable: 1to2-7.bmp
+157.3146 	DATA 	current s variable: 1to2-8.bmp
+157.4948 	DATA 	PLAYER HAS BALL
+157.5050 	DATA 	PLAYER THROWS TO 1 - RT 0.0101
+157.5050 	DATA 	round 3 - trial 1 - throw: 2to1 - FBALL
+157.5050 	DATA 	current s variable: 2to1-1.bmp
+157.6782 	DATA 	current s variable: 2to1-2.bmp
+157.8566 	DATA 	current s variable: 2to1-3.bmp
+158.0236 	DATA 	current s variable: 2to1-4.bmp
+158.2117 	DATA 	current s variable: 2to1-5.bmp
+158.3904 	DATA 	current s variable: 2to1-6.bmp
+158.5198 	DATA 	Keypress: 2
+158.5567 	DATA 	current s variable: 2to1-7.bmp
+158.6558 	DATA 	Keypress: 3
+160.0433 	DATA 	Keypress: 2
+160.0442 	DATA 	Keypress: 3
+160.0453 	DATA 	Keypress: 2
+160.0460 	DATA 	Keypress: 3
+160.2417 	DATA 	round 3 - trial 2 - throw: 1to2 - FBALL
+160.2417 	DATA 	current s variable: 1to2-1.bmp
+160.4306 	DATA 	current s variable: 1to2-2.bmp
+160.4431 	DATA 	Keypress: 2
+160.5838 	DATA 	Keypress: 3
+160.6127 	DATA 	current s variable: 1to2-3.bmp
+160.7968 	DATA 	current s variable: 1to2-4.bmp
+160.9796 	DATA 	current s variable: 1to2-5.bmp
+161.1198 	DATA 	Keypress: 2
+161.1623 	DATA 	current s variable: 1to2-6.bmp
+161.2638 	DATA 	Keypress: 3
+161.3412 	DATA 	current s variable: 1to2-7.bmp
+161.5076 	DATA 	current s variable: 1to2-8.bmp
+161.6748 	DATA 	PLAYER HAS BALL
+161.6851 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+161.6851 	DATA 	round 3 - trial 3 - throw: 2to1 - FBALL
+161.6851 	DATA 	current s variable: 2to1-1.bmp
+161.6997 	DATA 	Keypress: 2
+161.7597 	DATA 	Keypress: 3
+161.8579 	DATA 	current s variable: 2to1-2.bmp
+162.0417 	DATA 	current s variable: 2to1-3.bmp
+162.1677 	DATA 	Keypress: 2
+162.2150 	DATA 	current s variable: 2to1-4.bmp
+162.2481 	DATA 	Keypress: 3
+162.3968 	DATA 	current s variable: 2to1-5.bmp
+162.5796 	DATA 	current s variable: 2to1-6.bmp
+162.6477 	DATA 	Keypress: 2
+162.6797 	DATA 	Keypress: 3
+162.7634 	DATA 	current s variable: 2to1-7.bmp
+163.3148 	DATA 	Keypress: 2
+163.3156 	DATA 	Keypress: 3
+163.4877 	DATA 	Keypress: 2
+163.5137 	DATA 	round 3 - trial 4 - throw: 1to3 - FBALL
+163.5137 	DATA 	current s variable: 1to3-1.bmp
+163.5998 	DATA 	Keypress: 3
+163.6924 	DATA 	current s variable: 1to3-2.bmp
+163.8819 	DATA 	current s variable: 1to3-3.bmp
+164.0157 	DATA 	Keypress: 2
+164.0640 	DATA 	current s variable: 1to3-4.bmp
+164.1117 	DATA 	Keypress: 3
+164.2486 	DATA 	current s variable: 1to3-5.bmp
+164.4254 	DATA 	current s variable: 1to3-6.bmp
+164.5037 	DATA 	Keypress: 2
+164.5597 	DATA 	Keypress: 3
+164.5920 	DATA 	current s variable: 1to3-7.bmp
+164.7592 	DATA 	current s variable: 1to3-8.bmp
+164.9476 	DATA 	current s variable: 1to3-9.bmp
+164.9620 	DATA 	Keypress: 2
+165.0958 	DATA 	Keypress: 3
+165.4637 	DATA 	Keypress: 2
+165.6238 	DATA 	Keypress: 3
+165.6432 	DATA 	round 3 - trial 5 - throw: 3to1 - FBALL
+165.6432 	DATA 	current s variable: 3to1-1.bmp
+165.8306 	DATA 	current s variable: 3to1-2.bmp
+166.0091 	DATA 	current s variable: 3to1-3.bmp
+166.0397 	DATA 	Keypress: 2
+166.1278 	DATA 	Keypress: 3
+166.1763 	DATA 	current s variable: 3to1-4.bmp
+166.3589 	DATA 	current s variable: 3to1-5.bmp
+166.5198 	DATA 	Keypress: 2
+166.5309 	DATA 	current s variable: 3to1-6.bmp
+166.6077 	DATA 	Keypress: 3
+166.7091 	DATA 	current s variable: 3to1-7.bmp
+166.8922 	DATA 	current s variable: 3to1-8.bmp
+166.9517 	DATA 	Keypress: 2
+167.0157 	DATA 	Keypress: 3
+167.0806 	DATA 	current s variable: 3to1-9.bmp
+167.8766 	DATA 	Keypress: 2
+167.8774 	DATA 	Keypress: 3
+167.8787 	DATA 	Keypress: 3
+167.9597 	DATA 	Keypress: 2
+168.0754 	DATA 	round 3 - trial 6 - throw: 1to2 - FBALL
+168.0754 	DATA 	current s variable: 1to2-1.bmp
+168.2430 	DATA 	current s variable: 1to2-2.bmp
+168.3918 	DATA 	Keypress: 2
+168.4100 	DATA 	current s variable: 1to2-3.bmp
+168.4246 	DATA 	Keypress: 3
+168.5987 	DATA 	current s variable: 1to2-4.bmp
+168.7812 	DATA 	current s variable: 1to2-5.bmp
+168.8638 	DATA 	Keypress: 3
+168.9037 	DATA 	Keypress: 2
+168.9650 	DATA 	current s variable: 1to2-6.bmp
+169.1435 	DATA 	current s variable: 1to2-7.bmp
+169.3269 	DATA 	current s variable: 1to2-8.bmp
+169.3664 	DATA 	Keypress: 3
+169.3675 	DATA 	Keypress: 2
+169.5152 	DATA 	PLAYER HAS BALL
+169.5253 	DATA 	PLAYER THROWS TO 1 - RT 0.0101
+169.5253 	DATA 	round 3 - trial 7 - throw: 2to1 - FBALL
+169.5253 	DATA 	current s variable: 2to1-1.bmp
+169.6938 	DATA 	current s variable: 2to1-2.bmp
+169.7757 	DATA 	Keypress: 3
+169.8076 	DATA 	Keypress: 2
+169.8826 	DATA 	current s variable: 2to1-3.bmp
+170.0648 	DATA 	current s variable: 2to1-4.bmp
+170.2484 	DATA 	current s variable: 2to1-5.bmp
+170.2798 	DATA 	Keypress: 3
+170.3918 	DATA 	Keypress: 2
+170.4266 	DATA 	current s variable: 2to1-6.bmp
+170.5934 	DATA 	current s variable: 2to1-7.bmp
+170.7358 	DATA 	Keypress: 3
+171.7873 	DATA 	Keypress: 2
+171.7887 	DATA 	Keypress: 3
+171.7894 	DATA 	Keypress: 2
+171.7905 	DATA 	Keypress: 3
+171.7912 	DATA 	Keypress: 2
+171.9861 	DATA 	round 3 - trial 8 - throw: 1to3 - FBALL
+171.9862 	DATA 	current s variable: 1to3-1.bmp
+172.0877 	DATA 	Keypress: 3
+172.1517 	DATA 	Keypress: 2
+172.1605 	DATA 	current s variable: 1to3-2.bmp
+172.3284 	DATA 	current s variable: 1to3-3.bmp
+172.4989 	DATA 	current s variable: 1to3-4.bmp
+172.5438 	DATA 	Keypress: 3
+172.6238 	DATA 	Keypress: 2
+172.6771 	DATA 	current s variable: 1to3-5.bmp
+172.8606 	DATA 	current s variable: 1to3-6.bmp
+172.9838 	DATA 	Keypress: 3
+173.0272 	DATA 	current s variable: 1to3-7.bmp
+173.0638 	DATA 	Keypress: 2
+173.1941 	DATA 	current s variable: 1to3-8.bmp
+173.3674 	DATA 	current s variable: 1to3-9.bmp
+173.4319 	DATA 	Keypress: 3
+174.2228 	DATA 	Keypress: 2
+174.2246 	DATA 	Keypress: 3
+174.2254 	DATA 	Keypress: 2
+174.4216 	DATA 	round 3 - trial 9 - throw: 3to2 - FBALL
+174.4216 	DATA 	current s variable: 3to2-1.bmp
+174.5119 	DATA 	Keypress: 2
+174.5195 	DATA 	Keypress: 3
+174.5995 	DATA 	current s variable: 3to2-2.bmp
+174.7786 	DATA 	current s variable: 3to2-3.bmp
+174.9198 	DATA 	Keypress: 3
+174.9625 	DATA 	current s variable: 3to2-4.bmp
+175.1463 	DATA 	current s variable: 3to2-5.bmp
+175.3038 	DATA 	Keypress: 3
+175.3331 	DATA 	current s variable: 3to2-6.bmp
+175.5173 	DATA 	current s variable: 3to2-7.bmp
+175.6718 	DATA 	Keypress: 3
+175.6999 	DATA 	current s variable: 3to2-8.bmp
+175.8791 	DATA 	PLAYER HAS BALL
+175.8892 	DATA 	PLAYER THROWS TO 3 - RT 0.0101
+175.8892 	DATA 	round 3 - trial 10 - throw: 2to3 - FBALL
+175.8893 	DATA 	current s variable: 2to3-1.bmp
+175.9918 	DATA 	Keypress: 3
+176.0619 	DATA 	current s variable: 2to3-2.bmp
+176.2448 	DATA 	current s variable: 2to3-3.bmp
+176.3278 	DATA 	Keypress: 2
+176.4116 	DATA 	current s variable: 2to3-4.bmp
+176.5918 	DATA 	Keypress: 3
+176.5951 	DATA 	current s variable: 2to3-5.bmp
+176.7667 	DATA 	current s variable: 2to3-6.bmp
+176.7917 	DATA 	Keypress: 2
+176.9284 	DATA 	current s variable: 2to3-7.bmp
+177.0238 	DATA 	Keypress: 3
+177.4440 	DATA 	Keypress: 2
+177.4448 	DATA 	Keypress: 3
+177.6427 	DATA 	round 3 - trial 11 - throw: 3to1 - FBALL
+177.6427 	DATA 	current s variable: 3to1-1.bmp
+177.7918 	DATA 	Keypress: 2
+177.8076 	DATA 	Keypress: 3
+177.8122 	DATA 	current s variable: 3to1-2.bmp
+177.9957 	DATA 	current s variable: 3to1-3.bmp
+178.1788 	DATA 	current s variable: 3to1-4.bmp
+178.2318 	DATA 	Keypress: 3
+178.3358 	DATA 	Keypress: 2
+178.3619 	DATA 	current s variable: 3to1-5.bmp
+178.5292 	DATA 	current s variable: 3to1-6.bmp
+178.7122 	DATA 	current s variable: 3to1-7.bmp
+178.7597 	DATA 	Keypress: 3
+178.8718 	DATA 	Keypress: 2
+178.8851 	DATA 	current s variable: 3to1-8.bmp
+179.0686 	DATA 	current s variable: 3to1-9.bmp
+180.7798 	DATA 	Keypress: 2
+180.7806 	DATA 	Keypress: 3
+180.7818 	DATA 	Keypress: 2
+180.7826 	DATA 	Keypress: 3
+180.7837 	DATA 	Keypress: 3
+180.7845 	DATA 	Keypress: 2
+180.9785 	DATA 	round 3 - trial 12 - throw: 1to3 - FBALL
+180.9785 	DATA 	current s variable: 1to3-1.bmp
+181.1685 	DATA 	current s variable: 1to3-2.bmp
+181.3465 	DATA 	current s variable: 1to3-3.bmp
+181.5352 	DATA 	current s variable: 1to3-4.bmp
+181.6078 	DATA 	Keypress: 3
+181.6797 	DATA 	Keypress: 2
+181.7136 	DATA 	current s variable: 1to3-5.bmp
+181.8802 	DATA 	current s variable: 1to3-6.bmp
+182.0516 	DATA 	current s variable: 1to3-7.bmp
+182.1197 	DATA 	Keypress: 3
+182.1435 	DATA 	Keypress: 2
+182.2346 	DATA 	current s variable: 1to3-8.bmp
+182.4185 	DATA 	current s variable: 1to3-9.bmp
+182.5677 	DATA 	Keypress: 3
+182.5916 	DATA 	Keypress: 2
+183.3794 	DATA 	Keypress: 3
+183.3802 	DATA 	Keypress: 2
+183.3916 	DATA 	Keypress: 3
+183.4476 	DATA 	Keypress: 2
+183.5777 	DATA 	round 3 - trial 13 - throw: 3to1 - FBALL
+183.5777 	DATA 	current s variable: 3to1-1.bmp
+183.7474 	DATA 	current s variable: 3to1-2.bmp
+183.8478 	DATA 	Keypress: 3
+183.8716 	DATA 	Keypress: 2
+183.9312 	DATA 	current s variable: 3to1-3.bmp
+184.0976 	DATA 	current s variable: 3to1-4.bmp
+184.2317 	DATA 	Keypress: 3
+184.2641 	DATA 	current s variable: 3to1-5.bmp
+184.4308 	DATA 	current s variable: 3to1-6.bmp
+184.5976 	DATA 	current s variable: 3to1-7.bmp
+184.6398 	DATA 	Keypress: 2
+184.7038 	DATA 	Keypress: 3
+184.7642 	DATA 	current s variable: 3to1-8.bmp
+184.9312 	DATA 	current s variable: 3to1-9.bmp
+185.0798 	DATA 	Keypress: 3
+185.0955 	DATA 	Keypress: 2
+185.9776 	DATA 	Keypress: 3
+185.9786 	DATA 	Keypress: 2
+186.1760 	DATA 	round 3 - trial 14 - throw: 1to3 - FBALL
+186.1760 	DATA 	current s variable: 1to3-1.bmp
+186.3485 	DATA 	current s variable: 1to3-2.bmp
+186.5370 	DATA 	current s variable: 1to3-3.bmp
+186.7199 	DATA 	current s variable: 1to3-4.bmp
+186.8977 	DATA 	current s variable: 1to3-5.bmp
+187.0816 	DATA 	current s variable: 1to3-6.bmp
+187.2697 	DATA 	current s variable: 1to3-7.bmp
+187.4483 	DATA 	current s variable: 1to3-8.bmp
+187.6145 	DATA 	current s variable: 1to3-9.bmp
+189.7756 	DATA 	round 3 - trial 15 - throw: 3to1 - FBALL
+189.7757 	DATA 	current s variable: 3to1-1.bmp
+189.9546 	DATA 	current s variable: 3to1-2.bmp
+190.1380 	DATA 	current s variable: 3to1-3.bmp
+190.3159 	DATA 	current s variable: 3to1-4.bmp
+190.5046 	DATA 	current s variable: 3to1-5.bmp
+190.6889 	DATA 	current s variable: 3to1-6.bmp
+190.8661 	DATA 	current s variable: 3to1-7.bmp
+191.0497 	DATA 	current s variable: 3to1-8.bmp
+191.2321 	DATA 	current s variable: 3to1-9.bmp
+193.0936 	DATA 	round 3 - trial 16 - throw: 1to3 - FBALL
+193.0936 	DATA 	current s variable: 1to3-1.bmp
+193.2661 	DATA 	current s variable: 1to3-2.bmp
+193.4334 	DATA 	current s variable: 1to3-3.bmp
+193.6171 	DATA 	current s variable: 1to3-4.bmp
+193.7886 	DATA 	current s variable: 1to3-5.bmp
+193.9725 	DATA 	current s variable: 1to3-6.bmp
+194.1503 	DATA 	current s variable: 1to3-7.bmp
+194.3380 	DATA 	current s variable: 1to3-8.bmp
+194.5172 	DATA 	current s variable: 1to3-9.bmp
+196.3057 	DATA 	round 3 - trial 17 - throw: 3to2 - FBALL
+196.3057 	DATA 	current s variable: 3to2-1.bmp
+196.4888 	DATA 	current s variable: 3to2-2.bmp
+196.6670 	DATA 	current s variable: 3to2-3.bmp
+196.8571 	DATA 	current s variable: 3to2-4.bmp
+197.0334 	DATA 	current s variable: 3to2-5.bmp
+197.2052 	DATA 	current s variable: 3to2-6.bmp
+197.3883 	DATA 	current s variable: 3to2-7.bmp
+197.5676 	DATA 	current s variable: 3to2-8.bmp
+197.6639 	DATA 	Keypress: 3
+197.7335 	DATA 	PLAYER HAS BALL
+197.7437 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+197.7437 	DATA 	round 3 - trial 18 - throw: 2to3 - FBALL
+197.7437 	DATA 	current s variable: 2to3-1.bmp
+197.9185 	DATA 	current s variable: 2to3-2.bmp
+198.1052 	DATA 	current s variable: 2to3-3.bmp
+198.2892 	DATA 	current s variable: 2to3-4.bmp
+198.4684 	DATA 	current s variable: 2to3-5.bmp
+198.6418 	DATA 	current s variable: 2to3-6.bmp
+198.8188 	DATA 	current s variable: 2to3-7.bmp
+200.9646 	DATA 	round 3 - trial 19 - throw: 3to2 - FBALL
+200.9646 	DATA 	current s variable: 3to2-1.bmp
+201.1404 	DATA 	current s variable: 3to2-2.bmp
+201.3239 	DATA 	current s variable: 3to2-3.bmp
+201.5018 	DATA 	current s variable: 3to2-4.bmp
+201.6852 	DATA 	current s variable: 3to2-5.bmp
+201.8685 	DATA 	current s variable: 3to2-6.bmp
+202.0532 	DATA 	current s variable: 3to2-7.bmp
+202.1518 	DATA 	Keypress: 2
+202.2178 	DATA 	current s variable: 3to2-8.bmp
+202.3904 	DATA 	PLAYER HAS BALL
+202.4006 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+202.4006 	DATA 	round 3 - trial 20 - throw: 2to1 - FBALL
+202.4006 	DATA 	current s variable: 2to1-1.bmp
+202.5736 	DATA 	current s variable: 2to1-2.bmp
+202.7572 	DATA 	current s variable: 2to1-3.bmp
+202.9353 	DATA 	current s variable: 2to1-4.bmp
+203.1065 	DATA 	current s variable: 2to1-5.bmp
+203.2909 	DATA 	current s variable: 2to1-6.bmp
+203.4703 	DATA 	current s variable: 2to1-7.bmp
+205.6585 	DATA 	round 3 - trial 21 - throw: 1to2 - FBALL
+205.6585 	DATA 	current s variable: 1to2-1.bmp
+205.8361 	DATA 	current s variable: 1to2-2.bmp
+206.0094 	DATA 	current s variable: 1to2-3.bmp
+206.1866 	DATA 	current s variable: 1to2-4.bmp
+206.3745 	DATA 	current s variable: 1to2-5.bmp
+206.5533 	DATA 	current s variable: 1to2-6.bmp
+206.7419 	DATA 	current s variable: 1to2-7.bmp
+206.8077 	DATA 	Keypress: 3
+206.9203 	DATA 	current s variable: 1to2-8.bmp
+207.1086 	DATA 	PLAYER HAS BALL
+207.1188 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+207.1188 	DATA 	round 3 - trial 22 - throw: 2to3 - FBALL
+207.1188 	DATA 	current s variable: 2to3-1.bmp
+207.2866 	DATA 	current s variable: 2to3-2.bmp
+207.4528 	DATA 	current s variable: 2to3-3.bmp
+207.6252 	DATA 	current s variable: 2to3-4.bmp
+207.8085 	DATA 	current s variable: 2to3-5.bmp
+207.9866 	DATA 	current s variable: 2to3-6.bmp
+208.1711 	DATA 	current s variable: 2to3-7.bmp
+210.1786 	DATA 	round 3 - trial 23 - throw: 3to2 - FBALL
+210.1786 	DATA 	current s variable: 3to2-1.bmp
+210.3552 	DATA 	current s variable: 3to2-2.bmp
+210.5425 	DATA 	current s variable: 3to2-3.bmp
+210.7265 	DATA 	current s variable: 3to2-4.bmp
+210.9046 	DATA 	current s variable: 3to2-5.bmp
+211.0878 	DATA 	current s variable: 3to2-6.bmp
+211.2478 	DATA 	Keypress: 2
+211.2713 	DATA 	current s variable: 3to2-7.bmp
+211.4596 	DATA 	current s variable: 3to2-8.bmp
+211.6427 	DATA 	PLAYER HAS BALL
+211.6529 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+211.6529 	DATA 	round 3 - trial 24 - throw: 2to1 - FBALL
+211.6530 	DATA 	current s variable: 2to1-1.bmp
+211.8213 	DATA 	current s variable: 2to1-2.bmp
+211.8558 	DATA 	Keypress: 2
+211.9922 	DATA 	current s variable: 2to1-3.bmp
+212.1707 	DATA 	current s variable: 2to1-4.bmp
+212.3384 	DATA 	current s variable: 2to1-5.bmp
+212.5114 	DATA 	current s variable: 2to1-6.bmp
+212.6933 	DATA 	current s variable: 2to1-7.bmp
+213.7267 	DATA 	Keypress: 3
+213.9252 	DATA 	round 3 - trial 25 - throw: 1to2 - FBALL
+213.9252 	DATA 	current s variable: 1to2-1.bmp
+214.1074 	DATA 	current s variable: 1to2-2.bmp
+214.2893 	DATA 	current s variable: 1to2-3.bmp
+214.4776 	DATA 	current s variable: 1to2-4.bmp
+214.6562 	DATA 	current s variable: 1to2-5.bmp
+214.8438 	DATA 	current s variable: 1to2-6.bmp
+215.0228 	DATA 	current s variable: 1to2-7.bmp
+215.1918 	DATA 	Keypress: 3
+215.2058 	DATA 	current s variable: 1to2-8.bmp
+215.3887 	DATA 	PLAYER HAS BALL
+215.3989 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+215.3990 	DATA 	round 3 - trial 26 - throw: 2to1 - FBALL
+215.3990 	DATA 	current s variable: 2to1-1.bmp
+215.5732 	DATA 	current s variable: 2to1-2.bmp
+215.7614 	DATA 	current s variable: 2to1-3.bmp
+215.9447 	DATA 	current s variable: 2to1-4.bmp
+216.1226 	DATA 	current s variable: 2to1-5.bmp
+216.2892 	DATA 	current s variable: 2to1-6.bmp
+216.4770 	DATA 	current s variable: 2to1-7.bmp
+216.4914 	DATA 	Keypress: 3
+217.8055 	DATA 	round 3 - trial 27 - throw: 1to3 - FBALL
+217.8056 	DATA 	current s variable: 1to3-1.bmp
+217.8558 	DATA 	Keypress: 3
+217.9892 	DATA 	current s variable: 1to3-2.bmp
+218.1616 	DATA 	current s variable: 1to3-3.bmp
+218.3396 	DATA 	current s variable: 1to3-4.bmp
+218.5116 	DATA 	current s variable: 1to3-5.bmp
+218.6906 	DATA 	current s variable: 1to3-6.bmp
+218.8789 	DATA 	current s variable: 1to3-7.bmp
+219.0565 	DATA 	current s variable: 1to3-8.bmp
+219.2242 	DATA 	current s variable: 1to3-9.bmp
+220.4736 	DATA 	round 3 - trial 28 - throw: 3to1 - FBALL
+220.4736 	DATA 	current s variable: 3to1-1.bmp
+220.6620 	DATA 	current s variable: 3to1-2.bmp
+220.8456 	DATA 	current s variable: 3to1-3.bmp
+221.0236 	DATA 	current s variable: 3to1-4.bmp
+221.1902 	DATA 	current s variable: 3to1-5.bmp
+221.3567 	DATA 	current s variable: 3to1-6.bmp
+221.5299 	DATA 	current s variable: 3to1-7.bmp
+221.7122 	DATA 	current s variable: 3to1-8.bmp
+221.8968 	DATA 	current s variable: 3to1-9.bmp
+223.7947 	DATA 	round 3 - trial 29 - throw: 1to3 - FBALL
+223.7947 	DATA 	current s variable: 1to3-1.bmp
+223.9755 	DATA 	current s variable: 1to3-2.bmp
+224.1592 	DATA 	current s variable: 1to3-3.bmp
+224.3293 	DATA 	current s variable: 1to3-4.bmp
+224.5084 	DATA 	current s variable: 1to3-5.bmp
+224.6960 	DATA 	current s variable: 1to3-6.bmp
+224.8804 	DATA 	current s variable: 1to3-7.bmp
+225.0635 	DATA 	current s variable: 1to3-8.bmp
+225.2419 	DATA 	current s variable: 1to3-9.bmp
+226.5796 	DATA 	round 3 - trial 30 - throw: 3to2 - FBALL
+226.5796 	DATA 	current s variable: 3to2-1.bmp
+226.7587 	DATA 	current s variable: 3to2-2.bmp
+226.9300 	DATA 	current s variable: 3to2-3.bmp
+227.1136 	DATA 	current s variable: 3to2-4.bmp
+227.2913 	DATA 	current s variable: 3to2-5.bmp
+227.4640 	DATA 	current s variable: 3to2-6.bmp
+227.6418 	DATA 	current s variable: 3to2-7.bmp
+227.8262 	DATA 	current s variable: 3to2-8.bmp
+227.8643 	DATA 	Keypress: 3
+228.0133 	DATA 	PLAYER HAS BALL
+233.0417 	DATA 	Displaying Round 4 label
+234.8668 	DATA 	Keypress: 3
+234.8677 	DATA 	Keypress: 2
+235.0656 	DATA 	Starting Round 4
+235.2957 	DATA 	Keypress: 2
+236.8951 	DATA 	Keypress: 3
+236.8965 	DATA 	Keypress: 2
+236.8973 	DATA 	Keypress: 3
+236.8982 	DATA 	Keypress: 2
+236.8991 	DATA 	Keypress: 3
+236.9001 	DATA 	Keypress: 2
+236.9011 	DATA 	Keypress: 3
+236.9021 	DATA 	Keypress: 2
+236.9031 	DATA 	Keypress: 3
+236.9040 	DATA 	Keypress: 2
+236.9197 	DATA 	Keypress: 3
+237.0717 	DATA 	Keypress: 2
+237.0937 	DATA 	round 4 - trial 0 - throw: 1to3 - FBALL
+237.0937 	DATA 	current s variable: 1to3-1.bmp
+237.2318 	DATA 	Keypress: 3
+237.2665 	DATA 	current s variable: 1to3-2.bmp
+237.3598 	DATA 	Keypress: 2
+237.4442 	DATA 	current s variable: 1to3-3.bmp
+237.5200 	DATA 	Keypress: 3
+237.6106 	DATA 	current s variable: 1to3-4.bmp
+237.6877 	DATA 	Keypress: 2
+237.7774 	DATA 	current s variable: 1to3-5.bmp
+237.8557 	DATA 	Keypress: 3
+237.9504 	DATA 	current s variable: 1to3-6.bmp
+238.0878 	DATA 	Keypress: 2
+238.1287 	DATA 	current s variable: 1to3-7.bmp
+238.3167 	DATA 	current s variable: 1to3-8.bmp
+238.3309 	DATA 	Keypress: 3
+238.5004 	DATA 	current s variable: 1to3-9.bmp
+238.5358 	DATA 	Keypress: 2
+238.6557 	DATA 	Keypress: 3
+239.4512 	DATA 	Keypress: 2
+239.4520 	DATA 	Keypress: 3
+239.4529 	DATA 	Keypress: 2
+239.4540 	DATA 	Keypress: 3
+239.5038 	DATA 	Keypress: 2
+239.6497 	DATA 	round 4 - trial 1 - throw: 3to2 - FBALL
+239.6497 	DATA 	current s variable: 3to2-1.bmp
+239.6957 	DATA 	Keypress: 3
+239.8336 	DATA 	current s variable: 3to2-2.bmp
+239.8638 	DATA 	Keypress: 2
+240.0128 	DATA 	current s variable: 3to2-3.bmp
+240.1953 	DATA 	current s variable: 3to2-4.bmp
+240.2317 	DATA 	Keypress: 2
+240.3517 	DATA 	Keypress: 3
+240.3626 	DATA 	current s variable: 3to2-5.bmp
+240.5456 	DATA 	current s variable: 3to2-6.bmp
+240.6959 	DATA 	Keypress: 2
+240.7335 	DATA 	current s variable: 3to2-7.bmp
+240.7685 	DATA 	Keypress: 3
+240.9174 	DATA 	current s variable: 3to2-8.bmp
+241.1009 	DATA 	PLAYER HAS BALL
+241.1118 	DATA 	Keypress: 2
+241.1121 	DATA 	PLAYER THROWS TO 3 - RT 0.0111
+241.1121 	DATA 	round 4 - trial 2 - throw: 2to3 - FBALL
+241.1121 	DATA 	current s variable: 2to3-1.bmp
+241.2078 	DATA 	Keypress: 3
+241.2949 	DATA 	current s variable: 2to3-2.bmp
+241.4616 	DATA 	current s variable: 2to3-3.bmp
+241.6239 	DATA 	Keypress: 2
+241.6335 	DATA 	current s variable: 2to3-4.bmp
+241.6637 	DATA 	Keypress: 3
+241.7950 	DATA 	current s variable: 2to3-5.bmp
+241.9791 	DATA 	current s variable: 2to3-6.bmp
+242.0477 	DATA 	Keypress: 2
+242.0877 	DATA 	Keypress: 3
+242.1502 	DATA 	current s variable: 2to3-7.bmp
+243.4870 	DATA 	Keypress: 3
+243.4878 	DATA 	Keypress: 2
+243.4890 	DATA 	Keypress: 3
+243.4897 	DATA 	Keypress: 2
+243.4909 	DATA 	Keypress: 3
+243.4916 	DATA 	Keypress: 2
+243.6857 	DATA 	round 4 - trial 3 - throw: 3to1 - FBALL
+243.6858 	DATA 	current s variable: 3to1-1.bmp
+243.7597 	DATA 	Keypress: 3
+243.8637 	DATA 	Keypress: 2
+243.8639 	DATA 	current s variable: 3to1-2.bmp
+244.0515 	DATA 	current s variable: 3to1-3.bmp
+244.2311 	DATA 	current s variable: 3to1-4.bmp
+244.2451 	DATA 	Keypress: 2
+244.3357 	DATA 	Keypress: 3
+244.4138 	DATA 	current s variable: 3to1-5.bmp
+244.6024 	DATA 	current s variable: 3to1-6.bmp
+244.6477 	DATA 	Keypress: 2
+244.7358 	DATA 	Keypress: 3
+244.7802 	DATA 	current s variable: 3to1-7.bmp
+244.9532 	DATA 	current s variable: 3to1-8.bmp
+245.0238 	DATA 	Keypress: 2
+245.0957 	DATA 	Keypress: 3
+245.1355 	DATA 	current s variable: 3to1-9.bmp
+245.8422 	DATA 	Keypress: 2
+245.8432 	DATA 	Keypress: 3
+245.8796 	DATA 	Keypress: 2
+245.9196 	DATA 	Keypress: 3
+246.0406 	DATA 	round 4 - trial 4 - throw: 1to3 - FBALL
+246.0406 	DATA 	current s variable: 1to3-1.bmp
+246.2180 	DATA 	current s variable: 1to3-2.bmp
+246.3518 	DATA 	Keypress: 3
+246.3757 	DATA 	Keypress: 2
+246.4016 	DATA 	current s variable: 1to3-3.bmp
+246.5806 	DATA 	current s variable: 1to3-4.bmp
+246.7688 	DATA 	current s variable: 1to3-5.bmp
+246.8398 	DATA 	Keypress: 2
+246.8956 	DATA 	Keypress: 3
+246.9528 	DATA 	current s variable: 1to3-6.bmp
+247.1296 	DATA 	current s variable: 1to3-7.bmp
+247.2964 	DATA 	current s variable: 1to3-8.bmp
+247.3111 	DATA 	Keypress: 3
+247.3119 	DATA 	Keypress: 2
+247.4803 	DATA 	current s variable: 1to3-9.bmp
+249.0327 	DATA 	Keypress: 3
+249.0336 	DATA 	Keypress: 2
+249.0347 	DATA 	Keypress: 3
+249.0355 	DATA 	Keypress: 2
+249.0366 	DATA 	Keypress: 2
+249.0374 	DATA 	Keypress: 3
+249.0387 	DATA 	Keypress: 2
+249.0394 	DATA 	Keypress: 3
+249.2315 	DATA 	round 4 - trial 5 - throw: 3to1 - FBALL
+249.2315 	DATA 	current s variable: 3to1-1.bmp
+249.3117 	DATA 	Keypress: 3
+249.3355 	DATA 	Keypress: 2
+249.4154 	DATA 	current s variable: 3to1-2.bmp
+249.6036 	DATA 	current s variable: 3to1-3.bmp
+249.6638 	DATA 	Keypress: 3
+249.6957 	DATA 	Keypress: 2
+249.7866 	DATA 	current s variable: 3to1-4.bmp
+249.9644 	DATA 	current s variable: 3to1-5.bmp
+250.0238 	DATA 	Keypress: 3
+250.0315 	DATA 	Keypress: 2
+250.1314 	DATA 	current s variable: 3to1-6.bmp
+250.2985 	DATA 	current s variable: 3to1-7.bmp
+250.3758 	DATA 	Keypress: 3
+250.3836 	DATA 	Keypress: 2
+250.4870 	DATA 	current s variable: 3to1-8.bmp
+250.6694 	DATA 	current s variable: 3to1-9.bmp
+250.7278 	DATA 	Keypress: 2
+250.7355 	DATA 	Keypress: 3
+251.4440 	DATA 	Keypress: 3
+251.4450 	DATA 	Keypress: 2
+251.6426 	DATA 	round 4 - trial 6 - throw: 1to2 - FBALL
+251.6426 	DATA 	current s variable: 1to2-1.bmp
+251.6877 	DATA 	Keypress: 3
+251.8195 	DATA 	current s variable: 1to2-2.bmp
+251.9991 	DATA 	current s variable: 1to2-3.bmp
+252.0321 	DATA 	Keypress: 3
+252.0796 	DATA 	Keypress: 2
+252.1811 	DATA 	current s variable: 1to2-4.bmp
+252.3545 	DATA 	current s variable: 1to2-5.bmp
+252.4077 	DATA 	Keypress: 3
+252.4155 	DATA 	Keypress: 2
+252.5371 	DATA 	current s variable: 1to2-6.bmp
+252.7196 	DATA 	current s variable: 1to2-7.bmp
+252.7552 	DATA 	Keypress: 2
+252.7596 	DATA 	Keypress: 3
+252.9041 	DATA 	current s variable: 1to2-8.bmp
+253.0638 	DATA 	Keypress: 3
+253.0715 	DATA 	Keypress: 2
+253.0818 	DATA 	PLAYER HAS BALL
+253.0920 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+253.0920 	DATA 	round 4 - trial 7 - throw: 2to3 - FBALL
+253.0920 	DATA 	current s variable: 2to3-1.bmp
+253.2658 	DATA 	current s variable: 2to3-2.bmp
+253.3438 	DATA 	Keypress: 3
+253.3515 	DATA 	Keypress: 2
+253.4542 	DATA 	current s variable: 2to3-3.bmp
+253.6157 	DATA 	Keypress: 3
+253.6235 	DATA 	Keypress: 2
+253.6372 	DATA 	current s variable: 2to3-4.bmp
+253.8216 	DATA 	current s variable: 2to3-5.bmp
+253.9117 	DATA 	Keypress: 2
+253.9195 	DATA 	Keypress: 3
+254.0045 	DATA 	current s variable: 2to3-6.bmp
+254.1829 	DATA 	current s variable: 2to3-7.bmp
+254.2317 	DATA 	Keypress: 3
+254.2395 	DATA 	Keypress: 2
+255.4718 	DATA 	Keypress: 2
+255.4727 	DATA 	Keypress: 3
+255.4738 	DATA 	Keypress: 2
+255.4745 	DATA 	Keypress: 3
+255.4756 	DATA 	Keypress: 2
+255.4764 	DATA 	Keypress: 3
+255.4775 	DATA 	Keypress: 2
+255.4783 	DATA 	Keypress: 3
+255.6078 	DATA 	Keypress: 2
+255.6155 	DATA 	Keypress: 3
+255.6696 	DATA 	round 4 - trial 8 - throw: 3to2 - FBALL
+255.6696 	DATA 	current s variable: 3to2-1.bmp
+255.8318 	DATA 	Keypress: 3
+255.8396 	DATA 	Keypress: 2
+255.8550 	DATA 	current s variable: 3to2-2.bmp
+256.0318 	DATA 	Keypress: 3
+256.0376 	DATA 	current s variable: 3to2-3.bmp
+256.0492 	DATA 	Keypress: 2
+256.2077 	DATA 	Keypress: 3
+256.2155 	DATA 	Keypress: 2
+256.2162 	DATA 	current s variable: 3to2-4.bmp
+256.3880 	DATA 	current s variable: 3to2-5.bmp
+256.4025 	DATA 	Keypress: 3
+256.4033 	DATA 	Keypress: 2
+256.5727 	DATA 	current s variable: 3to2-6.bmp
+256.5855 	DATA 	Keypress: 3
+256.5863 	DATA 	Keypress: 2
+256.7545 	DATA 	current s variable: 3to2-7.bmp
+256.7691 	DATA 	Keypress: 3
+256.7700 	DATA 	Keypress: 2
+256.9334 	DATA 	current s variable: 3to2-8.bmp
+256.9481 	DATA 	Keypress: 3
+256.9490 	DATA 	Keypress: 2
+257.1118 	DATA 	Keypress: 3
+257.1166 	DATA 	PLAYER HAS BALL
+257.1267 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+257.1268 	DATA 	round 4 - trial 9 - throw: 2to3 - FBALL
+257.1268 	DATA 	current s variable: 2to3-1.bmp
+257.1416 	DATA 	Keypress: 2
+257.2558 	DATA 	Keypress: 3
+257.2716 	DATA 	Keypress: 2
+257.3000 	DATA 	current s variable: 2to3-2.bmp
+257.4398 	DATA 	Keypress: 3
+257.4476 	DATA 	Keypress: 2
+257.4831 	DATA 	current s variable: 2to3-3.bmp
+257.6237 	DATA 	Keypress: 3
+257.6315 	DATA 	Keypress: 2
+257.6711 	DATA 	current s variable: 2to3-4.bmp
+257.8078 	DATA 	Keypress: 3
+257.8155 	DATA 	Keypress: 2
+257.8495 	DATA 	current s variable: 2to3-5.bmp
+257.9757 	DATA 	Keypress: 3
+257.9836 	DATA 	Keypress: 2
+258.0221 	DATA 	current s variable: 2to3-6.bmp
+258.1517 	DATA 	Keypress: 3
+258.1596 	DATA 	Keypress: 2
+258.2000 	DATA 	current s variable: 2to3-7.bmp
+258.3198 	DATA 	Keypress: 3
+258.3276 	DATA 	Keypress: 2
+259.0231 	DATA 	Keypress: 3
+259.0240 	DATA 	Keypress: 2
+259.0252 	DATA 	Keypress: 3
+259.0261 	DATA 	Keypress: 2
+259.0273 	DATA 	Keypress: 3
+259.0281 	DATA 	Keypress: 2
+259.1598 	DATA 	Keypress: 3
+259.2216 	DATA 	round 4 - trial 10 - throw: 3to1 - FBALL
+259.2216 	DATA 	current s variable: 3to1-1.bmp
+259.4005 	DATA 	current s variable: 3to1-2.bmp
+259.4398 	DATA 	Keypress: 3
+259.5673 	DATA 	current s variable: 3to1-3.bmp
+259.6478 	DATA 	Keypress: 3
+259.6555 	DATA 	Keypress: 2
+259.7558 	DATA 	current s variable: 3to1-4.bmp
+259.8558 	DATA 	Keypress: 2
+259.8636 	DATA 	Keypress: 3
+259.9349 	DATA 	current s variable: 3to1-5.bmp
+260.0558 	DATA 	Keypress: 3
+260.0636 	DATA 	Keypress: 2
+260.1225 	DATA 	current s variable: 3to1-6.bmp
+260.2398 	DATA 	Keypress: 3
+260.2475 	DATA 	Keypress: 2
+260.2888 	DATA 	current s variable: 3to1-7.bmp
+260.4077 	DATA 	Keypress: 3
+260.4155 	DATA 	Keypress: 2
+260.4672 	DATA 	current s variable: 3to1-8.bmp
+260.5917 	DATA 	Keypress: 3
+260.5995 	DATA 	Keypress: 2
+260.6509 	DATA 	current s variable: 3to1-9.bmp
+260.7758 	DATA 	Keypress: 3
+260.7834 	DATA 	Keypress: 2
+261.3976 	DATA 	Keypress: 3
+261.3986 	DATA 	Keypress: 2
+261.3999 	DATA 	Keypress: 3
+261.4006 	DATA 	Keypress: 2
+261.4018 	DATA 	Keypress: 3
+261.4025 	DATA 	Keypress: 2
+261.5277 	DATA 	Keypress: 3
+261.5355 	DATA 	Keypress: 2
+261.5956 	DATA 	round 4 - trial 11 - throw: 1to3 - FBALL
+261.5956 	DATA 	current s variable: 1to3-1.bmp
+261.7278 	DATA 	Keypress: 3
+261.7729 	DATA 	current s variable: 1to3-2.bmp
+261.9558 	DATA 	current s variable: 1to3-3.bmp
+261.9699 	DATA 	Keypress: 3
+262.0797 	DATA 	Keypress: 2
+262.1346 	DATA 	current s variable: 1to3-4.bmp
+262.2237 	DATA 	Keypress: 3
+262.3071 	DATA 	current s variable: 1to3-5.bmp
+262.4078 	DATA 	Keypress: 2
+262.4877 	DATA 	Keypress: 3
+262.4897 	DATA 	current s variable: 1to3-6.bmp
+262.6396 	DATA 	Keypress: 2
+262.6724 	DATA 	current s variable: 1to3-7.bmp
+262.7917 	DATA 	Keypress: 3
+262.8508 	DATA 	current s variable: 1to3-8.bmp
+262.9118 	DATA 	Keypress: 2
+263.0392 	DATA 	current s variable: 1to3-9.bmp
+263.0685 	DATA 	Keypress: 3
+263.1836 	DATA 	Keypress: 2
+264.5399 	DATA 	Keypress: 3
+264.5408 	DATA 	Keypress: 2
+264.5419 	DATA 	Keypress: 3
+264.5426 	DATA 	Keypress: 2
+264.5437 	DATA 	Keypress: 3
+264.5445 	DATA 	Keypress: 2
+264.5455 	DATA 	Keypress: 2
+264.5463 	DATA 	Keypress: 3
+264.6478 	DATA 	Keypress: 2
+264.6636 	DATA 	Keypress: 3
+264.7381 	DATA 	round 4 - trial 12 - throw: 3to1 - FBALL
+264.7381 	DATA 	current s variable: 3to1-1.bmp
+264.9193 	DATA 	current s variable: 3to1-2.bmp
+264.9588 	DATA 	Keypress: 3
+265.0397 	DATA 	Keypress: 2
+265.1076 	DATA 	current s variable: 3to1-3.bmp
+265.2907 	DATA 	current s variable: 3to1-4.bmp
+265.3357 	DATA 	Keypress: 3
+265.4238 	DATA 	Keypress: 2
+265.4687 	DATA 	current s variable: 3to1-5.bmp
+265.6362 	DATA 	current s variable: 3to1-6.bmp
+265.7917 	DATA 	Keypress: 3
+265.8155 	DATA 	Keypress: 2
+265.8186 	DATA 	current s variable: 3to1-7.bmp
+265.9517 	DATA 	Keypress: 2
+265.9916 	DATA 	current s variable: 3to1-8.bmp
+266.1684 	DATA 	current s variable: 3to1-9.bmp
+266.2718 	DATA 	Keypress: 3
+267.9810 	DATA 	Keypress: 2
+267.9823 	DATA 	Keypress: 3
+267.9831 	DATA 	Keypress: 2
+267.9842 	DATA 	Keypress: 3
+267.9849 	DATA 	Keypress: 2
+267.9860 	DATA 	Keypress: 2
+267.9869 	DATA 	Keypress: 3
+268.1517 	DATA 	Keypress: 2
+268.1796 	DATA 	round 4 - trial 13 - throw: 1to2 - FBALL
+268.1796 	DATA 	current s variable: 1to2-1.bmp
+268.2718 	DATA 	Keypress: 3
+268.3572 	DATA 	current s variable: 1to2-2.bmp
+268.5365 	DATA 	current s variable: 1to2-3.bmp
+268.5997 	DATA 	Keypress: 2
+268.6718 	DATA 	Keypress: 3
+268.7096 	DATA 	current s variable: 1to2-4.bmp
+268.8915 	DATA 	current s variable: 1to2-5.bmp
+269.0318 	DATA 	Keypress: 3
+269.0746 	DATA 	current s variable: 1to2-6.bmp
+269.2157 	DATA 	Keypress: 2
+269.2539 	DATA 	current s variable: 1to2-7.bmp
+269.3678 	DATA 	Keypress: 3
+269.4371 	DATA 	current s variable: 1to2-8.bmp
+269.6079 	DATA 	PLAYER HAS BALL
+269.6181 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+269.6181 	DATA 	round 4 - trial 14 - throw: 2to1 - FBALL
+269.6181 	DATA 	current s variable: 2to1-1.bmp
+269.6877 	DATA 	Keypress: 2
+269.7277 	DATA 	Keypress: 3
+269.8041 	DATA 	current s variable: 2to1-2.bmp
+269.9866 	DATA 	current s variable: 2to1-3.bmp
+270.0958 	DATA 	Keypress: 3
+270.1746 	DATA 	current s variable: 2to1-4.bmp
+270.2398 	DATA 	Keypress: 2
+270.3587 	DATA 	current s variable: 2to1-5.bmp
+270.5422 	DATA 	current s variable: 2to1-6.bmp
+270.6237 	DATA 	Keypress: 3
+270.7204 	DATA 	current s variable: 2to1-7.bmp
+270.7545 	DATA 	Keypress: 2
+271.9740 	DATA 	Keypress: 3
+271.9750 	DATA 	Keypress: 2
+271.9761 	DATA 	Keypress: 2
+271.9769 	DATA 	Keypress: 3
+271.9836 	DATA 	Keypress: 2
+272.0557 	DATA 	Keypress: 3
+272.1725 	DATA 	round 4 - trial 15 - throw: 1to3 - FBALL
+272.1726 	DATA 	current s variable: 1to3-1.bmp
+272.3542 	DATA 	current s variable: 1to3-2.bmp
+272.5256 	DATA 	current s variable: 1to3-3.bmp
+272.7086 	DATA 	current s variable: 1to3-4.bmp
+272.8918 	DATA 	current s variable: 1to3-5.bmp
+273.0706 	DATA 	current s variable: 1to3-6.bmp
+273.1097 	DATA 	Keypress: 2
+273.1757 	DATA 	Keypress: 3
+273.2587 	DATA 	current s variable: 1to3-7.bmp
+273.4376 	DATA 	current s variable: 1to3-8.bmp
+273.5359 	DATA 	Keypress: 3
+273.6096 	DATA 	current s variable: 1to3-9.bmp
+273.6798 	DATA 	Keypress: 2
+274.2521 	DATA 	Keypress: 3
+274.2529 	DATA 	Keypress: 2
+274.4506 	DATA 	round 4 - trial 16 - throw: 3to2 - FBALL
+274.4506 	DATA 	current s variable: 3to2-1.bmp
+274.5678 	DATA 	Keypress: 3
+274.6221 	DATA 	current s variable: 3to2-2.bmp
+274.6958 	DATA 	Keypress: 2
+274.8044 	DATA 	current s variable: 3to2-3.bmp
+274.9758 	DATA 	Keypress: 3
+274.9777 	DATA 	current s variable: 3to2-4.bmp
+275.0113 	DATA 	Keypress: 2
+275.1602 	DATA 	current s variable: 3to2-5.bmp
+275.3386 	DATA 	current s variable: 3to2-6.bmp
+275.4478 	DATA 	Keypress: 3
+275.5117 	DATA 	current s variable: 3to2-7.bmp
+275.5518 	DATA 	Keypress: 2
+275.6937 	DATA 	current s variable: 3to2-8.bmp
+275.8772 	DATA 	PLAYER HAS BALL
+275.8874 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+275.8874 	DATA 	round 4 - trial 17 - throw: 2to1 - FBALL
+275.8874 	DATA 	current s variable: 2to1-1.bmp
+275.9678 	DATA 	Keypress: 3
+276.0545 	DATA 	current s variable: 2to1-2.bmp
+276.0878 	DATA 	Keypress: 2
+276.2222 	DATA 	current s variable: 2to1-3.bmp
+276.4103 	DATA 	current s variable: 2to1-4.bmp
+276.4717 	DATA 	Keypress: 3
+276.4875 	DATA 	Keypress: 2
+276.5880 	DATA 	current s variable: 2to1-5.bmp
+276.7549 	DATA 	current s variable: 2to1-6.bmp
+276.9198 	DATA 	Keypress: 3
+276.9266 	DATA 	current s variable: 2to1-7.bmp
+277.0557 	DATA 	Keypress: 2
+278.0332 	DATA 	Keypress: 3
+278.0340 	DATA 	Keypress: 2
+278.0557 	DATA 	Keypress: 2
+278.1598 	DATA 	Keypress: 3
+278.2316 	DATA 	round 4 - trial 18 - throw: 1to2 - FBALL
+278.2317 	DATA 	current s variable: 1to2-1.bmp
+278.4113 	DATA 	current s variable: 1to2-2.bmp
+278.5896 	DATA 	current s variable: 1to2-3.bmp
+278.6021 	DATA 	Keypress: 2
+278.6717 	DATA 	Keypress: 3
+278.7604 	DATA 	current s variable: 1to2-4.bmp
+278.9391 	DATA 	current s variable: 1to2-5.bmp
+279.0958 	DATA 	Keypress: 3
+279.1281 	DATA 	current s variable: 1to2-6.bmp
+279.1838 	DATA 	Keypress: 2
+279.3062 	DATA 	current s variable: 1to2-7.bmp
+279.4775 	DATA 	current s variable: 1to2-8.bmp
+279.5758 	DATA 	Keypress: 3
+279.6624 	DATA 	PLAYER HAS BALL
+279.6726 	DATA 	PLAYER THROWS TO 3 - RT 0.0102
+279.6726 	DATA 	round 4 - trial 19 - throw: 2to3 - FBALL
+279.6726 	DATA 	current s variable: 2to3-1.bmp
+279.7074 	DATA 	Keypress: 2
+279.8563 	DATA 	current s variable: 2to3-2.bmp
+280.0229 	DATA 	current s variable: 2to3-3.bmp
+280.0637 	DATA 	Keypress: 3
+280.1678 	DATA 	Keypress: 2
+280.1939 	DATA 	current s variable: 2to3-4.bmp
+280.3736 	DATA 	current s variable: 2to3-5.bmp
+280.5198 	DATA 	Keypress: 3
+280.5572 	DATA 	current s variable: 2to3-6.bmp
+280.5998 	DATA 	Keypress: 2
+280.7452 	DATA 	current s variable: 2to3-7.bmp
+281.4516 	DATA 	Keypress: 3
+281.4524 	DATA 	Keypress: 2
+281.4536 	DATA 	Keypress: 3
+281.4957 	DATA 	Keypress: 2
+281.6505 	DATA 	round 4 - trial 20 - throw: 3to2 - FBALL
+281.6505 	DATA 	current s variable: 3to2-1.bmp
+281.8236 	DATA 	current s variable: 3to2-2.bmp
+281.8380 	DATA 	Keypress: 3
+281.9118 	DATA 	Keypress: 2
+282.0128 	DATA 	current s variable: 3to2-3.bmp
+282.1941 	DATA 	current s variable: 3to2-4.bmp
+282.2958 	DATA 	Keypress: 3
+282.3597 	DATA 	Keypress: 2
+282.3785 	DATA 	current s variable: 3to2-5.bmp
+282.5618 	DATA 	current s variable: 3to2-6.bmp
+282.7198 	DATA 	Keypress: 2
+282.7444 	DATA 	current s variable: 3to2-7.bmp
+282.8078 	DATA 	Keypress: 3
+282.9282 	DATA 	current s variable: 3to2-8.bmp
+283.1076 	DATA 	PLAYER HAS BALL
+283.1177 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+283.1178 	DATA 	round 4 - trial 21 - throw: 2to1 - FBALL
+283.1178 	DATA 	current s variable: 2to1-1.bmp
+283.1597 	DATA 	Keypress: 2
+283.1916 	DATA 	Keypress: 3
+283.2951 	DATA 	current s variable: 2to1-2.bmp
+283.3758 	DATA 	Keypress: 2
+283.4557 	DATA 	Keypress: 3
+283.4786 	DATA 	current s variable: 2to1-3.bmp
+283.5837 	DATA 	Keypress: 2
+283.6574 	DATA 	current s variable: 2to1-4.bmp
+283.7036 	DATA 	Keypress: 3
+283.7997 	DATA 	Keypress: 2
+283.8456 	DATA 	current s variable: 2to1-5.bmp
+283.9437 	DATA 	Keypress: 3
+284.0235 	DATA 	current s variable: 2to1-6.bmp
+284.0638 	DATA 	Keypress: 2
+284.1917 	DATA 	Keypress: 3
+284.2125 	DATA 	current s variable: 2to1-7.bmp
+284.2957 	DATA 	Keypress: 2
+285.2006 	DATA 	Keypress: 3
+285.2017 	DATA 	Keypress: 2
+285.2027 	DATA 	Keypress: 3
+285.2038 	DATA 	Keypress: 2
+285.2046 	DATA 	Keypress: 3
+285.2057 	DATA 	Keypress: 2
+285.2064 	DATA 	Keypress: 3
+285.2876 	DATA 	Keypress: 2
+285.3992 	DATA 	round 4 - trial 22 - throw: 1to3 - FBALL
+285.3992 	DATA 	current s variable: 1to3-1.bmp
+285.4316 	DATA 	Keypress: 3
+285.5677 	DATA 	Keypress: 2
+285.5796 	DATA 	current s variable: 1to3-2.bmp
+285.7196 	DATA 	Keypress: 3
+285.7623 	DATA 	current s variable: 1to3-3.bmp
+285.9037 	DATA 	Keypress: 2
+285.9460 	DATA 	current s variable: 1to3-4.bmp
+285.9917 	DATA 	Keypress: 3
+286.1297 	DATA 	current s variable: 1to3-5.bmp
+286.1998 	DATA 	Keypress: 2
+286.2557 	DATA 	Keypress: 3
+286.3129 	DATA 	current s variable: 1to3-6.bmp
+286.4398 	DATA 	Keypress: 2
+286.4971 	DATA 	current s variable: 1to3-7.bmp
+286.6638 	DATA 	Keypress: 3
+286.6742 	DATA 	current s variable: 1to3-8.bmp
+286.8478 	DATA 	Keypress: 2
+286.8619 	DATA 	current s variable: 1to3-9.bmp
+286.9197 	DATA 	Keypress: 3
+288.0675 	DATA 	Keypress: 2
+288.0683 	DATA 	Keypress: 3
+288.0694 	DATA 	Keypress: 2
+288.0701 	DATA 	Keypress: 3
+288.0712 	DATA 	Keypress: 2
+288.0719 	DATA 	Keypress: 3
+288.0730 	DATA 	Keypress: 2
+288.0738 	DATA 	Keypress: 3
+288.1996 	DATA 	Keypress: 2
+288.2661 	DATA 	round 4 - trial 23 - throw: 3to1 - FBALL
+288.2661 	DATA 	current s variable: 3to1-1.bmp
+288.3198 	DATA 	Keypress: 3
+288.4414 	DATA 	current s variable: 3to1-2.bmp
+288.5196 	DATA 	Keypress: 2
+288.6130 	DATA 	current s variable: 3to1-3.bmp
+288.6797 	DATA 	Keypress: 3
+288.7928 	DATA 	current s variable: 3to1-4.bmp
+288.8638 	DATA 	Keypress: 2
+288.9799 	DATA 	current s variable: 3to1-5.bmp
+289.0158 	DATA 	Keypress: 3
+289.1588 	DATA 	current s variable: 3to1-6.bmp
+289.2077 	DATA 	Keypress: 2
+289.3466 	DATA 	current s variable: 3to1-7.bmp
+289.3588 	DATA 	Keypress: 3
+289.4637 	DATA 	Keypress: 2
+289.5307 	DATA 	current s variable: 3to1-8.bmp
+289.6076 	DATA 	Keypress: 3
+289.7086 	DATA 	current s variable: 3to1-9.bmp
+289.7230 	DATA 	Keypress: 2
+289.8318 	DATA 	Keypress: 3
+291.1153 	DATA 	Keypress: 2
+291.1162 	DATA 	Keypress: 3
+291.1174 	DATA 	Keypress: 2
+291.1184 	DATA 	Keypress: 3
+291.1194 	DATA 	Keypress: 2
+291.1201 	DATA 	Keypress: 3
+291.1213 	DATA 	Keypress: 2
+291.1220 	DATA 	Keypress: 3
+291.1232 	DATA 	Keypress: 2
+291.1516 	DATA 	Keypress: 3
+291.2876 	DATA 	Keypress: 2
+291.3137 	DATA 	round 4 - trial 24 - throw: 1to3 - FBALL
+291.3137 	DATA 	current s variable: 1to3-1.bmp
+291.4076 	DATA 	Keypress: 3
+291.4923 	DATA 	current s variable: 1to3-2.bmp
+291.5197 	DATA 	Keypress: 2
+291.6476 	DATA 	Keypress: 3
+291.6602 	DATA 	current s variable: 1to3-3.bmp
+291.7677 	DATA 	Keypress: 2
+291.8305 	DATA 	current s variable: 1to3-4.bmp
+291.9196 	DATA 	Keypress: 3
+292.0135 	DATA 	current s variable: 1to3-5.bmp
+292.0337 	DATA 	Keypress: 2
+292.1516 	DATA 	Keypress: 3
+292.1978 	DATA 	current s variable: 1to3-6.bmp
+292.2796 	DATA 	Keypress: 2
+292.3810 	DATA 	current s variable: 1to3-7.bmp
+292.4157 	DATA 	Keypress: 3
+292.5517 	DATA 	Keypress: 2
+292.5636 	DATA 	current s variable: 1to3-8.bmp
+292.6876 	DATA 	Keypress: 3
+292.7478 	DATA 	current s variable: 1to3-9.bmp
+292.8317 	DATA 	Keypress: 2
+294.1516 	DATA 	Keypress: 3
+294.1526 	DATA 	Keypress: 2
+294.1535 	DATA 	Keypress: 3
+294.1542 	DATA 	Keypress: 2
+294.1553 	DATA 	Keypress: 3
+294.1562 	DATA 	Keypress: 2
+294.1571 	DATA 	Keypress: 3
+294.1581 	DATA 	Keypress: 2
+294.1589 	DATA 	Keypress: 3
+294.3501 	DATA 	round 4 - trial 25 - throw: 3to2 - FBALL
+294.3501 	DATA 	current s variable: 3to2-1.bmp
+294.5321 	DATA 	current s variable: 3to2-2.bmp
+294.6718 	DATA 	Keypress: 2
+294.7146 	DATA 	current s variable: 3to2-3.bmp
+294.7918 	DATA 	Keypress: 3
+294.8979 	DATA 	current s variable: 3to2-4.bmp
+295.0078 	DATA 	Keypress: 2
+295.0557 	DATA 	Keypress: 3
+295.0763 	DATA 	current s variable: 3to2-5.bmp
+295.2431 	DATA 	current s variable: 3to2-6.bmp
+295.2798 	DATA 	Keypress: 2
+295.3598 	DATA 	Keypress: 3
+295.4159 	DATA 	current s variable: 3to2-7.bmp
+295.5678 	DATA 	Keypress: 2
+295.5939 	DATA 	current s variable: 3to2-8.bmp
+295.6319 	DATA 	Keypress: 3
+295.7779 	DATA 	PLAYER HAS BALL
+295.7838 	DATA 	Keypress: 2
+295.7882 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+295.7882 	DATA 	round 4 - trial 26 - throw: 2to1 - FBALL
+295.7882 	DATA 	current s variable: 2to1-1.bmp
+295.9826 	DATA 	current s variable: 2to1-2.bmp
+296.0159 	DATA 	Keypress: 2
+296.1648 	DATA 	current s variable: 2to1-3.bmp
+296.2001 	DATA 	Keypress: 3
+296.3488 	DATA 	current s variable: 2to1-4.bmp
+296.3997 	DATA 	Keypress: 2
+296.4557 	DATA 	Keypress: 3
+296.5316 	DATA 	current s variable: 2to1-5.bmp
+296.6477 	DATA 	Keypress: 2
+296.7165 	DATA 	current s variable: 2to1-6.bmp
+296.7284 	DATA 	Keypress: 3
+296.8798 	DATA 	Keypress: 2
+296.8936 	DATA 	current s variable: 2to1-7.bmp
+296.9758 	DATA 	Keypress: 3
+297.3930 	DATA 	Keypress: 2
+297.3939 	DATA 	Keypress: 3
+297.4236 	DATA 	Keypress: 2
+297.5277 	DATA 	Keypress: 3
+297.5917 	DATA 	round 4 - trial 27 - throw: 1to2 - FBALL
+297.5917 	DATA 	current s variable: 1to2-1.bmp
+297.6957 	DATA 	Keypress: 2
+297.7656 	DATA 	current s variable: 1to2-2.bmp
+297.8158 	DATA 	Keypress: 3
+297.9490 	DATA 	current s variable: 1to2-3.bmp
+297.9779 	DATA 	Keypress: 2
+298.1038 	DATA 	Keypress: 3
+298.1268 	DATA 	current s variable: 1to2-4.bmp
+298.2717 	DATA 	Keypress: 2
+298.3000 	DATA 	current s variable: 1to2-5.bmp
+298.3677 	DATA 	Keypress: 3
+298.4785 	DATA 	current s variable: 1to2-6.bmp
+298.5437 	DATA 	Keypress: 2
+298.6397 	DATA 	Keypress: 3
+298.6662 	DATA 	current s variable: 1to2-7.bmp
+298.8317 	DATA 	Keypress: 2
+298.8497 	DATA 	current s variable: 1to2-8.bmp
+298.9277 	DATA 	Keypress: 3
+299.0328 	DATA 	PLAYER HAS BALL
+299.0429 	DATA 	PLAYER THROWS TO 1 - RT 0.0102
+299.0429 	DATA 	round 4 - trial 28 - throw: 2to1 - FBALL
+299.0429 	DATA 	current s variable: 2to1-1.bmp
+299.1197 	DATA 	Keypress: 2
+299.1838 	DATA 	Keypress: 3
+299.2115 	DATA 	current s variable: 2to1-2.bmp
+299.3517 	DATA 	Keypress: 2
+299.3830 	DATA 	current s variable: 2to1-3.bmp
+299.4477 	DATA 	Keypress: 3
+299.5619 	DATA 	current s variable: 2to1-4.bmp
+299.6317 	DATA 	Keypress: 2
+299.6957 	DATA 	Keypress: 3
+299.7496 	DATA 	current s variable: 2to1-5.bmp
+299.8798 	DATA 	Keypress: 2
+299.9116 	DATA 	Keypress: 3
+299.9325 	DATA 	current s variable: 2to1-6.bmp
+300.1118 	DATA 	Keypress: 2
+300.1122 	DATA 	current s variable: 2to1-7.bmp
+300.1526 	DATA 	Keypress: 3
+301.2988 	DATA 	Keypress: 2
+301.2996 	DATA 	Keypress: 3
+301.3007 	DATA 	Keypress: 2
+301.3015 	DATA 	Keypress: 3
+301.3028 	DATA 	Keypress: 3
+301.3038 	DATA 	Keypress: 3
+301.3045 	DATA 	Keypress: 2
+301.3056 	DATA 	Keypress: 3
+301.3062 	DATA 	Keypress: 2
+301.4397 	DATA 	Keypress: 3
+301.4877 	DATA 	Keypress: 2
+301.4977 	DATA 	round 4 - trial 29 - throw: 1to2 - FBALL
+301.4977 	DATA 	current s variable: 1to2-1.bmp
+301.6478 	DATA 	Keypress: 3
+301.6797 	DATA 	Keypress: 2
+301.6836 	DATA 	current s variable: 1to2-2.bmp
+301.8478 	DATA 	Keypress: 3
+301.8503 	DATA 	current s variable: 1to2-3.bmp
+301.8799 	DATA 	Keypress: 2
+302.0282 	DATA 	current s variable: 1to2-4.bmp
+302.0679 	DATA 	Keypress: 3
+302.2169 	DATA 	current s variable: 1to2-5.bmp
+302.3200 	DATA 	Keypress: 3
+302.3998 	DATA 	current s variable: 1to2-6.bmp
+302.5118 	DATA 	Keypress: 3
+302.5789 	DATA 	current s variable: 1to2-7.bmp
+302.7118 	DATA 	Keypress: 3
+302.7669 	DATA 	current s variable: 1to2-8.bmp
+302.8958 	DATA 	Keypress: 3
+302.9452 	DATA 	PLAYER HAS BALL
+302.9554 	DATA 	PLAYER THROWS TO 1 - RT 0.0101
+302.9554 	DATA 	round 4 - trial 30 - throw: 2to1 - FBALL
+302.9554 	DATA 	current s variable: 2to1-1.bmp
+303.0638 	DATA 	Keypress: 2
+303.1295 	DATA 	current s variable: 2to1-2.bmp
+303.2398 	DATA 	Keypress: 2
+303.3192 	DATA 	current s variable: 2to1-3.bmp
+303.4398 	DATA 	Keypress: 3
+303.5012 	DATA 	current s variable: 2to1-4.bmp
+303.6238 	DATA 	Keypress: 3
+303.6796 	DATA 	current s variable: 2to1-5.bmp
+303.8238 	DATA 	Keypress: 2
+303.8670 	DATA 	current s variable: 2to1-6.bmp
+304.0077 	DATA 	Keypress: 2
+304.0506 	DATA 	current s variable: 2to1-7.bmp
+304.1998 	DATA 	Keypress: 2
+305.8279 	DATA 	Keypress: 3
+305.8289 	DATA 	Keypress: 3
+305.8298 	DATA 	Keypress: 3
+305.8307 	DATA 	Keypress: 3
+305.8317 	DATA 	Keypress: 3
+305.8326 	DATA 	Keypress: 3
+305.8335 	DATA 	Keypress: 3
+305.8345 	DATA 	Keypress: 2
+305.8877 	DATA 	Keypress: 2
+306.0264 	DATA 	RETURN with 31 Trial Count and 70 Trial Clock
+310.8480 	DATA 	Keypress: 2
+310.8490 	DATA 	Keypress: 3
+310.8499 	DATA 	Keypress: 2
+310.8508 	DATA 	Keypress: 3
+310.8518 	DATA 	Keypress: 2
+310.8525 	DATA 	Keypress: 3
+310.8536 	DATA 	Keypress: 3
+310.8544 	DATA 	Keypress: 2
+312.5437 	DATA 	Keypress: 2
+321.7288 	DATA 	PICTURE: 55.png
+323.7521 	DATA 	PICTURE: reset_image
+324.9215 	DATA 	PICTURE: 17.png
+326.9361 	DATA 	PICTURE: reset_image
+328.1112 	DATA 	PICTURE: 22.png
+330.1272 	DATA 	PICTURE: reset_image
+331.3089 	DATA 	PICTURE: 6.png
+333.3220 	DATA 	PICTURE: reset_image
+334.4890 	DATA 	PICTURE: 7.png
+336.5057 	DATA 	PICTURE: reset_image
+337.6763 	DATA 	PICTURE: 56.png
+339.6891 	DATA 	PICTURE: reset_image
+340.8532 	DATA 	PICTURE: 48.png
+342.8842 	DATA 	PICTURE: reset_image
+344.0412 	DATA 	PICTURE: 46.png
+346.0591 	DATA 	PICTURE: reset_image
+347.2226 	DATA 	PICTURE: 29.png
+349.2421 	DATA 	PICTURE: reset_image
+350.4302 	DATA 	PICTURE: 53.png
+352.4432 	DATA 	PICTURE: reset_image
+353.6151 	DATA 	PICTURE: 33.png
+355.6329 	DATA 	PICTURE: reset_image
+356.8106 	DATA 	PICTURE: 1.png
+358.8280 	DATA 	PICTURE: reset_image
+360.0054 	DATA 	PICTURE: 43.png
+362.0203 	DATA 	PICTURE: reset_image
+363.2016 	DATA 	PICTURE: 12.png
+365.2135 	DATA 	PICTURE: reset_image
+366.3984 	DATA 	PICTURE: 4.png
+368.4129 	DATA 	PICTURE: reset_image
+369.5875 	DATA 	PICTURE: 41.png
+371.5982 	DATA 	PICTURE: reset_image
+372.7799 	DATA 	PICTURE: 26.png
+374.7990 	DATA 	PICTURE: reset_image
+375.9913 	DATA 	PICTURE: 24.png
+378.0081 	DATA 	PICTURE: reset_image
+379.1647 	DATA 	PICTURE: 37.png
+381.1844 	DATA 	PICTURE: reset_image
+382.3492 	DATA 	PICTURE: 3.png
+384.3672 	DATA 	PICTURE: reset_image
+385.5240 	DATA 	PICTURE: 51.png
+387.5353 	DATA 	PICTURE: reset_image
+388.7158 	DATA 	PICTURE: 28.png
+390.7370 	DATA 	PICTURE: reset_image
+391.9067 	DATA 	PICTURE: 13.png
+393.9211 	DATA 	PICTURE: reset_image
+395.0981 	DATA 	PICTURE: 5.png
+397.1055 	DATA 	PICTURE: reset_image
+398.2892 	DATA 	PICTURE: 44.png
+400.3071 	DATA 	PICTURE: reset_image
+401.4920 	DATA 	PICTURE: 49.png
+403.5061 	DATA 	PICTURE: reset_image
+404.7049 	DATA 	PICTURE: 23.png
+406.7251 	DATA 	PICTURE: reset_image
+407.9291 	DATA 	PICTURE: 25.png
+409.9410 	DATA 	PICTURE: reset_image
+411.1178 	DATA 	PICTURE: 20.png
+413.1331 	DATA 	PICTURE: reset_image
+414.3113 	DATA 	PICTURE: 52.png
+416.3272 	DATA 	PICTURE: reset_image
+417.5025 	DATA 	PICTURE: 39.png
+419.5101 	DATA 	PICTURE: reset_image
+420.6857 	DATA 	PICTURE: 45.png
+422.6947 	DATA 	PICTURE: reset_image
+423.8623 	DATA 	PICTURE: 34.png
+425.8793 	DATA 	PICTURE: reset_image
+427.0742 	DATA 	PICTURE: 9.png
+429.0971 	DATA 	PICTURE: reset_image
+430.2818 	DATA 	PICTURE: 10.png
+432.2970 	DATA 	PICTURE: reset_image
+433.4741 	DATA 	PICTURE: 19.png
+435.4821 	DATA 	PICTURE: reset_image
+436.6526 	DATA 	PICTURE: 8.png
+438.6651 	DATA 	PICTURE: reset_image
+439.8623 	DATA 	PICTURE: 11.png
+441.8840 	DATA 	PICTURE: reset_image
+443.0683 	DATA 	PICTURE: 31.png
+445.0840 	DATA 	PICTURE: reset_image
+446.2511 	DATA 	PICTURE: 42.png
+448.2680 	DATA 	PICTURE: reset_image
+449.4468 	DATA 	PICTURE: 15.png
+451.4710 	DATA 	PICTURE: reset_image
+452.6526 	DATA 	PICTURE: 47.png
+454.6691 	DATA 	PICTURE: reset_image
+455.8468 	DATA 	PICTURE: 38.png
+457.8620 	DATA 	PICTURE: reset_image
+459.0386 	DATA 	PICTURE: 27.png
+461.0551 	DATA 	PICTURE: reset_image
+462.2422 	DATA 	PICTURE: 35.png
+464.2559 	DATA 	PICTURE: reset_image
+465.4125 	DATA 	PICTURE: 54.png
+467.4290 	DATA 	PICTURE: reset_image
+468.6006 	DATA 	PICTURE: 32.png
+470.6181 	DATA 	PICTURE: reset_image
+471.7636 	DATA 	PICTURE: 50.png
+473.7859 	DATA 	PICTURE: reset_image
+474.9634 	DATA 	PICTURE: 2.png
+476.9811 	DATA 	PICTURE: reset_image
+478.1530 	DATA 	PICTURE: 36.png
+480.1678 	DATA 	PICTURE: reset_image
+481.3274 	DATA 	PICTURE: 16.png
+483.3437 	DATA 	PICTURE: reset_image
+484.5264 	DATA 	PICTURE: 14.png
+486.5453 	DATA 	PICTURE: reset_image
+487.7163 	DATA 	PICTURE: 21.png
+489.7284 	DATA 	PICTURE: reset_image
+490.8857 	DATA 	PICTURE: 30.png
+492.9041 	DATA 	PICTURE: reset_image
+494.0530 	DATA 	PICTURE: 18.png
+496.0700 	DATA 	PICTURE: reset_image
+497.2437 	DATA 	PICTURE: 40.png
+499.2644 	DATA 	PICTURE: reset_image
+503.9918 	DATA 	Keypress: space
+504.8167 	DATA 	Keypress: space
+506.8989 	DATA 	Mouse: Left button down, pos=(1266,342)
+507.0338 	DATA 	Mouse:  Left button up, pos=(1266,342)
+508.1003 	DATA 	Mouse: Left button down, pos=(1287,418)
+508.2169 	DATA 	Mouse:  Left button up, pos=(1287,418)
+508.6006 	DATA 	Mouse: Left button down, pos=(1255,308)
+508.7330 	DATA 	Mouse:  Left button up, pos=(1255,308)
+509.2345 	DATA 	Mouse: Left button down, pos=(1251,156)
+509.2840 	DATA 	Keypress: return
+509.2867 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+509.2869 	DATA 	RatingScale unnamed RatingScale: rating RT=5.261
+509.2869 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 4.077), ('       3:\nmoderately', 5.261)]
+509.2996 	DATA 	Question Number: 20 , Response:        3:
+moderately
+509.3835 	DATA 	Mouse:  Left button up, pos=(1251,156)
+510.3180 	DATA 	Mouse: Left button down, pos=(1287,431)
+510.4537 	DATA 	Mouse:  Left button up, pos=(1287,431)
+510.6185 	DATA 	Keypress: return
+510.6217 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+510.6218 	DATA 	RatingScale unnamed RatingScale: rating RT=1.291
+510.6218 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.989), ('       3:\nmoderately', 1.291)]
+510.6334 	DATA 	Question Number: 30 , Response:        3:
+moderately
+510.9361 	DATA 	Mouse: Left button down, pos=(1287,431)
+511.0836 	DATA 	Mouse:  Left button up, pos=(1287,431)
+511.2678 	DATA 	Keypress: return
+511.2707 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+511.2708 	DATA 	RatingScale unnamed RatingScale: rating RT=0.609
+511.2708 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.274), ('       3:\nmoderately', 0.609)]
+511.2837 	DATA 	Question Number: 4 , Response:        3:
+moderately
+511.6518 	DATA 	Keypress: return
+511.6521 	DATA 	Mouse: Left button down, pos=(1287,431)
+511.7671 	DATA 	Mouse:  Left button up, pos=(1288,431)
+511.8506 	DATA 	Mouse: Left button down, pos=(1289,432)
+511.9344 	DATA 	Keypress: return
+511.9374 	DATA 	Mouse:  Left button up, pos=(1292,435)
+511.9376 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+511.9378 	DATA 	RatingScale unnamed RatingScale: rating RT=0.626
+511.9378 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.343), ('       3:\nmoderately', 0.626)]
+511.9512 	DATA 	Question Number: 19 , Response:        3:
+moderately
+512.0072 	DATA 	Mouse: Left button down, pos=(1292,435)
+512.1016 	DATA 	Mouse:  Left button up, pos=(1292,435)
+512.1510 	DATA 	Keypress: return
+512.1839 	DATA 	Mouse: Left button down, pos=(1292,435)
+512.2676 	DATA 	Mouse:  Left button up, pos=(1292,435)
+512.3341 	DATA 	Mouse: Left button down, pos=(1292,435)
+512.3842 	DATA 	Keypress: return
+512.3870 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+512.3871 	DATA 	RatingScale unnamed RatingScale: rating RT=0.407
+512.3872 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.03), ('       3:\nmoderately', 0.407)]
+512.4009 	DATA 	Question Number: 6 , Response:        3:
+moderately
+512.4358 	DATA 	Mouse:  Left button up, pos=(1292,435)
+512.5013 	DATA 	Mouse: Left button down, pos=(1292,435)
+512.6008 	DATA 	Mouse:  Left button up, pos=(1293,435)
+512.6018 	DATA 	Keypress: return
+512.6673 	DATA 	Mouse: Left button down, pos=(1293,435)
+512.7686 	DATA 	Keypress: return
+512.7718 	DATA 	Mouse:  Left button up, pos=(1293,435)
+512.8169 	DATA 	Mouse: Left button down, pos=(1293,435)
+512.9177 	DATA 	Mouse:  Left button up, pos=(1295,435)
+512.9544 	DATA 	Keypress: return
+512.9546 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+512.9547 	DATA 	RatingScale unnamed RatingScale: rating RT=0.525
+512.9547 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.074), ('       3:\nmoderately', 0.525)]
+512.9676 	DATA 	Question Number: 11 , Response:        3:
+moderately
+512.9996 	DATA 	Mouse: Left button down, pos=(1295,435)
+513.0841 	DATA 	Mouse:  Left button up, pos=(1296,436)
+513.1339 	DATA 	Mouse: Left button down, pos=(1297,436)
+513.1375 	DATA 	Keypress: return
+513.2343 	DATA 	Mouse:  Left button up, pos=(1298,436)
+513.3003 	DATA 	Mouse: Left button down, pos=(1299,436)
+513.3354 	DATA 	Keypress: return
+513.4014 	DATA 	Mouse:  Left button up, pos=(1304,437)
+513.4679 	DATA 	Mouse: Left button down, pos=(1304,437)
+513.5361 	DATA 	Keypress: return
+513.5388 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+513.5389 	DATA 	RatingScale unnamed RatingScale: rating RT=0.539
+513.5389 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.006), ('       3:\nmoderately', 0.539)]
+513.5510 	DATA 	Question Number: 21 , Response:        3:
+moderately
+513.5787 	DATA 	Mouse:  Left button up, pos=(1304,437)
+513.6353 	DATA 	Mouse: Left button down, pos=(1305,437)
+513.7180 	DATA 	Mouse:  Left button up, pos=(1306,437)
+513.7223 	DATA 	Keypress: return
+513.8178 	DATA 	Mouse: Left button down, pos=(1307,437)
+513.9023 	DATA 	Mouse:  Left button up, pos=(1307,437)
+513.9033 	DATA 	Keypress: return
+513.9693 	DATA 	Mouse: Left button down, pos=(1307,437)
+514.0546 	DATA 	Mouse:  Left button up, pos=(1307,437)
+514.0860 	DATA 	Keypress: return
+514.0889 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+514.0890 	DATA 	RatingScale unnamed RatingScale: rating RT=0.510
+514.0890 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.058), ('       3:\nmoderately', 0.51)]
+514.1008 	DATA 	Question Number: 16 , Response:        3:
+moderately
+514.1295 	DATA 	Mouse: Left button down, pos=(1307,437)
+514.2190 	DATA 	Mouse:  Left button up, pos=(1309,438)
+514.2680 	DATA 	Keypress: return
+514.2684 	DATA 	Mouse: Left button down, pos=(1309,438)
+514.3853 	DATA 	Mouse:  Left button up, pos=(1309,438)
+514.4349 	DATA 	Mouse: Left button down, pos=(1309,438)
+514.4524 	DATA 	Keypress: return
+514.5371 	DATA 	Mouse:  Left button up, pos=(1310,438)
+514.6012 	DATA 	Mouse: Left button down, pos=(1310,438)
+514.6190 	DATA 	Keypress: return
+514.6219 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+514.6220 	DATA 	RatingScale unnamed RatingScale: rating RT=0.492
+514.6220 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.006), ('       3:\nmoderately', 0.492)]
+514.6345 	DATA 	Question Number: 18 , Response:        3:
+moderately
+514.7013 	DATA 	Mouse:  Left button up, pos=(1311,438)
+514.7689 	DATA 	Mouse: Left button down, pos=(1312,438)
+514.8022 	DATA 	Keypress: return
+514.8518 	DATA 	Mouse:  Left button up, pos=(1312,438)
+514.9187 	DATA 	Mouse: Left button down, pos=(1312,438)
+515.0027 	DATA 	Keypress: return
+515.0218 	DATA 	Mouse:  Left button up, pos=(1312,438)
+515.0855 	DATA 	Mouse: Left button down, pos=(1312,438)
+515.1863 	DATA 	Keypress: return
+515.1896 	DATA 	Mouse:  Left button up, pos=(1312,438)
+515.1897 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+515.1898 	DATA 	RatingScale unnamed RatingScale: rating RT=0.527
+515.1898 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.109), ('       3:\nmoderately', 0.527)]
+515.2017 	DATA 	Question Number: 12 , Response:        3:
+moderately
+515.2518 	DATA 	Mouse: Left button down, pos=(1312,438)
+515.3855 	DATA 	Keypress: return
+515.5853 	DATA 	Keypress: return
+515.7693 	DATA 	Keypress: return
+515.7724 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+515.7725 	DATA 	RatingScale unnamed RatingScale: rating RT=0.542
+515.7726 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.024), ('       3:\nmoderately', 0.542)]
+515.7732 	DATA 	Mouse:  Left button up, pos=(1312,438)
+515.7855 	DATA 	Question Number: 17 , Response:        3:
+moderately
+515.8186 	DATA 	Mouse: Left button down, pos=(1312,438)
+515.9348 	DATA 	Mouse:  Left button up, pos=(1322,441)
+515.9683 	DATA 	Keypress: return
+515.9851 	DATA 	Mouse: Left button down, pos=(1326,441)
+516.0848 	DATA 	Mouse:  Left button up, pos=(1327,442)
+516.1347 	DATA 	Mouse: Left button down, pos=(1328,442)
+516.1683 	DATA 	Keypress: return
+516.2530 	DATA 	Mouse:  Left button up, pos=(1330,442)
+516.3017 	DATA 	Mouse: Left button down, pos=(1330,442)
+516.3380 	DATA 	Keypress: return
+516.3381 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+516.3382 	DATA 	RatingScale unnamed RatingScale: rating RT=0.525
+516.3382 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.006), ('       3:\nmoderately', 0.525)]
+516.3513 	DATA 	Question Number: 10 , Response:        3:
+moderately
+516.4045 	DATA 	Mouse:  Left button up, pos=(1330,442)
+516.4713 	DATA 	Mouse: Left button down, pos=(1331,442)
+516.5351 	DATA 	Keypress: return
+516.5851 	DATA 	Mouse:  Left button up, pos=(1332,443)
+516.6518 	DATA 	Mouse: Left button down, pos=(1333,443)
+516.7194 	DATA 	Keypress: return
+516.7524 	DATA 	Mouse:  Left button up, pos=(1334,443)
+516.8025 	DATA 	Mouse: Left button down, pos=(1335,443)
+516.8869 	DATA 	Keypress: return
+516.8903 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+516.8904 	DATA 	RatingScale unnamed RatingScale: rating RT=0.510
+516.8904 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.091), ('       3:\nmoderately', 0.51)]
+516.9019 	DATA 	Question Number: 15 , Response:        3:
+moderately
+516.9299 	DATA 	Mouse:  Left button up, pos=(1336,443)
+516.9691 	DATA 	Mouse: Left button down, pos=(1336,443)
+517.0690 	DATA 	Keypress: return
+517.1019 	DATA 	Mouse:  Left button up, pos=(1339,444)
+517.1520 	DATA 	Mouse: Left button down, pos=(1339,444)
+517.2515 	DATA 	Mouse:  Left button up, pos=(1340,444)
+517.2524 	DATA 	Keypress: return
+517.3186 	DATA 	Mouse: Left button down, pos=(1342,444)
+517.4364 	DATA 	Keypress: return
+517.4367 	DATA 	Mouse:  Left button up, pos=(1344,445)
+517.4397 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+517.4398 	DATA 	RatingScale unnamed RatingScale: rating RT=0.509
+517.4398 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.041), ('       3:\nmoderately', 0.509)]
+517.4516 	DATA 	Question Number: 13 , Response:        3:
+moderately
+517.4875 	DATA 	Mouse: Left button down, pos=(1344,445)
+517.6016 	DATA 	Mouse:  Left button up, pos=(1345,445)
+517.6025 	DATA 	Keypress: return
+517.6521 	DATA 	Mouse: Left button down, pos=(1345,445)
+517.7688 	DATA 	Mouse:  Left button up, pos=(1345,445)
+517.7695 	DATA 	Keypress: return
+517.8217 	DATA 	Mouse: Left button down, pos=(1345,445)
+517.9359 	DATA 	Mouse:  Left button up, pos=(1346,445)
+517.9522 	DATA 	Keypress: return
+517.9550 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+517.9551 	DATA 	RatingScale unnamed RatingScale: rating RT=0.473
+517.9551 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.006), ('       3:\nmoderately', 0.473)]
+517.9689 	DATA 	Question Number: 29 , Response:        3:
+moderately
+517.9988 	DATA 	Mouse: Left button down, pos=(1346,445)
+518.1027 	DATA 	Mouse:  Left button up, pos=(1346,445)
+518.1355 	DATA 	Keypress: return
+518.1525 	DATA 	Mouse: Left button down, pos=(1346,445)
+518.2720 	DATA 	Mouse:  Left button up, pos=(1348,445)
+518.3202 	DATA 	Mouse: Left button down, pos=(1348,445)
+518.3364 	DATA 	Keypress: return
+518.4058 	DATA 	Mouse:  Left button up, pos=(1349,445)
+518.4857 	DATA 	Mouse: Left button down, pos=(1350,446)
+518.5203 	DATA 	Keypress: return
+518.5230 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+518.5231 	DATA 	RatingScale unnamed RatingScale: rating RT=0.524
+518.5231 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.006), ('       3:\nmoderately', 0.524)]
+518.5357 	DATA 	Question Number: 25 , Response:        3:
+moderately
+518.5872 	DATA 	Mouse:  Left button up, pos=(1350,446)
+518.6532 	DATA 	Mouse: Left button down, pos=(1350,446)
+518.6897 	DATA 	Keypress: return
+518.7553 	DATA 	Mouse:  Left button up, pos=(1353,446)
+518.8190 	DATA 	Mouse: Left button down, pos=(1353,446)
+518.8702 	DATA 	Keypress: return
+518.9193 	DATA 	Mouse:  Left button up, pos=(1355,446)
+519.0038 	DATA 	Mouse: Left button down, pos=(1368,447)
+519.0540 	DATA 	Keypress: return
+519.0567 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+519.0568 	DATA 	RatingScale unnamed RatingScale: rating RT=0.494
+519.0568 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.092), ('       3:\nmoderately', 0.494)]
+519.0696 	DATA 	Question Number: 8 , Response:        3:
+moderately
+519.0976 	DATA 	Mouse:  Left button up, pos=(1368,447)
+519.1538 	DATA 	Mouse: Left button down, pos=(1368,447)
+519.2203 	DATA 	Keypress: return
+519.2526 	DATA 	Mouse:  Left button up, pos=(1368,447)
+519.3057 	DATA 	Mouse: Left button down, pos=(1368,447)
+519.3703 	DATA 	Keypress: return
+519.4200 	DATA 	Mouse:  Left button up, pos=(1368,447)
+519.4697 	DATA 	Mouse: Left button down, pos=(1368,447)
+519.5535 	DATA 	Keypress: return
+519.5567 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+519.5569 	DATA 	RatingScale unnamed RatingScale: rating RT=0.459
+519.5569 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.058), ('       3:\nmoderately', 0.459)]
+519.5699 	DATA 	Mouse:  Left button up, pos=(1368,447)
+519.5700 	DATA 	Question Number: 2 , Response:        3:
+moderately
+519.6365 	DATA 	Mouse: Left button down, pos=(1368,447)
+519.7367 	DATA 	Keypress: return
+519.7370 	DATA 	Mouse:  Left button up, pos=(1369,447)
+519.8028 	DATA 	Mouse: Left button down, pos=(1369,447)
+519.9033 	DATA 	Mouse:  Left button up, pos=(1369,447)
+519.9040 	DATA 	Keypress: return
+519.9700 	DATA 	Mouse: Left button down, pos=(1369,447)
+520.0861 	DATA 	Mouse:  Left button up, pos=(1369,447)
+520.0896 	DATA 	Keypress: return
+520.0897 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+520.0898 	DATA 	RatingScale unnamed RatingScale: rating RT=0.488
+520.0898 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.037), ('       3:\nmoderately', 0.488)]
+520.1029 	DATA 	Question Number: 22 , Response:        3:
+moderately
+520.1701 	DATA 	Mouse: Left button down, pos=(1369,447)
+520.2525 	DATA 	Mouse:  Left button up, pos=(1369,447)
+520.2742 	DATA 	Keypress: return
+520.3199 	DATA 	Mouse: Left button down, pos=(1369,447)
+520.4198 	DATA 	Mouse:  Left button up, pos=(1370,447)
+520.4373 	DATA 	Keypress: return
+520.4868 	DATA 	Mouse: Left button down, pos=(1370,447)
+520.5871 	DATA 	Mouse:  Left button up, pos=(1371,448)
+520.6204 	DATA 	Keypress: return
+520.6232 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+520.6233 	DATA 	RatingScale unnamed RatingScale: rating RT=0.493
+520.6233 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.042), ('       3:\nmoderately', 0.493)]
+520.6373 	DATA 	Keypress: apostrophe
+520.6376 	DATA 	Question Number: 3 , Response:        3:
+moderately
+520.6658 	DATA 	Mouse: Left button down, pos=(1371,448)
+520.7530 	DATA 	Mouse:  Left button up, pos=(1372,448)
+520.8203 	DATA 	Keypress: apostrophe
+520.8401 	DATA 	Keypress: return
+520.8529 	DATA 	Mouse: Left button down, pos=(1373,448)
+520.9359 	DATA 	Mouse:  Left button up, pos=(1373,448)
+521.0039 	DATA 	Mouse: Left button down, pos=(1373,448)
+521.0046 	DATA 	Keypress: return
+521.1031 	DATA 	Mouse:  Left button up, pos=(1373,448)
+521.2033 	DATA 	Keypress: return
+521.2063 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+521.2068 	DATA 	Mouse: Left button down, pos=(1373,448)
+521.2069 	DATA 	RatingScale unnamed RatingScale: rating RT=0.541
+521.2069 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.005), ('       3:\nmoderately', 0.54)]
+521.2195 	DATA 	Question Number: 14 , Response:        3:
+moderately
+521.2874 	DATA 	Mouse:  Left button up, pos=(1373,448)
+521.3703 	DATA 	Keypress: return
+521.3874 	DATA 	Mouse: Left button down, pos=(1373,448)
+521.4529 	DATA 	Mouse:  Left button up, pos=(1373,448)
+521.5192 	DATA 	Mouse: Left button down, pos=(1373,448)
+521.5532 	DATA 	Keypress: return
+521.6202 	DATA 	Mouse:  Left button up, pos=(1373,448)
+521.6699 	DATA 	Mouse: Left button down, pos=(1373,448)
+521.7214 	DATA 	Keypress: return
+521.7247 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+521.7248 	DATA 	RatingScale unnamed RatingScale: rating RT=0.472
+521.7248 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.138), ('       3:\nmoderately', 0.472)]
+521.7367 	DATA 	Question Number: 27 , Response:        3:
+moderately
+521.7871 	DATA 	Mouse:  Left button up, pos=(1373,448)
+521.8872 	DATA 	Mouse: Left button down, pos=(1373,448)
+521.9080 	DATA 	Keypress: return
+521.9539 	DATA 	Mouse:  Left button up, pos=(1373,448)
+522.0544 	DATA 	Keypress: return
+522.0696 	DATA 	Mouse: Left button down, pos=(1373,448)
+522.1195 	DATA 	Mouse:  Left button up, pos=(1373,448)
+522.1865 	DATA 	Mouse: Left button down, pos=(1373,448)
+522.2375 	DATA 	Keypress: return
+522.2402 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+522.2403 	DATA 	RatingScale unnamed RatingScale: rating RT=0.475
+522.2403 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.125), ('       3:\nmoderately', 0.475)]
+522.2536 	DATA 	Question Number: 9 , Response:        3:
+moderately
+522.2836 	DATA 	Mouse:  Left button up, pos=(1373,448)
+522.3863 	DATA 	Mouse: Left button down, pos=(1373,448)
+522.4083 	DATA 	Keypress: return
+522.4561 	DATA 	Mouse:  Left button up, pos=(1373,448)
+522.5371 	DATA 	Mouse: Left button down, pos=(1373,448)
+522.5535 	DATA 	Keypress: return
+522.6033 	DATA 	Mouse:  Left button up, pos=(1373,448)
+522.6699 	DATA 	Mouse: Left button down, pos=(1373,448)
+522.7202 	DATA 	Keypress: return
+522.7230 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+522.7232 	DATA 	RatingScale unnamed RatingScale: rating RT=0.439
+522.7232 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.105), ('       3:\nmoderately', 0.439)]
+522.7361 	DATA 	Question Number: 24 , Response:        3:
+moderately
+522.7713 	DATA 	Mouse:  Left button up, pos=(1373,448)
+522.8397 	DATA 	Mouse: Left button down, pos=(1373,448)
+522.8734 	DATA 	Keypress: return
+522.9398 	DATA 	Mouse:  Left button up, pos=(1373,448)
+523.0379 	DATA 	Keypress: return
+523.0530 	DATA 	Mouse: Left button down, pos=(1373,448)
+523.1201 	DATA 	Mouse:  Left button up, pos=(1373,448)
+523.2199 	DATA 	Mouse: Left button down, pos=(1373,448)
+523.2378 	DATA 	Keypress: return
+523.2408 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+523.2409 	DATA 	RatingScale unnamed RatingScale: rating RT=0.475
+523.2409 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.074), ('       3:\nmoderately', 0.475)]
+523.2530 	DATA 	Question Number: 5 , Response:        3:
+moderately
+523.2838 	DATA 	Mouse:  Left button up, pos=(1373,448)
+523.3878 	DATA 	Mouse: Left button down, pos=(1373,448)
+523.4091 	DATA 	Keypress: return
+523.4543 	DATA 	Mouse:  Left button up, pos=(1373,448)
+523.5052 	DATA 	Mouse: Left button down, pos=(1373,448)
+523.5882 	DATA 	Keypress: return
+523.6217 	DATA 	Mouse:  Left button up, pos=(1373,448)
+523.6879 	DATA 	Mouse: Left button down, pos=(1373,448)
+523.7722 	DATA 	Keypress: return
+523.7751 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+523.7752 	DATA 	RatingScale unnamed RatingScale: rating RT=0.491
+523.7752 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.106), ('       3:\nmoderately', 0.491)]
+523.7877 	DATA 	Question Number: 26 , Response:        3:
+moderately
+523.8166 	DATA 	Mouse:  Left button up, pos=(1373,448)
+523.9215 	DATA 	Mouse: Left button down, pos=(1373,448)
+523.9552 	DATA 	Keypress: return
+523.9708 	DATA 	Mouse:  Left button up, pos=(1373,448)
+524.0705 	DATA 	Mouse: Left button down, pos=(1373,448)
+524.1540 	DATA 	Mouse:  Left button up, pos=(1373,448)
+524.1547 	DATA 	Keypress: return
+524.2049 	DATA 	Mouse: Left button down, pos=(1373,448)
+524.3209 	DATA 	Mouse:  Left button up, pos=(1373,448)
+524.3215 	DATA 	Keypress: return
+524.3242 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+524.3243 	DATA 	RatingScale unnamed RatingScale: rating RT=0.507
+524.3243 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.107), ('       3:\nmoderately', 0.507)]
+524.3380 	DATA 	Question Number: 7 , Response:        3:
+moderately
+524.3878 	DATA 	Mouse: Left button down, pos=(1373,448)
+524.4889 	DATA 	Mouse:  Left button up, pos=(1373,448)
+524.5051 	DATA 	Keypress: return
+524.5373 	DATA 	Mouse: Left button down, pos=(1373,448)
+524.6406 	DATA 	Mouse:  Left button up, pos=(1373,448)
+524.6710 	DATA 	Keypress: return
+524.7079 	DATA 	Mouse: Left button down, pos=(1373,448)
+524.8078 	DATA 	Mouse:  Left button up, pos=(1373,448)
+524.8379 	DATA 	Keypress: return
+524.8411 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+524.8413 	DATA 	RatingScale unnamed RatingScale: rating RT=0.475
+524.8413 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.024), ('       3:\nmoderately', 0.475)]
+524.8549 	DATA 	Question Number: 1 , Response:        3:
+moderately
+524.9210 	DATA 	Mouse: Left button down, pos=(1373,448)
+524.9879 	DATA 	Mouse:  Left button up, pos=(1373,448)
+525.0218 	DATA 	Keypress: return
+525.0880 	DATA 	Mouse: Left button down, pos=(1373,448)
+525.1577 	DATA 	Mouse:  Left button up, pos=(1373,448)
+525.2049 	DATA 	Keypress: return
+525.2239 	DATA 	Mouse: Left button down, pos=(1373,448)
+525.3209 	DATA 	Mouse:  Left button up, pos=(1373,448)
+525.4054 	DATA 	Keypress: return
+525.4056 	DATA 	Mouse: Left button down, pos=(1373,448)
+525.4084 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+525.4085 	DATA 	RatingScale unnamed RatingScale: rating RT=0.522
+525.4085 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.037), ('       3:\nmoderately', 0.522)]
+525.4207 	DATA 	Question Number: 28 , Response:        3:
+moderately
+525.4711 	DATA 	Mouse:  Left button up, pos=(1373,448)
+525.5551 	DATA 	Mouse: Left button down, pos=(1373,448)
+525.5722 	DATA 	Keypress: return
+525.6742 	DATA 	Mouse:  Left button up, pos=(1373,448)
+525.7403 	DATA 	Mouse: Left button down, pos=(1373,448)
+525.7558 	DATA 	Keypress: return
+525.9548 	DATA 	Keypress: return
+525.9575 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+525.9576 	DATA 	RatingScale unnamed RatingScale: rating RT=0.506
+525.9576 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.106), ('       3:\nmoderately', 0.506)]
+525.9717 	DATA 	Question Number: 23 , Response:        3:
+moderately
+526.0013 	DATA 	Mouse:  Left button up, pos=(1373,448)
+526.0540 	DATA 	Mouse: Left button down, pos=(1373,448)
+526.1391 	DATA 	Keypress: return
+526.1393 	DATA 	Mouse:  Left button up, pos=(1373,448)
+526.2383 	DATA 	Mouse: Left button down, pos=(1373,448)
+526.3048 	DATA 	Mouse:  Left button up, pos=(1373,448)
+526.3216 	DATA 	Keypress: return
+526.4219 	DATA 	Mouse: Left button down, pos=(1373,448)
+526.4720 	DATA 	Mouse:  Left button up, pos=(1373,448)
+526.4883 	DATA 	Keypress: return
+526.4910 	DATA 	RatingScale unnamed RatingScale: (key response) rating=       3:
+moderately
+526.4911 	DATA 	RatingScale unnamed RatingScale: rating RT=0.489
+526.4911 	DATA 	RatingScale unnamed RatingScale: history=[(None, 0.0), ('       3:\nmoderately', 0.055), ('       3:\nmoderately', 0.489)]
+526.5046 	DATA 	Question Number: 31 , Response:        3:
+moderately
+541.3401 	DATA 	Mouse: Left button down, pos=(1373,448)
+541.3405 	DATA 	Mouse:  Left button up, pos=(1373,448)
+541.3412 	DATA 	Keypress: return
+541.3416 	DATA 	Mouse: Left button down, pos=(1373,448)
+541.3418 	DATA 	Mouse:  Left button up, pos=(1373,448)
+541.3424 	DATA 	Keypress: return
+541.3427 	DATA 	Mouse: Left button down, pos=(1373,448)
+541.3430 	DATA 	Mouse:  Left button up, pos=(1373,448)
+541.3439 	DATA 	Keypress: space
+541.3451 	DATA 	Keypress: escape
+541.3455 	DATA 	Keypress: lcommand
+541.3561 	DATA 	Keypress: escape
+541.3573 	DATA 	Keypress: c
+541.3582 	DATA 	Keypress: escape
+541.3589 	DATA 	Keypress: c
+541.3594 	DATA 	Keypress: lcommand
+541.3597 	DATA 	Keypress: escape
+541.3601 	DATA 	Keypress: lctrl
+541.3603 	DATA 	Keypress: lcommand
+541.3607 	DATA 	Keypress: c
+541.3609 	DATA 	Keypress: escape
+541.3624 	DATA 	Keypress: c
+541.3630 	DATA 	Keypress: escape
+541.3633 	DATA 	Keypress: lctrl
+541.3640 	DATA 	Keypress: lcommand
+541.5110 	DATA 	Keypress: lcommand
+541.5394 	DATA 	END
