@@ -143,7 +143,7 @@ def extract_survey(full_log_df):
     # extract reaction time rows from full logfile
     rt_df = (full_log_df[(full_log_df['event'].str.contains('rating RT'))]
              .reset_index(drop=True)
-             .drop(columns=['type', 'end_time', 'duration'])
+             .drop(columns=['type'])
              .rename(columns={'adjusted_timestamp': 'time',
                               'event': 'rt'}))
 
@@ -154,7 +154,6 @@ def extract_survey(full_log_df):
     # extract question rows from full logfile
     question_df = (full_log_df[(full_log_df['event'].str.contains('Question'))]
                    .reset_index(drop=True)
-                   .drop(columns=['type', 'end_time', 'duration'])
                    .rename(columns={'adjusted_timestamp': 'time'}))
 
     # extract questions and responses from comma-separated line in 'event' variable
