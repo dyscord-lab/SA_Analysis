@@ -4,23 +4,23 @@ import os
 import pandas as pd
 
 # import custom-made functions that we'll need
-from lib.filesearch import findparticipants, findhighest
-from lib.sorting import Sorting, process_surfaces, pair_logs, associate_gaze_stimulus, extract_survey
+from lib.sorting import Sorting, process_surfaces, merge_all_dataframes, extract_survey
+from lib.filesearch import find_participants, find_highest_export
 
 # set root to current path location
 top_root = os.path.join(os.getcwd(), 'data')
 
 # set or create directory for saving logs
-savelogs = os.path.join(os.getcwd(), 'savelogs')
-if not os.path.exists(savelogs):
-    os.makedirs(savelogs)
+savelogs_directory = os.path.join(os.getcwd(), 'savelogs')
+if not os.path.exists(savelogs_directory):
+    os.makedirs(savelogs_directory)
 
 # keeps track of any issues and saves to file at end
 issues = pd.DataFrame(columns=['participant', 'error'])
 
 # figure out the participants in each sub-directory
 # each participant = full path to their datafolder
-included_participants = findparticipants(top_root)
+included_participants = find_participants(top_root)
 
 # cycle through participants
 for next_participant in included_participants:
@@ -36,7 +36,7 @@ for next_participant in included_participants:
 
     # identify log file path
     try:
-        logfile = glob.glob(containing_directory + '/*.log')[0]
+        logfile_path = glob.glob(containing_directory + '/*.log')[0]
     except IndexError:
         # a .log file wasn't found in the participants directory
         # aka index [0] doesn't exist, so document issue and continue to next?
@@ -46,75 +46,56 @@ for next_participant in included_participants:
             ignore_index=True)
         continue
 
-    # logfile = findlogfile(root)
-    # if isinstance(logfile, list):
+    # # TODO: this could be a cleaner kind of solution -- need to update find_logfile
+    # logfile = find_logfile(root)
+    # if isinstance(logfile_path, list):
     #     # multiple log files found,
     #     # documents as issue and skip this participant
     #     issues.append({'participant': participant_info,
-    #                    'error': logfile}, ignore_index=True)
+    #                    'error': logfile_path}, ignore_index=True)
     #     continue
 
     # look for the exports folder
-    exportfolder = findhighest(os.path.join(root, 'exports'))
-    print(exportfolder)
-
-    # identify the export info file path
-    exportinfo = os.path.join(exportfolder, 'export_info.csv')
+    exportfolder_path = find_highest_export(os.path.join(root, 'exports'))
 
     # gaze/position file paths
-    gazesurface_file = glob.glob(exportfolder + '/surfaces/gaze_positions*.csv')[0]
-    surfaceevents = os.path.join(exportfolder, 'surfaces', 'surface_events.csv')
+    full_gaze_path = glob.glob(exportfolder_path + '/gaze_positions.csv')[0]
+    gazesurface_path = glob.glob(exportfolder_path + '/surfaces/gaze_positions*.csv')[0]
+    surfaceevents_path = os.path.join(exportfolder_path, 'surfaces', 'surface_events.csv')
 
-    # sort the info file
-    sort = Sorting(savelogs)
+    # initialize the Sort class
+    sort = Sorting(savelogs_directory)
 
     # process the surface file
-    processed_surfaces = process_surfaces(surfaceevents)
+    processed_surfaces = process_surfaces(surfaceevents_path, full_gaze_path)
+    
+    # process the logfile
+    [full_logfile, processed_img_logs] = sort.logsort(logfile_path)
+    
+    # adjust the timestamps for gaze on recognized surfaces
+    gaze_surface_df = pd.read_csv(gazesurface_path)
+    gaze_surface_df = sort.adjust_timestamps(gaze_surface_df, processed_img_logs)
 
-    # see if we processed the file
-    if isinstance(processed_surfaces, str):
+    # adjust the timestamps for all recorded gaze
+    processed_surfaces['adjusted_timestamp'] = ((processed_surfaces['gaze_timestamp'] + sort.offset)
+                                                 .round(4))
+    
+    # join the gaze and PsychoPy image log data
+    gaze_dataframe = merge_all_dataframes(processed_surfaces, gaze_surface_df, processed_img_logs)
 
-        # if we have incomplete data, flag the participant
-        issues = issues.append({'participant': participant_info,
-                                'error': processed_surfaces},
-                               ignore_index=True)
+    # extract the survey data
+    survey_df = extract_survey(full_logfile)
 
-    # if we have the data, process proceed
-    else:
-        # process the logfile
-        [full_logfile, processed_img_logs] = sort.logsort(logfile)
-
-        # associate the surface and log stimulus information
-        paired_logs = pair_logs(processed_surfaces, processed_img_logs)
-
-        # see if we were able to process everything
-        if isinstance(paired_logs, str):
-
-            # if we have incomplete data, flag the participant
-            issues = issues.append({'participant': participant_info,
-                                    'error': paired_logs},
-                                   ignore_index=True)
-
-        # if we have the data, proceed
-        else:
-
-            # associate the gaze data with the stimulus data
-            gaze_stimulus_df = associate_gaze_stimulus(gazesurface_file,
-                                                       paired_logs)
-
-            # extract the survey data
-            survey_df = extract_survey(full_logfile)
-
-            # save the final gaze dataframe
-            gaze_filename = participant_info + '-complete_gaze_df.csv'
-            gaze_stimulus_df.to_csv(savelogs + '/' + gaze_filename,
+    # save the final gaze dataframe
+    gaze_filename = participant_info + '-complete_gaze_df.csv'
+    gaze_dataframe.to_csv(savelogs_directory + '/' + gaze_filename,
                                     index=None)
 
-            # save the final survey dataframe
-            survey_filename = participant_info + '-survey_df.csv'
-            survey_df.to_csv(savelogs + '/' + survey_filename, index=None)
+    # save the final survey dataframe
+    survey_filename = participant_info + '-survey_df.csv'
+    survey_df.to_csv(savelogs_directory + '/' + survey_filename, index=None)
 
 # logs issues, if there are any
 # right now just for ".log" duplicates, more can be added though
-issues.to_csv(savelogs+'/issues.csv',
+issues.to_csv(savelogs_directory+'/issues.csv',
               index=None)
