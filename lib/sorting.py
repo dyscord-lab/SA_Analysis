@@ -51,49 +51,31 @@ class Sorting:
 
     # Collects the gazes timestamp, instead of the world_timestamps
     # Levels out the gaze times to that of the log file
-    def timestamps_adjust(self, gazefile, logfile):
-        # collects the gaze_timestamps instead of world_timestamps
-        raw_gazes = []
-        with open(gazefile, "r+") as f:
-            reader = csv.reader(f)
-            next(reader)  # ignore header
-            for row in reader:
-                raw_gazes.append(float(row[2]))
-        gaze_offset = raw_gazes[0]
+    def adjust_timestamps(self, gaze_surface_df, logfile_df, 
+                          gaze_timestamp_colname = "gaze_timestamp", 
+                          logfile_timestamp_colname = "start_time",
+                          round_places=4):
+        
+        """Attempt to adjust the gaze timestamps to match with the logfile
+            timestamps.
+            
+            By default, round resulting timestamps to 4 places.
+            
+            By default, assume `gaze_surface_df` and `logfile_df` to have time 
+            variables `gaze_timestamp` and `start_time`, respectively."""
+        
+        # identify first time in the gazesurface file
+        gaze_offset = gaze_surface_df[gaze_timestamp_colname].apply(float).min()
 
-        # the moment Psychopy starts recording is not 0
-        # so to offset gazes times, we will add this later
-        log_pictimes = []
-        with open(logfile, "r+") as f:
-            reader = csv.reader(f)
+        # identify first time that PsychoPy logged an image
+        log_offset = logfile_df[logfile_timestamp_colname].apply(float).min()
 
-            for row in reader:
-                if "PICTURE" in row:
-                    t = float(row[0].split(" ")[0])
-                    log_pictimes.append(t)
-        log_offset = log_pictimes[0]
+        # create a timestamp adjusted to the logfile time
+        gaze_surface_df['adjusted_gaze'] = gaze_surface_df['gaze_timestamp'] - gaze_offset + log_offset
+        gaze_surface_df['adjusted_gaze'] = gaze_surface_df['adjusted_gaze'].round(round_places)
 
-        # adjusted_gaze_time = raw_time - gaze_offset + logoffset
-        adjusted_gazes = []
-        for gaze in raw_gazes:
-            adjusted_gaze = gaze - gaze_offset + log_offset
-            adjusted_gazes.append(adjusted_gaze)
-
-        rounded_gazes = round_gaze_to_log(adjusted_gazes)
-
-        # returns tuple of 2 lists
-        # return adjusted_gazes, rounded_gazes
-        return adjusted_gazes
-
-    # Attempt to circumvent the issue of floating points + extra decimals
-    def round_gaze_to_log(self, gazes):
-        rounded_gazes = []
-        round_to = 4  # the logfile does just 4 decimal places
-        for gaze in gazes:
-            rounded_gazes.append(round(gaze, round_to))
-
-        return rounded_gazes
-
+        # return df with new adjusted variable
+        return gaze_surface_df
 
 def chunks(l, n):
     """Convert a list l into chunks of n size.
