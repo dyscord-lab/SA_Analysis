@@ -126,7 +126,7 @@ def merge_all_dataframes(processed_surfaces_df, gaze_surface_df, processed_image
                                           how = "outer", 
                                           on='adjusted_timestamp')
                                  .sort_values(by=['adjusted_timestamp'])
-                                 #.fillna(method='ffill')
+                                 .fillna(method='ffill')
                                  .reset_index(drop=True))
     
     # return the resulting dataframe
