@@ -1,5 +1,12 @@
 #### Data preparation for SA Study ####
 
+## NOTE: The `analysis` subdirectory should be directly under the
+##       `data` directory.
+
+## NOTE: In `data`, you must make a subdirectory called `downsampled`.
+##       In the new `downsampled` subdirectory, you must make a new 
+##       subdirectory called `individual`.
+
 # set working directory to repo
 setwd("./SA_Analysis/")
 
@@ -128,9 +135,7 @@ for(i in 1:length(participant_files)) {
     # save processed data to main dataframe
     filtered = rbind.data.frame(filtered, 
                                 gaze_data_downsampled)
-    
   }
-  
 }
 
 # write the whole thing to a dataframe
