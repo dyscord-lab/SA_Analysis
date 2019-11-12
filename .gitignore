@@ -9,6 +9,6 @@ $RGROBJ3.gitignore
 .idea/workspace.xml
 */__pycache__
 savelogs/
-data/
+data*/
 .ipynb_checkpoints
 *.ipynb

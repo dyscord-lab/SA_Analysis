@@ -25,6 +25,7 @@ fileNames = list.files(path = "./")
 fileList = list()
 for(i in 1:length(fileNames)) {
   
+<<<<<<< HEAD
   # read in participant file
   tempData = read.csv(fileNames[1])
   
@@ -75,6 +76,13 @@ for(i in 1:length(fileNames)) {
                                        gaze_data_downsampled)
    
   }
+=======
+  # filtering for awake participants (0% conf for < 1/20th of the data)
+  dplyr::filter(sum(data$confidence == 0)/length(data$confidence) < .05) %>%
+  
+  # filtering for sufficient conf. participants (80+% conf for > 1/20th of the data)  
+  dplyr::filter(sum(data$confidence >= .8)/length(data$confidence) > .8) %>% 
+>>>>>>> 6c3382a84a3476c5d7383b304907973e4960e750
   
 }
 
