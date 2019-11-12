@@ -126,13 +126,15 @@ def merge_all_dataframes(processed_surfaces_df, gaze_surface_df, processed_image
                                           how = "outer", 
                                           on='adjusted_timestamp')
                                  .sort_values(by=['adjusted_timestamp'])
-                                 .fillna(method='ffill')
                                  .reset_index(drop=True))
+    
+    # forward-fill picture information
+    gaze_and_img_df['picture'] = gaze_and_img_df['picture'].fillna(method='ffill')    
     
     # return the resulting dataframe
     return gaze_and_img_df
 
-def extract_survey(full_log_df):
+def extract_survey(full_log_df, survey_key_df):
     """Extract the participant's survey responses and reaction times (RT) for responding
         from the PsychoPy logfile."""
 
@@ -167,15 +169,20 @@ def extract_survey(full_log_df):
 
                               # tag pre- or post-cyberball survey
                               .groupby('question_number').cumcount() + 1)
-                             .astype(str)
+                              .astype(str)
 
-                             # convert to string from numbers
-                             .str.replace('1', 'pre')
-                             .str.replace('2', 'post'))
+                              # convert to string from numbers
+                              .str.replace('1', 'pre')
+                              .str.replace('2', 'post'))
 
     # join the question and reaction time dataframes
     joined_frame = question_df.join(rt_df,
                                     lsuffix='_q', rsuffix='_rt')
+    
+    # join with the questions
+    joined_frame = joined_frame.merge(survey_key_df,
+                                     how='outer',
+                                     on='question_number')
 
     # return the joined frame
     return joined_frame

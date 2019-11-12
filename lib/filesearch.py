@@ -4,7 +4,7 @@ import os
 def find_participants(dataroot):
 
     """Find all participants in the current dataset"""
-
+    
     # create a container for participants
     included_participants = []
 
