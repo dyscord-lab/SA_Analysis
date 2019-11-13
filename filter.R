@@ -36,9 +36,6 @@ for(i in 1:length(participant_files)) {
   print(participant_files[i])
   
   # read in participant file
-  ##    [AP] One reason why this may not have worked is because this was always 
-  ##         reading in the first file, rather than the `i`th file.
-  #tempData = read.csv(participant_files[1])
   tempData = read.csv(participant_files[i])
   
   # identify when the last reset_image appeared

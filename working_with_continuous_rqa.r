@@ -1,4 +1,5 @@
 #### SA Analysis: Continuous RQA Parameter Searching ####
+# [MC]: Created new subdirectory 'crqa_results' under 'data' for results!
 
 # set working directory
 setwd("./SA_Analysis/")
@@ -17,8 +18,8 @@ library(ggplot2)
 library(beepr)
 
 # read in gaze csv of all participants
-gaze_data = read.table('./data/data-analysis_and_processed/filtered/',
-                       sep=',',header=TRUE)
+gaze_data = read.csv('./data/downsampled/all_participants-downsampled.csv',
+                       sep=',')
 
 #### Determine DELAY with average mutual information (AMI) ####
 
@@ -38,7 +39,7 @@ gaze_data = gaze_data %>%
 write.table(gaze_data %>%
               select(participant, ami.loc) %>%
               distinct(),
-            './testdata/ami.csv', 
+            './data/crqa_results/ami.csv', 
             sep=',',
             row.names=FALSE, col.names=TRUE)
 
@@ -70,7 +71,7 @@ gaze_data = gaze_data %>%
 write.table(gaze_data %>%
               select(participant, embed) %>%
               distinct(),
-            './data/embed.csv', sep=',',row.names=FALSE,col.names=TRUE)
+            './data/crqa_results/embed.csv', sep=',',row.names=FALSE,col.names=TRUE)
 
 #### Determine optimal radius ####
 
@@ -146,7 +147,7 @@ for (next.particiant in gaze_crqa){
                                    det,
                                    meanL,
                                    from.target),
-                  paste('./data/radius_calculations-mean_scaled-r',chosen.radius,'-', particiant,'.csv', sep=''), 
+                  paste('./data/crqa_results/radius_calculations-mean_scaled-r',chosen.radius,'-', particiant,'.csv', sep=''), 
                   sep=',',row.names=FALSE,col.names=TRUE)
       
       # append to dataframe
@@ -167,15 +168,15 @@ for (next.particiant in gaze_crqa){
     }}}
 
 # save the radius explorations to file
-write.table(radius_selection,'./data/radius_calculations-mean_scaled-SA.csv', sep=',',row.names=FALSE,col.names=TRUE)
+write.table(radius_selection,'./data/crqa_results/radius_calculations-mean_scaled-SA.csv', sep=',',row.names=FALSE,col.names=TRUE)
 
 # let us know when it's finished
-#beepr::beep("fanfare")
+beepr::beep("fanfare")
 
 #### Export chosen radii for all participants ####
 
 # load in files
-radius_selection = read.table('./data/radius_calculations-mean_scaled-SA.csv',
+radius_selection = read.table('./data/crqa_results/radius_calculations-mean_scaled-SA.csv',
                               sep=',',header=TRUE)
 
 # identify the target radii
@@ -195,7 +196,7 @@ gaze_crqa = full_join(radius_stats,
                                         "chosen.delay" = "ami.selected"))
 
 # save to files
-write.table(gaze_crqa,'./data/crqa_data_and_parameters-SA.csv', 
+write.table(gaze_crqa,'./data/crqa_results/crqa_data_and_parameters-SA.csv', 
             sep=',',row.names=FALSE,col.names=TRUE)
-write.table(radius_stats, './data/crqa_parameters-SA.csv',
+write.table(radius_stats, './data/crqa_results/crqa_parameters-SA.csv',
             sep=',',row.names=FALSE,col.names=TRUE)
