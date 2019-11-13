@@ -44,33 +44,57 @@ write.table(gaze_data %>%
 
 #### Determing embedding dimension with FNN ####
 
+# create empty data frame for saving embed results
+embed_results = data.frame()
+
 # set maximum percentage of false nearest neighbors
 fnnpercent = 10
 
-next_ami = unique(gaze_data$ami.loc)[1]
+# split up data into each participant
+participant.dfs = split(gaze_data,
+                  list(gaze_data$participant))
 
-# calculate false nearest neighbors
-fnn = tseriesChaos::false.nearest(series = gaze_data$gaze_diff,
-                                  m = fnnpercent,
-                                  d = next_ami,
-                                  t = 1,
-                                  rt = 10,
-                                  eps = sd(gaze_data$gaze_diff) / 10)
-fnn = fnn[1,][complete.cases(fnn[1,])]
-threshold = as.numeric(fnn[1]/fnnpercent)
-
-# identify the largest dimension after a large drop
-embed = max(as.numeric(which(diff(fnn) < -threshold))) + 1
-
-# bind everything to data frame
-gaze_data = gaze_data %>%
-  mutate(embed = embed) 
+# loop through each participant file to calculate fNN
+for (next.particiant in participant.dfs) {
+  
+  # call in the needed data
+  next_participant = data.frame(next.participant)
+  
+  # tell us whats up
+  print(paste0("Beginning fNN calculations for participant ", unique(next_participant$participant)))
+  
+  # grab unique ami for the participant
+  next_ami = unique(next_participant$ami.loc)[1]
+  
+  # calculate false nearest neighbors
+  fnn = tseriesChaos::false.nearest(series = next_participant$gaze_diff,
+                                    m = fnnpercent,
+                                    d = next_ami,
+                                    t = 1,
+                                    rt = 10,
+                                    eps = sd(next_participant$gaze_diff) / 10)
+  fnn = fnn[1,][complete.cases(fnn[1,])]
+  threshold = as.numeric(fnn[1]/fnnpercent)
+  
+  # identify the largest dimension after a large drop
+  embed = max(as.numeric(which(diff(fnn) < -threshold))) + 1
+  
+  next_participant = next_participant %>%
+    mutate(embed = embed) 
+  
+  embed_results = rbind.data.frame(embed_results,
+                              next_participant)
+}
 
 # save false nearest neighbor calculations to file
-write.table(gaze_data %>%
+write.table(embed_results %>%
               select(participant, embed) %>%
               distinct(),
             './data/crqa_results/embed.csv', sep=',',row.names=FALSE,col.names=TRUE)
+
+# overwrite gaze_data file to include new embed results
+gaze_data = read.csv('./data/crqa_results/embed.csv', 
+                     sep=',',row.names=FALSE,col.names=TRUE)
 
 #### Determine optimal radius ####
 
