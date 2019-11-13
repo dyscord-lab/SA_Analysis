@@ -19,6 +19,16 @@ library(dplyr)
 gaze_crqa = read.table('./data/crqa_results/crqa_data-rescaled_with_parameters.csv',
                        sep=',', header = TRUE)
 
+# read in embedding dimensions
+embed_dimensions=read.table('./data/crqa_results/embed.csv',
+                            sep=',', header = TRUE)
+
+# not sure why, but trying to write the table WITH the embedding dimensions leads to NAs
+# (will need to troubleshoot later)
+gaze_crqa = gaze_crqa %>% 
+  select(-embed) %>%
+  join(., embed_dimensions)
+
 # identify radius for calculations
 radius.list = seq(.05,.18,by=.01)
 
@@ -28,9 +38,9 @@ radius_grid_search = expand.grid(radius.list,
 
 # identify what set we're doing right now
 chosen.radius = as.numeric(radius_grid_search[n,1])
-print(chosen.radius)
+print('Chosen delay: ', str(chosen.radius))
 chosen.participant = radius_grid_search[n,2]
-print(chosen.participant)
+print('Chosen participant: ', str(chosen.participant))
 
 # subset the data
 next.participant = gaze_crqa %>%
@@ -39,7 +49,9 @@ rm(gaze_crqa)
 
 # identify parameters
 chosen.delay = unique(next.participant$ami.loc)
+print('Chosen delay: ', str(chosen.delay))
 chosen.embed = unique(next.participant$embed)
+print('Chosen embedding dimension: ', str(chosen.embed))
 
 # run CRQA and grab recurrence rate (RR)
 rec_analysis = crqa(next.participant$rescale.gaze_diff,
