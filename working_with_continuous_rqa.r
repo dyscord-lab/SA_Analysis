@@ -6,6 +6,7 @@ setwd("./SA_Analysis/")
 
 # read in libraries and functions
 source('./lib/functions_and_libraries-SA.R')
+library(crqa)
 
 # read in gaze csv of all participants
 gaze_data = read.table('./data/downsampled/all_participants-downsampled.csv',
@@ -92,9 +93,7 @@ write.table(embed_results %>%
               distinct(),
             './data/crqa_results/embed.csv', sep=',',row.names=FALSE,col.names=TRUE)
 
-# overwrite gaze_data file to include new embed results
-gaze_data = read.csv('./data/crqa_results/embed.csv', 
-                     sep=',',row.names=FALSE,col.names=TRUE)
+gaze_data = full_join(gaze_data, embed_results)
 
 #### Determine optimal radius ####
 
@@ -114,9 +113,13 @@ radius_selection = data.frame(participant = numeric(),
 # identify radius for calculations
 radius.list = seq(.05,.20,by=.05)
 
-# cycle through all participants
-for (next.particiant in gaze_crqa){
+# split up data into each participant
+participant.dfs = split(gaze_crqa,
+                        list(gaze_crqa$participant))
 
+# cycle through all participants
+for (next.particiant in participant.dfs){
+  
   # reset `target` variables for new radius (above what RR can be)
   from.target = 101
   last.from.target = 102
@@ -131,16 +134,16 @@ for (next.particiant in gaze_crqa){
       last.from.target = from.target
       
       # print update
-      print(paste("Participant ", unique(gaze_crqa$participant),
-                  ": radius ",chosen.radius,sep=""))
+      print(paste("Participant ", unique(next.particiant$participant),
+                  ": radius ", chosen.radius,sep=""))
       
       # identify parameters
-      chosen.delay = unique(gaze_crqa$ami.loc)
-      chosen.embed = unique(gaze_crqa$embed)
+      chosen.delay = unique(next.particiant$ami.loc)
+      chosen.embed = unique(next.particiant$embed)
       
       # run CRQA and grab recurrence rate (RR)
-      rec_analysis = crqa(gaze_crqa$rescale.gaze_diff, 
-                          gaze_crqa$rescale.gaze_diff,
+      rec_analysis = crqa(next.particiant$rescale.gaze_diff, 
+                          next.particiant$rescale.gaze_diff,
                           delay = chosen.delay, 
                           embed = chosen.embed, 
                           r = chosen.radius,
@@ -162,7 +165,7 @@ for (next.particiant in gaze_crqa){
       from.target = abs(rr - 5)
       
       # save individual radius calculations
-      write.table(cbind.data.frame(#participant,
+      write.table(cbind.data.frame(unique(next.participant$participant),
                                    chosen.delay,
                                    chosen.embed,
                                    chosen.radius,
@@ -175,7 +178,7 @@ for (next.particiant in gaze_crqa){
       
       # append to dataframe
       radius_selection = rbind.data.frame(radius_selection,
-                                          cbind.data.frame(participant,
+                                          cbind.data.frame(unique(next.participant$participant),
                                                            chosen.delay,
                                                            chosen.embed,
                                                            chosen.radius,
