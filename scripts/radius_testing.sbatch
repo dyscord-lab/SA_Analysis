@@ -9,7 +9,7 @@
 #SBATCH --time=01:00:00               # Don't let it run forever.
 
 # load modules
-#source /etc/profile.d/modules.sh
+source /etc/profile.d/modules.sh
 module load X11/7.7 gcc/9.2.0 r/3.6.1
 
 # save our task ID as an environmental variable

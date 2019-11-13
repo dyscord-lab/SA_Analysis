@@ -27,7 +27,7 @@ embed_dimensions=read.table('./data/crqa_results/embed.csv',
 # (will need to troubleshoot later)
 gaze_crqa = gaze_crqa %>% 
   select(-embed) %>%
-  join(., embed_dimensions)
+  dplyr::full_join(., embed_dimensions)
 
 # identify radius for calculations
 radius.list = seq(.05,.18,by=.01)
