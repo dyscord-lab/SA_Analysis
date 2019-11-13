@@ -42,7 +42,11 @@ pt = function(x) {return((1 - pnorm(abs(x))) * 2)}
 # function to identify first local minimum (modified from https://stackoverflow.com/a/6836583)
 first_local_minimum <- function(x){
   flm = as.numeric((which(diff(sign(diff(x)))==-2)+1)[1])
-  if (is.na(flm)) { flm = as.numeric(which(diff(x)==max(diff(x))))-1 }
+  if (is.na(flm)) { 
+    flm_1 = as.numeric(which(diff(x)==max(diff(x))))-1 
+    flm_2 = c(as.numeric(which(x<.001))-1)[1]
+    flm = min(flm_1,flm_2)
+  }
   return(flm)
 }
 

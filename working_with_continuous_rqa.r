@@ -7,19 +7,9 @@ setwd("./SA_Analysis/")
 # read in libraries and functions
 source('./lib/functions_and_libraries-SA.R')
 
-# load libraries
-library(signal)
-library(tseriesChaos)
-library(nonlinearTseries)
-library(crqa)
-library(quantmod)
-library(dplyr)
-library(ggplot2)
-library(beepr)
-
 # read in gaze csv of all participants
-gaze_data = read.csv('./data/downsampled/all_participants-downsampled.csv',
-                       sep=',')
+gaze_data = read.table('./data/downsampled/all_participants-downsampled.csv',
+                       sep=',',header=TRUE)
 
 #### Determine DELAY with average mutual information (AMI) ####
 
@@ -35,11 +25,20 @@ gaze_data = gaze_data %>%
   # find first local minimum
   mutate(ami.loc = first_local_minimum(tseriesChaos::mutual(gaze_diff, lag.max = ami.lag.max, plot = FALSE)))
 
+ami_df = gaze_data %>%
+  select(participant, ami.loc) %>%
+  distinct()
+# 
+# test_df = gaze_data %>%
+#   dplyr::filter(participant == 'sa1_2019-10-31_001-0')
+# 
+# test_ami = tseriesChaos::mutual(test_df$gaze_diff, lag.max = ami.lag.max, plot = TRUE)
+
 # write AMI information to file
 write.table(gaze_data %>%
               select(participant, ami.loc) %>%
               distinct(),
-            './data/crqa_results/ami.csv', 
+            './data/crqa_results/ami.csv',
             sep=',',
             row.names=FALSE, col.names=TRUE)
 
