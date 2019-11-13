@@ -173,7 +173,7 @@ for (next.particiant in participant.dfs){
                                    det,
                                    meanL,
                                    from.target),
-                  paste('./data/crqa_results/radius_calculations-mean_scaled-r',chosen.radius,'-', particiant,'.csv', sep=''), 
+                  paste('./data/crqa_results/radius_calculations-mean_scaled-r',chosen.radius,'-', unique(next.participont$particiant),'.csv', sep=''), 
                   sep=',',row.names=FALSE,col.names=TRUE)
       
       # append to dataframe
