@@ -151,7 +151,7 @@ for (next.particiant in participant.dfs){
                           rescale = 0, 
                           mindiagline = 2,
                           minvertline = 2, 
-                          tw = 0, 
+                          tw = 1, 
                           whiteline = FALSE,
                           recpt = FALSE)
       rr = rec_analysis$RR

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --job-name=sa_20191112         # Name of the job.
+#SBATCH --job-name=sa_20191113-tw1         # Name of the job.
 #SBATCH --exclusive                    # Request exclusive use of the node so that we can use more memory.
-#SBATCH --output=slurm_output/sa_20191112-%A_%a.out       # Provide unique output files for each array task.
-#SBATCH --error=slurm_output/sa_20191112-%A_%a.err        # Provide unique error files for each array task.
-#SBATCH --array=1-168                 # Provide values that we'll translate to unique gridsearch parameters.
+#SBATCH --output=slurm_output/sa_20191113-tw1-%A_%a.out       # Provide unique output files for each array task.
+#SBATCH --error=slurm_output/sa_20191113-tw1-%A_%a.err        # Provide unique error files for each array task.
+#SBATCH --array=1-96                 # Provide values that we'll translate to unique gridsearch parameters.
 #SBATCH --ntasks=1                    # We've only got one script we're running.
 #SBATCH --time=01:00:00               # Don't let it run forever.
 

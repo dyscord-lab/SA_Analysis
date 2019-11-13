@@ -21,7 +21,7 @@ tbl <- sapply(files, read_csv, simplify=FALSE) %>%
 #filtered = data.frame()
 
 # filtering for radii with closest rr to .05
-filtered2 = tbl %>% ungroup() %>%
+filtered = tbl %>% ungroup() %>%
   dplyr::group_by(chosen.participant) %>%
   dplyr::filter(from.target == min(from.target))
   

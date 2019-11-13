@@ -30,7 +30,7 @@ gaze_crqa = gaze_crqa %>%
   dplyr::full_join(., embed_dimensions)
 
 # identify radius for calculations
-radius.list = seq(.05,.18,by=.01)
+radius.list = seq(.05,.4,by=.05)
 
 # create a grid
 radius_grid_search = expand.grid(radius.list,
