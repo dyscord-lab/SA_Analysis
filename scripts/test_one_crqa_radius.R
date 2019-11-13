@@ -75,7 +75,7 @@ rm(rec_analysis)
 
 # identify how far off the RR is from our target (5%)
 from.target = abs(rr - 5)
-print(from_target)
+print(from.target)
 
 # save individual radius calculations
 write.table(cbind.data.frame(chosen.participant,
