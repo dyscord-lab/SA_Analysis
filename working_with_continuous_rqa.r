@@ -55,7 +55,7 @@ participant.dfs = split(gaze_data,
                   list(gaze_data$participant))
 
 # loop through each participant file to calculate fNN
-for (next.particiant in participant.dfs) {
+for (next.participant in participant.dfs) {
   
   # call in the needed data
   next_participant = data.frame(next.participant)
