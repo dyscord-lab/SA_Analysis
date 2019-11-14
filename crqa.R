@@ -45,26 +45,93 @@ gaze_data_simplified = gaze_data %>% ungroup() %>%
 # merge condition back into filtered data
 filtered = cbind(gaze_data_simplified, filtered)
 
-#### ANOVAs ####
+#### ANOVAs across RQA metrics and condition ####
 
-### % Determinism (det) and condition ###
+### % Determinism (det) ###
 
-# run the anova
-det_anova <- aov(condition ~ det, data=filtered)
+  # run the anova
+  det_anova <- aov(condition ~ det, data=filtered)
+  
+  # summarize results
+  det_anova_results <- summary(det_anova)
+  
+  # save results to file
+  capture.output(det_anova_results, file = './data/crqa_results/det_anova_results.txt')
 
-# summarize results
-det_anova_results <- summary(det_anova)
+### Mean Line (meanL) ###
 
-# save results to file
-capture.output(det_anova_results, file = './data/crqa_results/det_anova_results.txt')
+  # run the anova
+  meanL_anova <- aov(condition ~ meanL, data=filtered)
+  
+  # summarize results
+  meanL_anova_results <- summary(meanL_anova)
+  
+  # save results to file
+  capture.output(meanL_anova_results, file = './data/crqa_results/meanL_anova_results.txt')
+  
+### NRLINE ###
+  
+  # run the anova
+  NRLINE_anova <- aov(condition ~ NRLINE, data=filtered)
+  
+  # summarize results
+  NRLINE_anova_results <- summary(NRLINE_anova)
+  
+  # save results to file
+  capture.output(NRLINE_anova_results, file = './data/crqa_results/NRLINE_anova_results.txt')
+  
+### maxL ###
 
-### AMean Line (meanL) and condition ###
+  # run the anova
+  maxL_anova <- aov(condition ~ maxL, data=filtered)
+  
+  # summarize results
+  maxL_anova_results <- summary(maxL_anova)
+  
+  # save results to file
+  capture.output(maxL_anova_results, file = './data/crqa_results/maxL_anova_results.txt')
+  
+### ENTR ###
+  
+  # run the anova
+  ENTR_anova <- aov(condition ~ ENTR, data=filtered)
+  
+  # summarize results
+  ENTR_anova_results <- summary(ENTR_anova)
+  
+  # save results to file
+  capture.output(ENTR_anova_results, file = './data/crqa_results/ENTR_anova_results.txt')
+  
+### rENTR ###
+  
+  # run the anova
+  rENTR_anova <- aov(condition ~ rENTR, data=filtered)
+  
+  # summarize results
+  rENTR_anova_results <- summary(rENTR_anova)
+  
+  # save results to file
+  capture.output(rENTR_anova_results, file = './data/crqa_results/rENTR_anova_results.txt')
+  
+### LAM ###
+  
+  # run the anova
+  LAM_anova <- aov(condition ~ LAM, data=filtered)
+  
+  # summarize results
+  LAM_anova_results <- summary(LAM_anova)
+  
+  # save results to file
+  capture.output(LAM_anova_results, file = './data/crqa_results/LAM_anova_results.txt')
+  
+### TT ###
 
-# run the anova
-meanL_anova <- aov(condition ~ meanL, data=filtered)
-
-# summarize results
-meanL_anova_results <- summary(meanL_anova)
-
-# save results to file
-capture.output(meanL_anova_results, file = './data/crqa_results/meanL_anova_results.txt')
+  # run the anova
+  TT_anova <- aov(condition ~ TT, data=filtered)
+  
+  # summarize results
+  TT_anova_results <- summary(TT_anova)
+  
+  # save results to file
+  capture.output(TT_anova_results, file = './data/crqa_results/TT_anova_results.txt')
+  
