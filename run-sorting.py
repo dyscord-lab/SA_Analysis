@@ -2,10 +2,10 @@
 import glob, os, re
 import pandas as pd
 
+from lib.export import export_files
+from lib.filesearch import find_participants, find_highest_export
 # import custom-made functions that we'll need
 from lib.sorting import Sorting, process_surfaces, merge_all_dataframes, extract_survey
-from lib.filesearch import find_participants, find_highest_export
-from lib.export import export_files
 
 # set root to current path location
 top_root = os.path.join(os.getcwd(), 'data')
@@ -34,7 +34,7 @@ for next_participant in included_participants:
     containing_directory = os.path.abspath(os.path.join(root, "../"))
 
     # sets participant info for documentation purposes
-    participant_info = re.sub("_pupil", "", 
+    participant_info = re.sub("_pupil", "",
                               os.path.split(containing_directory)[1])
 
     # identify log file path
@@ -49,14 +49,14 @@ for next_participant in included_participants:
             ignore_index=True)
         continue
 
-    # # TODO: this could be a cleaner kind of solution -- need to update find_logfile
-    # logfile = find_logfile(root)
-    # if isinstance(logfile_path, list):
-    #     # multiple log files found,
-    #     # documents as issue and skip this participant
-    #     issues.append({'participant': participant_info,
-    #                    'error': logfile_path}, ignore_index=True)
-    #     continue
+    try:
+        infofile_path = glob.glob(containing_directory + './info.csv')[0]
+    except IndexError:
+        issues.append(
+            {'participant': participant_info,
+             'error': 'info.csv not found/glob list empty'},
+            ignore_index=True)
+        continue
 
     # look for the exports folder
     exportfolder_path = find_highest_export(os.path.join(root, 'exports'))
@@ -71,34 +71,34 @@ for next_participant in included_participants:
 
     # process the surface file
     processed_surfaces = process_surfaces(surfaceevents_path, full_gaze_path)
-    
+
     # process the logfile
-    [full_logfile, processed_img_logs] = sort.logsort(logfile_path)
-    
+    [full_logfile, processed_img_logs] = sort.logsort(logfile_path, infofile_path)
+
     # adjust the timestamps for gaze on recognized surfaces
     gaze_surface_df = pd.read_csv(gazesurface_path)
     gaze_surface_df = sort.adjust_timestamps(gaze_surface_df, processed_img_logs)
 
     # adjust the timestamps for all recorded gaze
-    processed_surfaces['adjusted_timestamp'] = ((processed_surfaces['gaze_timestamp'] 
+    processed_surfaces['adjusted_timestamp'] = ((processed_surfaces['gaze_timestamp']
                                                  + sort.offset)
-                                                 .round(4))
-    
+                                                .round(4))
+
     # join the gaze and PsychoPy image log data
-    gaze_dataframe = merge_all_dataframes(processed_surfaces, 
-                                          gaze_surface_df, 
+    gaze_dataframe = merge_all_dataframes(processed_surfaces,
+                                          gaze_surface_df,
                                           processed_img_logs)
 
     # extract the survey data
     survey_df = extract_survey(full_logfile, survey_key)
-    
+
     # export everything
-    export_files(participant_info, 
+    export_files(participant_info,
                  top_root,
                  gaze_dataframe,
                  survey_df)
 
 # logs issues, if there are any
 # right now just for ".log" duplicates, more can be added though
-issues.to_csv(top_root+'/issues.csv',
+issues.to_csv(top_root + '/issues.csv',
               index=None)
